@@ -1,0 +1,43 @@
+header {
+    padding: 14px 0 0 0;
+    background-color: #19882c;
+    background-color: #0A5517;
+    background-image: -moz-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #19882c), color-stop(100%, #025310));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #19882c 1%, #025310 100%);
+    background-image: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#19882c", endColorstr="#025310", GradientType=1);
+}
+
+#sobre {
+    background: #00420c;
+}
+
+#sobre .portalservicos-item a {
+    border-right: 1px solid #6c9072;
+}
+
+#sobre .portalservicos-item a {
+    border-right: 1px solid #6c9072;
+}
+header,
+header a,
+header a:hover,
+header a:visited{
+    color: #fff;
+}
+#portal-siteactions, #portal-language {
+    border-bottom: 1px dotted #9bc2a3;
+}
+#portal-searchbox {
+    border: 1px solid #CCCCCC;
+}
+#social-icons a, .item-central .link-videos, .item-central .link-audios, .item-central .link-infograficos, .item-central .link-publicacoes, .item-central .link-fotos, .item-central .link-aplicativos, .item-central .link-dadosabertos, header input.searchButton {
+    background-image: url(../img/tema-verde/sprite.png);
+}
+#accessibility span {
+    background-color: #9ed5ab;
+    color: #006600;
+}

@@ -1,0 +1,381 @@
+body {
+    background-color: #fff;
+    color: #000000;
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    font-family: "open_sansregular", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#main,
+#sobre,
+#sobre ul,
+header .block {
+    max-width: 960px;
+}
+
+@media only screen and (max-width: 975px) {
+    header .block {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        max-width: 90%;
+    }
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+a:hover,
+a:active {
+    outline: none;
+}
+
+header * {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#portal-siteactions a {
+    padding: 4px 0 4px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#siteaction-accessibility a {
+    padding-left: 0;
+}
+
+#sobre .portalservicos-item a {
+    padding: 0 10px;
+}
+
+#sobre {
+    clear: both;
+    margin: 0;
+    padding: 5px 0;
+    max-width: 100% !important;
+    line-height: 20px;
+}
+
+* :link,
+:visited {
+    text-decoration: none;
+}
+
+#sobre ul {
+    margin: 0 auto;
+    text-align: right;
+}
+
+header ul,
+ol {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#logo {
+    float: left;
+    padding: 0;
+    width: 70%;
+}
+
+header li {
+    display: inline-block;
+}
+
+#accessibility span {
+    background-color: #dcffe3;
+    color: #17882c;
+}
+
+#accessibility a {
+    margin-right: 8px;
+}
+
+#accessibility {
+    display: block !important;
+    float: left;
+    width: 50%;
+    font-size: 0.88em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#portal-siteactions {
+    display: block;
+    float: right;
+    clear: none;
+    padding-bottom: 2px;
+    font-size: 0.93em;
+    text-align: center;
+}
+
+#language {
+    float: right;
+    margin-left: 20px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #9bc2a3;
+    font-size: 0.93em;
+}
+
+#portal-searchbox {
+    float: right;
+    clear: right !important;
+    margin: 3.12em 0 0 0;
+    padding: 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: right;
+    font-size: 80%;
+}
+
+#portal-searchbox .searchField {
+    padding: 0.3em 0.35em;
+    width: 186px;
+    border: none;
+    border-right: none;
+    font-size: 1.2em;
+    font-family: "open_sansregular", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+header .block {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none;
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
+
+header input.searchButton {
+    padding: 4px 15px;
+    border: none;
+    background: transparent;
+    text-indent: -2000px;
+    background-position: 0px 2px;
+    padding-right: 5px;
+}
+
+#social-icons a {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 0 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    opacity: .85;
+    filter: alpha(opacity=85);
+    border-radius: 4px;
+}
+
+.LSBox {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#social-icons {
+    float: right;
+    clear: right;
+    margin: 1.167em 0;
+}
+
+h1,
+h2 {
+    letter-spacing: -0.05em;
+}
+
+#portalredes-facebook a {
+    background-position: -80px -25px;
+}
+
+#portalredes-facebook a {
+    background-position: -80px -25px;
+}
+
+#portalredes-twitter a {
+    background-position: -155px -25px;
+}
+
+#portalredes-youtube a {
+    background-position: -130px -25px;
+}
+
+#portalredes-flickr a {
+    background-position: -105px -25px;
+}
+
+#portalredes-googleplus a {
+    background-position: -130px 0;
+}
+
+#portalredes-slideshare a {
+    background-position: 45px 0;
+}
+
+#portalredes-soundcloud a {
+    background-position: 20px 0;
+}
+
+#portalredes-rss a {
+    background-position: 145px -25px;
+}
+
+#portalredes-instagram a {
+    background-position: 69px -49px;
+}
+
+#portalredes-tumblr a {
+    background-position: 96px -49px;
+}
+
+#social-icons a:focus,
+#social-icons a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#accessibility span {
+    padding: 0 4px;
+}
+
+#portal-logo {
+    display: block;
+    margin: 0;
+    width: 100%;
+    margin: 1em 0 15px 0;
+    /* mod */
+}
+
+#portal-title {
+    margin: 0;
+    color: #fff;
+    font-size: 3.35em;
+    font-family: "open_sansextrabold", "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: 1em;
+    padding: 0 0 7px 0;
+}
+
+#portal-description {
+    bottom: 24px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+#voltar-topo {
+    margin-top: 1.915em;
+    text-align: right;
+}
+
+#voltar-topo a {
+    padding-left: 20px;
+    background: url(../img/voltar-topo.png) no-repeat left center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        min-width: 140px;
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portal-breadcrumbs,
+    #accessibility,
+    #doormat-container,
+    #em-destaque,
+    #portal-features {
+        display: none !important;
+    }
+    #portal-siteactions {
+        position: static;
+        float: none;
+        padding: 0 0 0.5em;
+        font-size: 0.9em;
+    }
+    #logo {
+        padding-left: 0.5em !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header #portal-searchbox {
+        border: none;
+        margin-bottom: 10px !important;
+        margin: 0 auto 2%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #portal-searchbox .searchField {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 39px;
+        border: 0 none;
+        border-top: 2px solid #ccc;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #064d13;
+        text-indent: 13px;
+        font-size: 18px;
+        font-family: "open_sansregular", "open sans regular", Arial, Helvetica, sans-serif;
+        line-height: 39px;
+    }
+    header #portal-searchbox .searchButton {
+        position: absolute;
+        top: 7px;
+        right: 13px;
+        width: 30px;
+        height: 30px;
+        background: url(++resource++brasil.gov.portal/img/search-button-30px.gif) no-repeat;
+        cursor: pointer;
+    }
+    header #portal-searchbox {
+        width: 100%;
+    }
+    #social-icons{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 830px) {
+    header #portal-searchbox {
+        position: absolute;
+        top: 7em;
+        right: 0;
+        width: 25em;
+    }
+}
+
+#main {
+    margin: 0 auto;
+    padding: 0 0 1.5em;
+    background: #fff;
+    font-size: 1.3em;
+}
