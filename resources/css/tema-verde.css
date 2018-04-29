@@ -22,22 +22,56 @@ header {
 #sobre .portalservicos-item a {
     border-right: 1px solid #6c9072;
 }
+
 header,
 header a,
 header a:hover,
-header a:visited{
+header a:visited {
     color: #fff;
+    s
 }
-#portal-siteactions, #portal-language {
+
+#portal-siteactions,
+#portal-language {
     border-bottom: 1px dotted #9bc2a3;
 }
+
 #portal-searchbox {
     border: 1px solid #CCCCCC;
 }
-#social-icons a, .item-central .link-videos, .item-central .link-audios, .item-central .link-infograficos, .item-central .link-publicacoes, .item-central .link-fotos, .item-central .link-aplicativos, .item-central .link-dadosabertos, header input.searchButton {
+
+#social-icons a,
+.link-videos,
+.link-audios,
+.link-infograficos,
+.link-publicacoes,
+.link-fotos,
+.link-aplicativos,
+.link-dadosabertos,
+header input.searchButton {
     background-image: url(../img/tema-verde/sprite.png);
 }
+
 #accessibility span {
     background-color: #9ed5ab;
     color: #006600;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .menuTrigger {
+        background: #065116 url("../img/bg-menu-mobile.png") top right no-repeat;
+    }
+}
+
+.nav-menu-bloco {
+    border-top: 4px solid #00510f;
+    color: #00510f;
+}
+
+.error {
+    background-color: #ffffe3;
+    border: 1px solid #996;
+    clear: both;
+    margin: 1em 0;
+    padding: 10px;
 }
