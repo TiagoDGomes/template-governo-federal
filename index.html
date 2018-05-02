@@ -21,11 +21,16 @@
     <link rel="stylesheet" type="text/css" href="resources/css/extra-large.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/tema-verde.css" type="text/css" rel="stylesheet">
     <!-- -->
+    <!--<link rel="stylesheet" type="text/css" href="resources/css/tema-azul.css" type="text/css" rel="stylesheet">
+    <!-- -->
     <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+    <script src="resources/js/cookies.js"></script>
+    <script src="resources/js/acessibilidade.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="resources/css/acessibilidade.css" type="text/css" rel="stylesheet">
 </head>
 
-<body class="">
+<body onload="window.acessibilidade.alternar();" class="">
     <noscript>
         <div class="error minor-font">
             Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar
@@ -88,7 +93,7 @@
                         <a href="acessibilidade" title="Acessibilidade" accesskey="5" data-unsp-sanitized="clean">Acessibilidade</a>
                     </li>
                     <li id="siteaction-contraste">
-                        <a href="#" title="Alto Contraste" accesskey="6" data-unsp-sanitized="clean">Alto Contraste</a>
+                        <a href="#" onclick="window.acessibilidade.alternar()" title="Alto Contraste" accesskey="6" data-unsp-sanitized="clean" class="necessario-javascript">Alto Contraste</a>
                     </li>
                     <li id="siteaction-mapadosite" class="last-item">
                         <a href="mapadosite" title="Mapa do Site" accesskey="7" data-unsp-sanitized="clean">Mapa do Site</a>
@@ -173,10 +178,36 @@
             </div>
         </header>
         <div id="main">
-            <div id="portal-features">
+
+
+
+            <section id="portal-features">
                 <div id="featured-content"></div>
-            </div>
-            <div id="portal-columns">
+            </section>
+            <section id="em-destaque">
+                <h2>
+                    Em destaque
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#" data-unsp-sanitized="clean">Item #</a>
+                    </li>
+                    <li>
+                        <a href="#" data-unsp-sanitized="clean">Item #</a>
+                    </li>
+                    <li>
+                        <a href="#" data-unsp-sanitized="clean">Item #</a>
+                    </li>
+                    <li>
+                        <a href="#" data-unsp-sanitized="clean">Item #</a>
+                    </li>
+                    <li>
+                        <a href="#" data-unsp-sanitized="clean">Item #</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="portal-columns">
                 <div id="viewlet-above-content">
                     <div id="portal-breadcrumbs">
                         <span id="breadcrumbs-you-are-here">Você está aqui:</span>
@@ -185,7 +216,7 @@
                         </span>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div id="navigation" class="row">
                 <div id="nav-menu-lateral-esquerda" class="col col-12 col-md-2">
@@ -320,10 +351,10 @@
                     <main>
                         <aside>
                             <h2>Conteúdo</h2>
-                            <section>
+                            <div class="noticia">
                                 <h2>Título da notícia em duas linhas completas com 55 caracteres</h2>
                                 <p>Subtitulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres</p>
-                            </section>
+                            </div>
                             <div class="detalhes">
                                 <a href="#">Veja mais aqui</a>
                             </div>
@@ -332,12 +363,12 @@
                             <div class="col col-12 col-sm-6">
                                 <aside class="vermelho">
                                     <h2>Conteúdo</h2>
-                                    <section>
+                                    <div class="noticia">
                                         <h3>Título da notícia em duas linhas completas com 55 caracteres</h3>
                                         <p>Subtitulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar
                                             190 caracteres
                                         </p>
-                                    </section>
+                                    </div>
                                     <div class="detalhes">
                                         <a href="#">Veja mais aqui</a>
                                     </div>
@@ -346,12 +377,12 @@
                             <div class="col col-sm-6">
                                 <aside class="azul-escuro">
                                     <h2>Conteúdo</h2>
-                                    <section>
+                                    <div class="noticia">
                                         <h3>Título da notícia em duas linhas completas com 55 caracteres</h3>
                                         <p>Subtitulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar
                                             190 caracteres
                                         </p>
-                                    </section>
+                                    </div>
                                     <div class="detalhes">
                                         <a href="#">Veja mais aqui</a>
                                     </div>
@@ -377,36 +408,38 @@
         <div class="menu">
             <a name="afooter" id="afooter"></a>
             <div class="row">
-                <div class="col">
+                <div class="col col-12 col-sm-6 col-md-3">
                     <dl>
                         <dt>Assuntos</dt>
                         <dd>
                             <ul>
-                                <li><a href="#">Menu 1</a></li>
+                                <li>
+                                    <a href="#">Menu 1</a>
+                                </li>
                                 <li>Menu 2</li>
                                 <li>Menu 3</li>
                             </ul>
                         </dd>
                     </dl>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6 col-md-3">
                     <dl>
                         <dt>Assuntos</dt>
                         <dd>
                             <ul>
-                                <li>Menu 1</li>
+                                <li>Menu 1 texto 1 texto 2</li>
                                 <li>Menu 2</li>
                                 <li>Menu 3</li>
                             </ul>
                         </dd>
                     </dl>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-sm-6 col-md-3">
                     <dl>
                         <dt>Assuntos</dt>
                         <dd>
                             <ul>
-                                <li>Menu 1</li>
+                                <li>Menu 1 texto texto</li>
                                 <li>Menu 2</li>
                                 <li>Menu 3</li>
                             </ul>
@@ -414,7 +447,7 @@
                     </dl>
                 </div>
 
-                <div class="col">
+                <div class="col col-12 col-sm-6 col-md-3">
                     <dl>
                         <dt>Assuntos</dt>
                         <dd>
@@ -431,11 +464,18 @@
         </div>
         <div id="footer-brasil"></div>
     </footer>
-    
+
     <div id="about-template">
-        Desenvolvido com template base de código aberto disponível no <a href="https://github.com/TiagDGomes/template-governo-federal">GitHub</a>
+        Desenvolvido com template base de código aberto disponível no
+        <a href="https://github.com/TiagDGomes/template-governo-federal">GitHub</a>
     </div>
     <script defer="defer" src="https://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+    <script>
+        var elements = document.querySelectorAll('.necessario-javascript');
+        Array.prototype.forEach.call(elements, function (el, i) {
+            el.classList.remove('necessario-javascript');
+        });
+    </script>
 </body>
 
 </html>

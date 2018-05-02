@@ -19,5 +19,15 @@
         min-width: 140px;
         width: 100% !important;
     }
+    #about-template{
+        margin: 0;
+        padding: 1em;
+    }
+    #sobre ul{
+        text-align: center;
+    }
+    #content {
+        padding-right: 0;
+    }
 }
 

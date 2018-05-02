@@ -10,17 +10,19 @@ header {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#19882c", endColorstr="#025310", GradientType=1);
 }
 
+#accessibility span {
+    background-color: #dcffe3;
+    color: #17882c;
+}
 #sobre {
-    background: #00420c;
+    background-color: #00420c;
 }
 
 #sobre .portalservicos-item a {
-    border-right: 1px solid #6c9072;
+    border-color: #6c9072;
 }
 
-#sobre .portalservicos-item a {
-    border-right: 1px solid #6c9072;
-}
+
 
 header,
 header a,
@@ -46,7 +48,8 @@ header a:visited {
 .link-fotos,
 .link-aplicativos,
 .link-dadosabertos,
-header input.searchButton {
+header input.searchButton,
+.use-sprite {
     background-image: url(../img/tema-verde/sprite.png);
 }
 
@@ -66,16 +69,16 @@ header input.searchButton {
     color: #00510f;
 }
 
-.error {
-    background-color: #ffffe3;
-    border: 1px solid #996;
-    clear: both;
-    margin: 1em 0;
-    padding: 10px;
-}
+
 footer{
     background-color: #034811;
 }
 #footer-brasil {
     background-color: #00420c;
+}
+footer dt{
+    color: #7dc48a;
+}
+footer dl{
+    border-color: #7dc48a;
 }
