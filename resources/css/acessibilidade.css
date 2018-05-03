@@ -16,7 +16,10 @@
     background-color: black;
     background-image: unset;
 }
-
+.contraste #portal-searchbox {
+    border: 1px solid white;
+}
+body.contraste,
 .contraste #sobre,
 .contraste #sobre ul,
 .contraste #em-destaque,
@@ -25,8 +28,11 @@
 .contraste aside .details,
 .contraste aside .detalhes,
 .contraste footer,
-.contraste #about-template {
-    background: #1c1c1c;
+.contraste #about-template,
+.contraste #em-destaque ul,
+.contraste footer dl ,
+.contraste #nav-menu-lateral-esquerda dd>ul>li.ativo {
+    background-color: #1c1c1c;
     border-color: yellow;
 }
 .contraste .searchField {

@@ -19,20 +19,21 @@
     <link rel="stylesheet" type="text/css" href="resources/css/medium.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/large.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/css/extra-large.css" type="text/css" rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="resources/css/tema-amarelo.css" type="text/css" rel="stylesheet">
-    <!-- -->
-    <!--<link rel="stylesheet" type="text/css" href="resources/css/tema-verde.css" type="text/css" rel="stylesheet">
-    <!-- -->
-    <link rel="stylesheet" type="text/css" href="resources/css/tema-azul.css" type="text/css" rel="stylesheet">
-    <!-- -->
+    <!-- <link rel="stylesheet" type="text/css" href="resources/css/tema-amarelo.css" type="text/css" rel="stylesheet">
+    <!-- x -->
+    <!-- <link rel="stylesheet" type="text/css" href="resources/css/tema-verde.css" type="text/css" rel="stylesheet">
+    <!-- x -->
+    <!-- <link rel="stylesheet" type="text/css" href="resources/css/tema-azul.css" type="text/css" rel="stylesheet">
+    <!-- x -->
     <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
     <script src="resources/js/cookies.js"></script>
     <script src="resources/js/acessibilidade.js"></script>
+    <script src="resources/js/geral.js"></script>
 
     <link rel="stylesheet" type="text/css" href="resources/css/acessibilidade.css" type="text/css" rel="stylesheet">
 </head>
 
-<body onload="window.acessibilidade.alternar();" class="">
+<body onload="onLoad();" class="">
     <noscript>
         <div class="error minor-font">
             Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar
@@ -125,34 +126,34 @@
 
                 <div id="social-icons">
                     <ul>
-                        <li id="portalredes-youtube" class="portalredes-item">
+                        <li id="portalredes-youtube">
                             <a href="http://youtube.com/Youtube">YouTube</a>
                         </li>
-                        <li id="portalredes-googleplus" class="portalredes-item">
+                        <li id="portalredes-googleplus">
                             <a href="http://plus.google.com/google+">Google+</a>
                         </li>
-                        <li id="portalredes-instagram" class="portalredes-item">
+                        <li id="portalredes-instagram">
                             <a href="http://instagram.com/instagram">Instagram</a>
                         </li>
-                        <li id="portalredes-tumblr" class="portalredes-item">
+                        <li id="portalredes-tumblr">
                             <a href="http://thumblr.tumblr.com">Thumblr</a>
                         </li>
-                        <li id="portalredes-twitter" class="portalredes-item">
+                        <li id="portalredes-twitter">
                             <a href="https://twitter.com/twiiter">Twitter</a>
                         </li>
-                        <li id="portalredes-youtube" class="portalredes-item">
+                        <li id="portalredes-youtube">
                             <a href="http://youtube.com/youtube">YouTube</a>
                         </li>
-                        <li id="portalredes-flickr" class="portalredes-item">
+                        <li id="portalredes-flickr">
                             <a href="http://flickr.com/flickr">Flickr</a>
                         </li>
-                        <li id="portalredes-soundcloud" class="portalredes-item">
+                        <li id="portalredes-soundcloud">
                             <a href="http://soundcloud.com/soundcloud">SoundCloud</a>
                         </li>
-                        <li id="portalredes-slideshare" class="portalredes-item">
+                        <li id="portalredes-slideshare">
                             <a href="http://slideshare.com/slideshare">Slideshare</a>
                         </li>
-                        <li id="portalredes-rss" class="portalredes-item last-item">
+                        <li id="portalredes-rss">
                             <a href="rss">RSS</a>
                         </li>
                     </ul>
@@ -161,19 +162,19 @@
             </div>
             <div id="sobre">
                 <ul>
-                    <li id="portalservicos-perguntas-frequentes" class="portalservicos-item">
+                    <li id="portalservicos-perguntas-frequentes">
                         <a href="perguntas-frequentes" title="Perguntas frequentes" data-unsp-sanitized="clean">Perguntas frequentes</a>
                     </li>
-                    <li id="portalservicos-contato" class="portalservicos-item">
+                    <li id="portalservicos-contato">
                         <a href="contato" title="Contato" data-unsp-sanitized="clean">Contato</a>
                     </li>
-                    <li id="portalservicos-acesso-a-sistemas" class="portalservicos-item">
+                    <li id="portalservicos-acesso-a-sistemas">
                         <a href="acesso-a-sistemas" title="Serviços da [Denominação]" data-unsp-sanitized="clean">Serviços da [Denominação]</a>
                     </li>
-                    <li id="portalservicos-dados-abertos" class="portalservicos-item">
+                    <li id="portalservicos-dados-abertos">
                         <a href="dados-abertos" title="Dados abertos" data-unsp-sanitized="clean">Dados abertos</a>
                     </li>
-                    <li id="portalservicos-area-de-imprensa" class="portalservicos-item last-item">
+                    <li id="portalservicos-area-de-imprensa">
                         <a href="area-de-imprensa" title="Área de imprensa" data-unsp-sanitized="clean">Área de imprensa</a>
                     </li>
                 </ul>
@@ -218,7 +219,7 @@
             </section>
 
             <div id="navigation" class="row">
-                <div id="nav-menu-lateral-esquerda" class="col col-12 col-md-2">
+                <div id="nav-menu-lateral-esquerda" class="col col-12 col-sm-3 col-md-2">
                     <a name="anavigation" id="anavigation" data-unsp-sanitized="clean"></a>
                     <span class="menuTrigger">Menu</span>
                     <div class="cell width-1:4 position-0">
@@ -231,13 +232,13 @@
                                     <ul>
                                         <li class="visualNoMarker section-nova-identidade-digital-do-poder-executivo">
                                             <a href="http://www.portalpadrao.gov.br/conteudos-de-marcacao/site-secom-portal-do-planalto-e-portal-brasil-adotam-nova-identidade-digital"
-                                                title="" class="state-published contenttype-link" data-unsp-sanitized="clean">
+                                                title="" class="contenttype-link" data-unsp-sanitized="clean">
                                                 <span>Conheça a Identidade Digital do Poder Executivo</span>
                                             </a>
                                         </li>
                                         <li class="navTreeItem visualNoMarker section-manuais last-item">
                                             <a href="http://www.secom.gov.br/orientacoes-gerais#b_start=0&amp;c6=%2Fclientes%2Fsecom%2Fsecom%2Forientacoes-gerais%2Fcomunicacao-digital&amp;c1=Manuais"
-                                                title="" class="state-published contenttype-link" data-unsp-sanitized="clean">
+                                                title="" class="contenttype-link" data-unsp-sanitized="clean">
                                                 <span>Manuais</span>
                                             </a>
                                         </li>
@@ -254,13 +255,13 @@
                                 <dd>
                                     <ul>
                                         <li>
-                                            <a href="editoria-a" title="Editoria A" class="state-published navTreeFolderish contenttype-folder" data-unsp-sanitized="clean">
+                                            <a href="editoria-a" title="Editoria A" class="contenttype-folder" data-unsp-sanitized="clean">
                                                 <span>Editoria A</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="editoria-a" title="Editoria A" class="state-published navTreeFolderish contenttype-folder" data-unsp-sanitized="clean">
-                                                <span>Editoria A</span>
+                                        <li class="ativo">
+                                            <a href="editoria-b" title="Editoria B" class="contenttype-folder" data-unsp-sanitized="clean">
+                                                <span>Selecionado</span>
                                             </a>
                                         </li>
 
@@ -277,13 +278,13 @@
                                 <dd>
                                     <ul>
                                         <li>
-                                            <a href="editoria-a" title="Editoria A" class="state-published navTreeFolderish contenttype-folder" data-unsp-sanitized="clean">
-                                                <span>Editoria A</span>
+                                            <a href="editoria-c" title="Editoria C" class="contenttype-folder" data-unsp-sanitized="clean">
+                                                <span>Editoria C</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="editoria-a" title="Editoria A" class="state-published navTreeFolderish contenttype-folder" data-unsp-sanitized="clean">
-                                                <span>Editoria A</span>
+                                            <a href="editoria-d" title="Editoria D" class="contenttype-folder" data-unsp-sanitized="clean">
+                                                <span>Editoria D</span>
                                             </a>
                                         </li>
 
@@ -345,7 +346,7 @@
                     </div>
                 </div>
 
-                <div id="content" class="col col-md-10">
+                <div id="content" class="col col-sm-9 col-md-10">
                     <a name="acontent" id="acontent" data-unsp-sanitized="clean"></a>
                     <main>
                         <aside>

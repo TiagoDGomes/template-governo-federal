@@ -40,7 +40,6 @@ footer {
 footer>div {
     padding: 20px 0;
     min-height: 50px;
-    
 }
 
 #wrapper,
@@ -58,7 +57,9 @@ a:active {
 
 a,
 a:hover,
-a:visited {
+a:visited,
+footer {
+    color: #0056b3;
     text-decoration: none;
 }
 
@@ -74,12 +75,29 @@ header * {
     text-transform: uppercase;
 }
 
+#social-icons a,
+.link-videos,
+.link-audios,
+.link-infograficos,
+.link-publicacoes,
+.link-fotos,
+.link-aplicativos,
+.link-dadosabertos,
+header input.searchButton {
+    background-image: url(../img/tema-amarelo/sprite.png);
+}
+
 #siteaction-accessibility a {
     padding-left: 0;
 }
 
-#sobre .portalservicos-item a {
+#sobre li a {
     padding: 0 10px;
+}
+
+#sobre,
+#footer-brasil {
+    background-color: #bbbcbf;
 }
 
 #sobre {
@@ -142,10 +160,13 @@ header li {
     float: right;
     margin-left: 20px;
     padding-bottom: 2px;
-    border-bottom: 1px dotted #9bc2a3;
+    
     font-size: 0.93em;
 }
-
+#language li{
+    border-bottom: 1px dotted #9bc2a3;
+    margin-left: 2px;
+}
 #portal-searchbox {
     float: right;
     clear: right !important;
@@ -294,7 +315,6 @@ h2 {
 
 #portal-title {
     margin: 0;
-    color: #fff;
     font-size: 3.35em;
     font-family: "open_sansextrabold", "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -569,15 +589,19 @@ aside.azul-escuro>.detalhes a {
     background-image: url('../img/seta_azul-escuro.png');
 }
 
-#sobre .portalservicos-item a {
+#sobre li a {
     border-width: 0 1px 0 0;
     border-style: solid;
+}
+
+#sobre li:last-child a {
+    border: 0 !important;
 }
 
 header,
 footer {
     background-color: #efefef;
-    color: silver;
+
 }
 
 footer dl {
@@ -608,11 +632,6 @@ footer li {
     padding: 1em 0 1em 0;
 }
 
-footer a,
-footer a:hover,
-footer a:visited {
-    color: white;
-}
 
 .error {
     background-color: #ffffe3;
@@ -635,7 +654,7 @@ footer a:visited {
     width: 20%;
     background-color: #717782;
     vertical-align: middle;
-    padding: 5px 0 2px 0;
+    padding: 7px 0 2px 0;
     color: white;
     border-radius: 8px 0 0 8px;
 }
@@ -646,27 +665,47 @@ footer a:visited {
     width: 80%;
     margin: 0;
     padding: 0;
-    
+    background-color: #e8e7e7;
 }
-#em-destaque a{
+
+#em-destaque a {
     color: #333;
 }
+
 #em-destaque h2,
 #em-destaque {
-    min-height: 20px;
+    min-height: 24px;
 }
-#em-destaque {
-    background-color: #e8e7e7;
-    
-}
+
 #em-destaque li {
     display: table-cell;
     padding-top: 3px;
 }
-#em-destaque li:last-child{
+
+#em-destaque li:last-child {
     border-radius: 0 8px 8px 0;
 }
-.necessario-javascript{
-    text-decoration: line-through !important;
 
+.necessario-javascript {
+    text-decoration: line-through !important;
+}
+
+#portal-siteactions,
+#portal-language {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+
+#nav-menu-lateral-esquerda dd>ul>li.ativo {
+    font-weight: bold;
+    background-color: rgb(237, 239, 241);
+    border-top: 2px solid #03316f;
+    border-bottom: 2px solid #03316f;
+}
+
+#nav-menu-lateral-esquerda dd>ul>li.ativo>a {
+    background-origin: padding-box;
+    background-position: 7px -19px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
 }

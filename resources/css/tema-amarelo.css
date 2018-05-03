@@ -10,7 +10,13 @@ footer {
     background-image: radial-gradient(ellipse at center, #fbda43 1%, #f8c60b 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#fbda43", endColorstr="#f8c60b", GradientType=1);
 }
-
+#accessibility span {
+    background: #03316f;
+    color: #fff;
+}
+#portal-siteactions, #language {
+    border-color: #03316f;
+}
 header a,
 footer a,
 header,
@@ -34,19 +40,11 @@ header a:visited {
     background: #f8b904;
 }
 
-#social-icons a,
-.link-videos,
-.link-audios,
-.link-infograficos,
-.link-publicacoes,
-.link-fotos,
-.link-aplicativos,
-.link-dadosabertos,
-header input.searchButton {
-    background-image: url(../img/tema-amarelo/sprite.png);
-}
 
 .nav-menu-bloco {
     border-top: 4px solid #1659bf;
     color: #1659bf;
+}
+footer dl {
+    border-color: #1659bf;
 }

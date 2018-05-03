@@ -17,9 +17,10 @@ header {
 
 #sobre {
     background-color: #00420c;
+    
 }
 
-#sobre .portalservicos-item a {
+#sobre li a {
     border-color: #6c9072;
 }
 
@@ -28,13 +29,15 @@ header a,
 header a:hover,
 header a:visited,
 footer,
-footer a {
-    color: #fff;
+footer a,
+footer a:hover,
+footer a:visited {
+    color: #ffffff;
 }
 
 #portal-siteactions,
 #portal-language {
-    border-bottom: 1px dotted #9bc2a3;
+    border-color:#9bc2a3;
 }
 
 #portal-searchbox {
@@ -50,7 +53,7 @@ footer a {
 .link-aplicativos,
 .link-dadosabertos,
 header input.searchButton,
-.use-sprite {
+.use-sprite{
     background-image: url(../img/tema-verde/sprite.png);
 }
 
