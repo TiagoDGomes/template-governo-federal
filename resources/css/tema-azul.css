@@ -1,17 +1,24 @@
-header, footer{
+header,
+footer {
     background-color: #1659bf;
 }
-#footer-brasil{
+
+#footer-brasil {
     background-color: #0042b1;
 }
-header a, 
+
+header a,
 header a:hover,
-header a:visited{
+header a:visited,
+footer,
+footer a {
     color: white;
 }
+
 #sobre {
     background: #0f4098;
 }
+
 #social-icons a,
 .link-videos,
 .link-audios,
@@ -23,7 +30,6 @@ header a:visited{
 header input.searchButton {
     background-image: url(../img/tema-azul/sprite.png);
 }
-
 
 .nav-menu-bloco {
     border-top: 4px solid #1659bf;

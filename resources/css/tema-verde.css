@@ -14,6 +14,7 @@ header {
     background-color: #dcffe3;
     color: #17882c;
 }
+
 #sobre {
     background-color: #00420c;
 }
@@ -22,13 +23,13 @@ header {
     border-color: #6c9072;
 }
 
-
-
 header,
 header a,
 header a:hover,
-header a:visited {
-    color: #fff;    
+header a:visited,
+footer,
+footer a {
+    color: #fff;
 }
 
 #portal-siteactions,
@@ -69,16 +70,18 @@ header input.searchButton,
     color: #00510f;
 }
 
-
-footer{
+footer {
     background-color: #034811;
 }
+
 #footer-brasil {
     background-color: #00420c;
 }
-footer dt{
+
+footer dt {
     color: #7dc48a;
 }
-footer dl{
+
+footer dl {
     border-color: #7dc48a;
 }
