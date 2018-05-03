@@ -652,13 +652,16 @@ footer a:visited {
     color: #333;
 }
 #em-destaque h2,
-#em-destaque ul {
+#em-destaque {
     min-height: 20px;
 }
-
-#em-destaque li {
+#em-destaque {
     background-color: #e8e7e7;
+    
+}
+#em-destaque li {
     display: table-cell;
+    padding-top: 3px;
 }
 #em-destaque li:last-child{
     border-radius: 0 8px 8px 0;
