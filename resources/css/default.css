@@ -95,9 +95,12 @@ header input.searchButton {
     padding: 0 10px;
 }
 
-#sobre,
-#footer-brasil {
+#sobre {
     background-color: #bbbcbf;
+}
+
+#footer-brasil {
+    background-color: #0042b1;
 }
 
 #sobre {
@@ -156,17 +159,17 @@ header li {
     text-align: center;
 }
 
-#language {
+#portal-language {
     float: right;
     margin-left: 20px;
     padding-bottom: 2px;
-    
     font-size: 0.93em;
 }
-#language li{
-    border-bottom: 1px dotted #9bc2a3;
+
+#portal-language li {
     margin-left: 2px;
 }
+
 #portal-searchbox {
     float: right;
     clear: right !important;
@@ -214,7 +217,7 @@ header .block {
 header input.searchButton {
     padding: 6px 15px;
     border: none;
-    background: transparent;
+    background-color: transparent;
     text-indent: -2000px;
     background-position: 0px 2px;
     padding-right: 5px;
@@ -601,7 +604,6 @@ aside.azul-escuro>.detalhes a {
 header,
 footer {
     background-color: #efefef;
-
 }
 
 footer dl {
@@ -631,7 +633,6 @@ footer li {
     font-style: normal;
     padding: 1em 0 1em 0;
 }
-
 
 .error {
     background-color: #ffffe3;
@@ -708,4 +709,20 @@ footer li {
     background-position: 7px -19px;
     background-repeat: no-repeat;
     background-clip: border-box;
+}
+
+article .titulo-texto-abaixo {
+    font-size: 0.8em;
+}
+
+article .descricao,
+article .titulo-texto-abaixo {
+    margin: 1em 0 2em 0;
+}
+
+article .descricao {
+    font-weight: bold;
+}
+article img{
+    max-width: 100%;
 }
