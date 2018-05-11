@@ -503,7 +503,12 @@ aside>.details,
 aside>h2 {
     background: #eeeff1;
 }
-
+aside h2 a,
+aside h3 a,
+aside h2 a:visited,
+aside h3 a:visited{
+    color: black;
+}
 .nav-menu-bloco,
 aside>.detalhes,
 aside>.details,
