@@ -11,7 +11,9 @@ header a,
 header a:hover,
 header a:visited,
 footer,
-footer a {
+footer a,
+footer a:hover,
+footer a:visited {
     color: white;
 }
 
