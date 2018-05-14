@@ -18,30 +18,42 @@
     <link media="(max-width: 768px)" rel="stylesheet" type="text/css" href="resources/css/tela-pequena.css">
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/devel.css" />
+    <link media="print" rel="stylesheet" type="text/css" href="resources/css/impressao.css" />
     <!--[if lte IE 8]>
-        <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
-    <![endif]-->
-    
+    <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
+    <![endif]-->  
+       
+    <script src="resources/js/cookies.js"></script>
 </head>
 
-<body>
+<body>    
+    <script src="resources/js/acessibilidade.js"></script>   
+
     <!-- Início da área de testes -->
     <style>
-        #area-testes {
-            background-color: #fefefe;
-            position: fixed;
-            top: 0;
-            right: 12px;
-            z-index: 4;
-            background-color: threedface;
-        }
+        @media print{
+            #area-testes {
+                display: none;
+            }
+        } 
+        @media screen{
+            #area-testes {
+                display: initial;
+                background-color: #fefefe;
+                position: fixed;
+                top: 0;
+                right: 12px;
+                z-index: 4;
+                background-color: threedface;
+            }
 
-        #area-testes * {
-            font-size: 9pt;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            #area-testes * {
+                font-size: 9pt;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
         }
     </style>
-    <fieldset id="area-testes">
+    <fieldset id="area-testes" class="js-necessario">
         <legend>Testes</legend>
         <div>
             <label for="teste_tema">Tema: </label>
@@ -59,8 +71,7 @@
                 }
             </script>
         </div>
-    </fieldset>
-    <!-- Fim da área de testes -->
+    </fieldset>   
     <div id="barra-brasil"></div>
     <div id="tudo">
         <header>
@@ -113,8 +124,8 @@
                             <li>
                                 <a href="#">Acessibilidade</a>
                             </li>
-                            <li>
-                                <a href="#">Alto contraste</a>
+                            <li class="js-necessario">
+                                <a onclick="window.acessibilidade.altoContraste.alternar();" href="#">Alto contraste</a>
                             </li>
                             <li>
                                 <a href="#">Mapa do site</a>
@@ -531,7 +542,31 @@
 
     </div>
     <script defer="defer" src="https://barra.brasil.gov.br/barra.js"></script>
-
+    <script>
+        var elementosDesabilitadosJavascript = document.querySelectorAll('.js-necessario');
+        Array.prototype.forEach.call(elementosDesabilitadosJavascript, function(el, i){
+            el.classList.remove('js-necessario');
+        });
+    </script>
+    <!--[if lte IE 8]>
+    <script> 
+        var $buoop = {  required:{i:9},
+                        noclose:true,
+                        insecure:true,
+                        reminder: 1,
+                        notified: false,
+                        reminderClosed: 1,
+                        api:2018.05
+                    }; 
+        function $buo_f(){ 
+        var e = document.createElement("script"); 
+        e.src = "//browser-update.org/update.min.js"; 
+        document.body.appendChild(e);
+        };
+        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+        catch(e){window.attachEvent("onload", $buo_f)}
+    </script>
+    <![endif]-->
 </body>
 
 </html>

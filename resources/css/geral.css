@@ -9,7 +9,12 @@ body {
 header {
     font-size: 1.2em;
 }
-
+.js-necessario,
+.js-necessario * {
+    text-decoration: line-through;
+    cursor: not-allowed;    
+    display: none;
+}
 h1,
 h2, 
 h3 {

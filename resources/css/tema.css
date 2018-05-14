@@ -10,6 +10,10 @@ a:visited{
 .noticia h6 a{
     color: #000;
 }
+body{
+    /* sem isso, o IE buga ao alternar alto contraste. */
+    background-color: white; 
+}
 body header>div:first-child {
     background-color: #F0F2F1;
     background-color: #ECEDF1;
@@ -256,6 +260,7 @@ body.contraste h5,
 body.contraste h6,
 body.contraste #barra-breadcrumb,
 body.contraste dt.menu-bloco,
+body.contraste main legend,
 body.contraste .chapeu  {
     color: #ffffff !important;
 }
@@ -265,7 +270,7 @@ body.contraste a:hover{
 body.contraste,
 body.contraste header>div:first-child{
     background-color: black !important;
-    background-image: unset;
+    background-image: none !important;
 }
 
 body.contraste .centrais-de-conteudos li a,
@@ -298,5 +303,6 @@ body.contraste #barra-atalhos span{
     color: #000 !important;
 }
 body.contraste input:focus {
+    outline: initial !important;
     outline: unset !important;
 }
