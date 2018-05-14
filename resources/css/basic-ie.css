@@ -1,0 +1,18 @@
+#barra-brasil,
+#barra-redes-sociais,
+#barra-acessibilidade,
+#barra-idiomas,
+#barra-servicos,
+legend {
+    display:none;
+}
+#barra-busca *{
+    border: initial;
+}
+#menu-lateral,
+#barra-atalhos li{
+    float:left;
+}
+#central legend {
+    display: initial;
+}

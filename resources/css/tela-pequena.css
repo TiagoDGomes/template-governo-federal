@@ -1,0 +1,68 @@
+#cabecalho>div,
+#barra-breadcrumb,
+#barra-acessibilidade,
+#barra-acessibilidade ul,
+#extra-footer,
+#footer-brasil>div,
+#barra-servicos ul,
+#central{
+    max-width: 100%;
+}
+#barra-atalhos{
+    display: none;
+}
+
+#barra-acessibilidade,
+#barra-idiomas{
+    float: unset;
+    margin-left: 0;
+    display: block;
+}
+#barra-acessibilidade ul,
+#barra-servicos ul,
+#barra-idiomas{
+    text-align: center;
+}
+#barra-idiomas{
+    margin-bottom: 1em;
+}
+#titulo,
+main,
+#barra-breadcrumb,
+#extra-footer{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#menu-lateral{
+    display: none;
+}
+
+#cabecalho>div{
+    padding-bottom: 10px;
+    
+}
+
+#barra-busca{
+    float: unset;
+    display: block;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+    margin-bottom: 1em !important;
+    margin: 0 auto;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+    
+}
+#barra-busca input[type="text"]{
+    width: 90%;
+}
+#barra-busca input[type="submit"]{
+    position: absolute;
+    right: 15px;
+}
+#barra-redes-sociais{
+    text-align: center;
+}

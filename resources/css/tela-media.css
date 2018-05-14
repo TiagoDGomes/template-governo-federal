@@ -1,0 +1,32 @@
+#cabecalho>div,
+#barra-breadcrumb,
+#extra-footer,
+#footer-brasil>div,
+#barra-servicos ul,
+#central{
+    max-width: 750px !important;
+}
+#cabecalho>div{
+    position: relative;
+}
+#barra-idiomas{
+    position: absolute;
+    top: 2em;
+    right: 0;
+}
+#menu-lateral{
+    display: none;
+}
+
+#barra-busca,
+#barra-redes-sociais{    
+    position: absolute;
+    right: 0;
+}
+#barra-busca {
+    width: 240px;
+    top: 70px;
+}
+#barra-redes-sociais{
+    top: 115px;
+}

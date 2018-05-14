@@ -1,0 +1,302 @@
+a, 
+a:hover, 
+a:visited{
+    color: #0056b3;
+}
+.noticia h2 a,
+.noticia h3 a,
+.noticia h4 a,
+.noticia h5 a,
+.noticia h6 a{
+    color: #000;
+}
+body header>div:first-child {
+    background-color: #F0F2F1;
+    background-color: #ECEDF1;
+    background-image: -moz-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #F0F2F1), color-stop(100%, #ECEDF1));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
+    background-image: radial-gradient(ellipse at center, #F0F2F1 1%, #ECEDF1 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=" #F0F2F1", endColorstr=" #ECEDF1", GradientType=1);
+}
+
+body.verde header>div:first-child {
+    background-color: #17882C;
+    background-color: #00510F;
+    background-image: -moz-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #17882C), color-stop(100%, #00510F));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
+    background-image: radial-gradient(ellipse at center, #17882C 1%, #00510F 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#17882C", endColorstr="#00510F", GradientType=1);
+}
+
+body.amarelo header>div:first-child {
+    background-color: #FCDD4E;
+    background-color: #F9C404;
+    background-image: -moz-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #FCDD4E), color-stop(100%, #F9C404));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
+    background-image: radial-gradient(ellipse at center, #FCDD4E 1%, #F9C404 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCDD4E", endColorstr="#F9C404", GradientType=1);
+}
+
+body.azul header>div:first-child {
+    background-color: #3A72BC;
+    background-color: #2160BD;
+    background-image: -moz-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
+    background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #3A72BC), color-stop(100%, #2160BD));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
+    background-image: -ms-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
+    background-image: radial-gradient(ellipse at center, #3A72BC 1%, #2160BD 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=" #3A72BC", endColorstr=" #2160BD", GradientType=1);
+}
+body.contraste main{
+    color: white;
+}
+
+#barra-atalhos span {
+    background-color: #2c66ce;
+    color: #fff;
+}
+
+body.verde #barra-atalhos span {
+    background-color: #9ed5ab;
+    color: #006600;
+}
+
+body.azul #barra-atalhos span {
+    background-color: #aed3ff;
+    color: #fff;
+}
+
+#barra-acessibilidade,
+#barra-idiomas {
+    border-bottom-color: #03316f;
+}
+
+body.verde #barra-acessibilidade,
+body.verde #barra-idiomas,
+body.azul #barra-acessibilidade,
+body.azul #barra-idiomas {
+    border-bottom-color: #9bc2a3;
+    ;
+}
+
+#cabecalho,
+header a,
+header a:hover,
+header a:active,
+header a:visited,
+#barra-breadcrumb a,
+#barra-breadcrumb a:hover,
+#barra-breadcrumb a:active,
+#barra-breadcrumb a:visited
+ {
+    color: #2C66CE
+}
+
+body.verde #cabecalho,
+body.verde header a,
+body.verde header a:hover,
+body.verde header a:active,
+body.verde header a:visited,
+body.azul header,
+body.azul header a,
+body.azul header a:hover,
+body.azul header a:active,
+body.azul header a:visited {
+    color: #FFFFFF
+}
+
+body.amarelo #cabecalho,
+body.amarelo header a,
+body.amarelo header a:hover,
+body.amarelo header a:active,
+body.amarelo header a:visited {
+    color: #03316F;
+}
+
+#barra-servicos {
+    background-color: #cfd0d2;
+}
+
+body.verde #barra-servicos {
+    background-color: #01420a;
+}
+
+body.amarelo #barra-servicos {
+    background-color: #f8b904;
+}
+
+body.azul #barra-servicos {
+    background-color: #0e4097;
+}
+
+/* Resetar as cores do breadcrumb */
+
+#footer-brasil {
+    background-color: #0042b2
+}
+
+body.verde #footer-brasil {
+    background-color: #00420c;
+}
+
+body.amarelo #footer-brasil {
+    background-color: #f28f00;
+}
+
+/* Footer */
+
+#footer-menu {
+    background-color: #d5d5d5;
+}
+
+body.verde #footer-menu {
+    background-color: #00510f;
+}
+
+body.amarelo #footer-menu {
+    background-color: #f8c300;
+}
+
+body.azul #footer-menu {
+    background-color: #1659bf;
+}
+
+/* Cores dos blocos */
+
+#menu-lateral dt, 
+main fieldset legend,
+hr {
+    background-color: #edeff1;
+    border-top-color: #1659bf;
+}
+
+body.verde #menu-lateral dt,
+body.verde main fieldset legend,
+body.verde hr {
+    border-top-color: #00510f;
+}
+
+body.amarelo #menu-lateral dt,
+body.amarelo main fieldset legend,
+body.amarelo hr {
+    border-top-color: #03316f;
+}
+
+.chapeu,
+#menu-lateral dt, 
+main fieldset legend,
+hr {
+    color: #1659bf;
+}
+body.verde .chapeu,
+body.verde #menu-lateral dt,
+body.verde main fieldset legend,
+body.verde hr{
+    color: #00510f;
+}
+body.amarelo .chapeu,
+body.amarelo #menu-lateral dt,
+body.amarelo main fieldset legend,
+body.amarelo hr{
+    color: #03316f
+}
+
+
+.centrais-de-conteudos li a,
+#barra-busca input[type="submit"],
+#barra-redes-sociais a {
+    background-image: url(../img/tema-branco/sprite.png);
+}
+body.azul .centrais-de-conteudos li a,
+body.azul #barra-busca input[type="submit"],
+body.azul #barra-redes-sociais a {
+    background-image: url(../img/tema-azul/sprite.png);
+}
+
+body.verde .centrais-de-conteudos li a,
+body.verde #barra-busca input[type="submit"],
+body.verde #barra-redes-sociais a {
+    background-image: url(../img/tema-verde/sprite.png);
+}
+
+body.amarelo .centrais-de-conteudos li a,
+body.amarelo #barra-busca input[type="submit"],
+body.amarelo #barra-redes-sociais a {
+    background-image: url(../img/tema-amarelo/sprite.png);
+}
+
+body:not(.contraste) main > .informacoes dl {
+    color: #2c66ce;
+}
+
+
+body.contraste a, 
+body.contraste a:hover, 
+body.contraste a:visited{
+    color:#fff333 !important;
+}
+
+body.contraste input[type="text"],
+body.contraste footer,
+body.contraste  #barra-atalhos span,
+body.contraste h2,
+body.contraste h3,
+body.contraste h4,
+body.contraste h5,
+body.contraste h6,
+body.contraste #barra-breadcrumb,
+body.contraste dt.menu-bloco,
+body.contraste .chapeu  {
+    color: #ffffff !important;
+}
+body.contraste a:hover{
+    text-decoration: underline;
+}
+body.contraste,
+body.contraste header>div:first-child{
+    background-color: black !important;
+    background-image: unset;
+}
+
+body.contraste .centrais-de-conteudos li a,
+body.contraste #barra-busca input[type="submit"],
+body.contraste #barra-redes-sociais a {
+    background-image: url(../img/tema-contraste/sprite.png);
+}
+body.contraste #barra-servicos,
+body.contraste main fieldset legend,
+body.contraste #barra-busca,
+body.contraste dt.menu-bloco,
+body.contraste #footer-menu,
+body.contraste footer {
+    background-color: #1c1c1c !important;
+}
+body.contraste input{
+    background-color: transparent !important;
+}
+body.contraste dt.menu-bloco,
+body.contraste hr,
+body.contraste #barra-acessibilidade,
+body.contraste #barra-idiomas,
+body.contraste main fieldset legend
+{
+    border-color: #ffffff !important;
+
+}
+body.contraste #barra-atalhos span{
+    background: #FFF !important;
+    color: #000 !important;
+}
+body.contraste input:focus {
+    outline: unset !important;
+}

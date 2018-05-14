@@ -1,0 +1,41 @@
+/* Sistema de grid 
+
+    Página 15 a 18 do guia: http://www.secom.gov.br/orientacoes-gerais/comunicacao-digital/guia-de-estilo-identidade-padrao-comunicacao-digital-fev2015.pdf
+                   ===================================================================
+                   |                              960                                |
+linha              |                            750 (celula)                         |
+linha tamanho-3    |    230 (celula)     |              490 (celula-2)               |
+linha tamanho-3    |    230 (celula)     |    230 (celula)     |    230 (celula)     |
+linha tamanho-6    | (celula) | (celula) | (celula) | (celula) | (celula) | (celula) |
+                   ===================================================================
+    
+*/
+
+@media screen and (min-width: 768px) {
+    .grid .linha {
+        overflow: hidden;
+    }
+    .grid .linha [class*="celula"] {
+        display: inline-block;
+    }
+    .grid .linha .celula {
+        max-width: 100%
+    }
+    .grid .linha.tamanho-3 .celula {
+        width: 230px;
+    }
+    .grid .linha.tamanho-3 .celula-2 {
+        width: 490px;
+    }
+    .grid .linha.tamanho-6 .celula {
+        width: 100px;
+    }
+    .grid .linha [class*="celula"]:not(:last-child):not(.celula-1-1) {
+        margin-right: 30px;
+        float: left;
+    }
+    .grid .linha [class*="celula"]:last-child,
+    .grid .linha {
+        clear: both;
+    }
+}
