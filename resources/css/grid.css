@@ -10,32 +10,73 @@ linha tamanho-6    | (celula) | (celula) | (celula) | (celula) | (celula) | (cel
                    ===================================================================
     
 */
+.grid .linha [class*="celula"] {
+    display: inline-block;
+}
+.grid .linha {
+    overflow: hidden;
+}
 
 @media screen and (min-width: 768px) {
-    .grid .linha {
-        overflow: hidden;
-    }
-    .grid .linha [class*="celula"] {
-        display: inline-block;
-    }
     .grid .linha .celula {
-        max-width: 100%
+        max-width: 100%;
+        box-sizing: border-box;
     }
-    .grid .linha.tamanho-3 .celula {
+    main.grid .linha.tamanho-3 .celula {
         width: 230px;
     }
-    .grid .linha.tamanho-3 .celula-2 {
+    main.grid .linha.tamanho-3 .celula-2 {
         width: 490px;
     }
-    .grid .linha.tamanho-6 .celula {
+    main.grid .linha.tamanho-6 .celula {
         width: 100px;
     }
-    .grid .linha [class*="celula"]:not(:last-child):not(.celula-1-1) {
+    main.grid .linha [class*="celula"]:not(:last-child):not(.celula-1-1) {
         margin-right: 30px;
         float: left;
     }
     .grid .linha [class*="celula"]:last-child,
     .grid .linha {
         clear: both;
+    }
+
+    footer .grid .linha.tamanho-2 .celula{
+        width: 373px;
+    }
+    footer .grid .linha.tamanho-3 .celula{
+        width: 247px;
+    }
+    footer .grid .linha.tamanho-4 .celula{
+        width: 373px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    footer .grid .linha.tamanho-2 .celula{
+        width: 478px;
+    }
+    footer .grid .linha.tamanho-3 .celula{
+        width: 317px;
+    }
+    footer .grid .linha.tamanho-4 .celula{
+        width: 236px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #footer-menu>*{
+        width: 500px;
+    }
+    footer .grid .linha.tamanho-2 .celula,
+    footer .grid .linha.tamanho-3 .celula,
+    footer .grid .linha.tamanho-4 .celula{
+        width: 236px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #footer-menu>*,
+    footer .grid .linha.tamanho-2 .celula,
+    footer .grid .linha.tamanho-3 .celula,
+    footer .grid .linha.tamanho-4 .celula{
+        width: 90%;
+        margin: 0 auto;
     }
 }

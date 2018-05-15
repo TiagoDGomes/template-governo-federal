@@ -1,19 +1,22 @@
-a, 
-a:hover, 
-a:visited{
+a,
+a:hover,
+a:visited {
     color: #0056b3;
 }
+
 .noticia h2 a,
 .noticia h3 a,
 .noticia h4 a,
 .noticia h5 a,
-.noticia h6 a{
+.noticia h6 a {
     color: #000;
 }
-body{
+
+body {
     /* sem isso, o IE buga ao alternar alto contraste. */
-    background-color: white; 
+    background-color: white;
 }
+
 body header>div:first-child {
     background-color: #F0F2F1;
     background-color: #ECEDF1;
@@ -61,7 +64,8 @@ body.azul header>div:first-child {
     background-image: radial-gradient(ellipse at center, #3A72BC 1%, #2160BD 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=" #3A72BC", endColorstr=" #2160BD", GradientType=1);
 }
-body.contraste main{
+
+body.contraste main {
     color: white;
 }
 
@@ -101,8 +105,13 @@ header a:visited,
 #barra-breadcrumb a,
 #barra-breadcrumb a:hover,
 #barra-breadcrumb a:active,
-#barra-breadcrumb a:visited
- {
+#barra-breadcrumb a:visited,
+#footer-menu dt,
+#footer-menu dd,
+#footer-menu a,
+#footer-menu a:hover,
+#footer-menu a:active,
+#footer-menu a:visited {
     color: #2C66CE
 }
 
@@ -115,15 +124,35 @@ body.azul header,
 body.azul header a,
 body.azul header a:hover,
 body.azul header a:active,
-body.azul header a:visited {
+body.azul header a:visited,
+body.azul #footer-menu dt,
+body.azul #footer-menu dd,
+body.azul #footer-menu a,
+body.azul #footer-menu a:hover,
+body.azul #footer-menu a:active,
+body.azul #footer-menu a:visited body.verde #footer-menu dd,
+body.verde #footer-menu a,
+body.verde #footer-menu a:hover,
+body.verde #footer-menu a:active,
+body.verde #footer-menu a:visited {
     color: #FFFFFF
+}
+
+body.verde #footer-menu dt {
+    color: #61b06f;
 }
 
 body.amarelo #cabecalho,
 body.amarelo header a,
 body.amarelo header a:hover,
 body.amarelo header a:active,
-body.amarelo header a:visited {
+body.amarelo header a:visited,
+body.amarelo #footer-menu dt,
+body.amarelo #footer-menu dd,
+body.amarelo #footer-menu a,
+body.amarelo #footer-menu a:hover,
+body.amarelo #footer-menu a:active,
+body.amarelo #footer-menu a:visited {
     color: #03316F;
 }
 
@@ -158,6 +187,9 @@ body.amarelo #footer-brasil {
 }
 
 /* Footer */
+body.verde #footer-menu dl {
+    border-color: #80A887;
+}
 
 #footer-menu {
     background-color: #d5d5d5;
@@ -177,7 +209,7 @@ body.azul #footer-menu {
 
 /* Cores dos blocos */
 
-#menu-lateral dt, 
+#menu-lateral dt,
 main fieldset legend,
 hr {
     background-color: #edeff1;
@@ -197,30 +229,32 @@ body.amarelo hr {
 }
 
 .chapeu,
-#menu-lateral dt, 
+#menu-lateral dt,
 main fieldset legend,
 hr {
     color: #1659bf;
 }
+
 body.verde .chapeu,
 body.verde #menu-lateral dt,
 body.verde main fieldset legend,
-body.verde hr{
+body.verde hr {
     color: #00510f;
 }
+
 body.amarelo .chapeu,
 body.amarelo #menu-lateral dt,
 body.amarelo main fieldset legend,
-body.amarelo hr{
+body.amarelo hr {
     color: #03316f
 }
-
 
 .centrais-de-conteudos li a,
 #barra-busca input[type="submit"],
 #barra-redes-sociais a {
     background-image: url(../img/tema-branco/sprite.png);
 }
+
 body.azul .centrais-de-conteudos li a,
 body.azul #barra-busca input[type="submit"],
 body.azul #barra-redes-sociais a {
@@ -239,20 +273,23 @@ body.amarelo #barra-redes-sociais a {
     background-image: url(../img/tema-amarelo/sprite.png);
 }
 
-body:not(.contraste) main > .informacoes dl {
+body:not(.contraste) main>.informacoes dl {
     color: #2c66ce;
 }
 
+#barra-breadcrumb {
+    color: #000000;
+}
 
-body.contraste a, 
-body.contraste a:hover, 
-body.contraste a:visited{
-    color:#fff333 !important;
+body.contraste a,
+body.contraste a:hover,
+body.contraste a:visited {
+    color: #fff333 !important;
 }
 
 body.contraste input[type="text"],
 body.contraste footer,
-body.contraste  #barra-atalhos span,
+body.contraste #barra-atalhos span,
 body.contraste h2,
 body.contraste h3,
 body.contraste h4,
@@ -261,14 +298,17 @@ body.contraste h6,
 body.contraste #barra-breadcrumb,
 body.contraste dt.menu-bloco,
 body.contraste main legend,
-body.contraste .chapeu  {
+body.contraste .chapeu,
+body.contraste #barra-breadcrumb {
     color: #ffffff !important;
 }
-body.contraste a:hover{
+
+body.contraste a:hover {
     text-decoration: underline;
 }
+
 body.contraste,
-body.contraste header>div:first-child{
+body.contraste header>div:first-child {
     background-color: black !important;
     background-image: none !important;
 }
@@ -278,6 +318,7 @@ body.contraste #barra-busca input[type="submit"],
 body.contraste #barra-redes-sociais a {
     background-image: url(../img/tema-contraste/sprite.png);
 }
+
 body.contraste #barra-servicos,
 body.contraste main fieldset legend,
 body.contraste #barra-busca,
@@ -286,22 +327,27 @@ body.contraste #footer-menu,
 body.contraste footer {
     background-color: #1c1c1c !important;
 }
-body.contraste input{
+
+body.contraste input {
     background-color: transparent !important;
 }
+
+
+body.azul #footer-menu dl,
 body.contraste dt.menu-bloco,
 body.contraste hr,
 body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
-body.contraste main fieldset legend
-{
+body.contraste main fieldset legend,
+body.contraste #footer-menu dl {
     border-color: #ffffff !important;
-
 }
-body.contraste #barra-atalhos span{
+
+body.contraste #barra-atalhos span {
     background: #FFF !important;
     color: #000 !important;
 }
+
 body.contraste input:focus {
     outline: initial !important;
     outline: unset !important;

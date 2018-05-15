@@ -21,30 +21,34 @@
     <link media="print" rel="stylesheet" type="text/css" href="resources/css/impressao.css" />
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
-    <![endif]-->  
-       
+    <![endif]-->
+
     <script src="resources/js/cookies.js"></script>
 </head>
 
-<body>    
-    <script src="resources/js/acessibilidade.js"></script>   
+<body>
+    <script src="resources/js/acessibilidade.js"></script>
 
     <!-- Início da área de testes -->
     <style>
-        @media print{
+        @media print {
             #area-testes {
                 display: none;
             }
-        } 
-        @media screen{
+        }
+
+        @media screen {
             #area-testes {
                 display: initial;
                 background-color: #fefefe;
                 position: fixed;
-                top: 0;
+                top: .5em;
                 right: 12px;
                 z-index: 4;
                 background-color: threedface;
+                padding: .5em;
+                opacity: .75;
+                border: 2px dotted red;
             }
 
             #area-testes * {
@@ -53,25 +57,27 @@
             }
         }
     </style>
-    <fieldset id="area-testes" class="js-necessario">
-        <legend>Testes</legend>
-        <div>
-            <label for="teste_tema">Tema: </label>
-            <select id="teste_tema" onchange="teste_cor(this.value)">
-                <option value="branco">Branco</option>
-                <option value="verde">Verde</option>
-                <option value="amarelo">Amarelo</option>
-                <option value="azul">Azul</option>
-                <option value="contraste">Alto contraste</option>
+    <div id="area-testes" class="js-necessario">
+        <fieldset>
+            <legend>Testes</legend>
+            <div>
+                <label for="teste_tema">Tema: </label>
+                <select id="teste_tema" onchange="teste_cor(this.value)">
+                    <option value="branco">Branco</option>
+                    <option value="verde">Verde</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="azul">Azul</option>
+                    <option value="contraste">Alto contraste</option>
+                </select>
+                <script>
+                    function teste_cor(c) {
+                        document.body.className = c;
+                    }
+                </script>
+            </div>
+        </fieldset>
+    </div>
 
-            </select>
-            <script>
-                function teste_cor(c) {
-                    document.body.className = c;
-                }
-            </script>
-        </div>
-    </fieldset>   
     <div id="barra-brasil"></div>
     <div id="tudo">
         <header>
@@ -530,7 +536,67 @@
         </div>
         <footer>
             <a name="secao-rodape" id="secao-rodape"></a>
-            <div id="footer-menu"></div>
+            <div id="footer-menu" class="grid">
+                <div class="linha tamanho-3">
+                    <dl class="celula">
+                        <dt class="menu-bloco ">
+                            Menu bloco 1
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Item 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="celula">
+                        <dt class="menu-bloco">
+                            Menu bloco 2
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Item 2 com conteúdo mais extenso
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="celula">
+                        <dt class="menu-bloco">
+                            Menu bloco 2
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Item 2 com conteúdo mais extenso
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
             <div id="footer-brasil"></div>
             <div id="extra-footer">
                 <p>
@@ -544,7 +610,7 @@
     <script defer="defer" src="https://barra.brasil.gov.br/barra.js"></script>
     <script>
         var elementosDesabilitadosJavascript = document.querySelectorAll('.js-necessario');
-        Array.prototype.forEach.call(elementosDesabilitadosJavascript, function(el, i){
+        Array.prototype.forEach.call(elementosDesabilitadosJavascript, function (el, i) {
             el.classList.remove('js-necessario');
         });
     </script>
