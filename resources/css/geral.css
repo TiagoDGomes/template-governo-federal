@@ -593,11 +593,18 @@ main>.manchetes .linha  {
 #footer-menu .tamanho-3 .celula {
     width:30%;
 }
-#footer-menu .tamanho-4 .celula {
-    width:20%;
-}
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
+    #footer-menu .tamanho-4 .celula {
+        width: 23%;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 1024px){
+    #footer-menu .tamanho-4 .celula {
+        width: 30%;
+    }    
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
     #footer-menu .linha{
         max-width: 750px;
     }
