@@ -191,6 +191,9 @@ body.verde #footer-menu dl {
     border-color: #80A887;
 }
 
+body.azul #footer-menu dl {
+    border-color: #ffffff;
+}
 #footer-menu {
     background-color: #d5d5d5;
 }
@@ -280,35 +283,22 @@ body:not(.contraste) main>.informacoes dl {
 #barra-breadcrumb {
     color: #000000;
 }
-
+body.contraste * {
+    color: #ffffff !important;
+}
 body.contraste a,
 body.contraste a:hover,
 body.contraste a:visited {
     color: #fff333 !important;
 }
 
-body.contraste input[type="text"],
-body.contraste footer,
-body.contraste #barra-atalhos span,
-body.contraste h2,
-body.contraste h3,
-body.contraste h4,
-body.contraste h5,
-body.contraste h6,
-body.contraste #barra-breadcrumb,
-body.contraste .menu-bloco dt,
-body.contraste main .bloco .legenda,
-body.contraste .chapeu,
-body.contraste #barra-breadcrumb {
-    color: #ffffff !important;
-}
 
 body.contraste a:hover {
     text-decoration: underline;
 }
 
 body.contraste,
-body.contraste header>div:first-child {
+body.contraste #cabecalho {
     background-color: black !important;
     background-image: none !important;
 }
@@ -332,8 +322,6 @@ body.contraste input {
     background-color: transparent !important;
 }
 
-
-body.azul #footer-menu dl,
 body.contraste .menu-bloco dt,
 body.contraste hr,
 body.contraste #barra-acessibilidade,
