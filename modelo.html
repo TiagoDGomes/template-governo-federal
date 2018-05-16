@@ -662,6 +662,16 @@
                     }
                 </script>
             </div>
+            <div>
+                <input id="teste_barra_idioma" type="checkbox" checked="checked" onclick="barra_idioma(this.checked)">
+                <label for="teste_barra_idioma">Barra de idiomas</label>
+                
+                <script>
+                    function barra_idioma(v) {
+                        document.getElementById('barra-idiomas').style.display = v ? '': 'none' ;
+                    }
+                </script>
+            </div>
 
         </fieldset>
         <div>O código deste formulário de teste está
