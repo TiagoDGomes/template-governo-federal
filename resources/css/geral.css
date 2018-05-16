@@ -316,6 +316,7 @@ main .bloco .legenda{
     padding-top: 12px;
     font-weight: normal;
     padding-right: 0;
+    box-sizing: border-box;
 }
 main .bloco:first-child>.legenda{
     margin-top: 0;
