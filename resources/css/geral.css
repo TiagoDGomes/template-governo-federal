@@ -502,6 +502,7 @@ main .informacoes {
     border-top-color: rgb(215, 220, 216);
     border-top-style: solid;
     border-top-width: 1px;
+    overflow: hidden;
 }
 
 main .informacoes ul {
@@ -518,9 +519,10 @@ main .informacoes ul {
     display: inline-block;
 }
 
-main .informacoes dl {
+main .informacoes .info {
     font-size: 12px;
     width: 75%;
+    float: left;
 }
 
 main .informacoes dt {
