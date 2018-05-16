@@ -338,17 +338,17 @@ main .bloco .legenda {
     vertical-align: middle;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 1em;
 }
 
 .menu-relevancia li a {
     padding-left: 0 !important;
 }
 
-#menu-lateral :not(.menu-relevancia) li a,
-#menu-lateral :not(.menu-relevancia) li a:hover,
-#menu-lateral :not(.menu-relevancia) li a:active,
-#menu-lateral :not(.menu-relevancia) li a:visited {
+#menu-lateral .menu-bloco li a,
+#menu-lateral .menu-bloco li a:hover,
+#menu-lateral .menu-bloco li a:active,
+#menu-lateral .menu-bloco li a:visited {    
+    padding-left: 1em;
     color: #172938;
 }
 
