@@ -53,7 +53,7 @@ body.amarelo header #cabecalho {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCDD4E", endColorstr="#F9C404", GradientType=1);
 }
 
-body.azul header>div:first-child {
+body.azul header #cabecalho {
     background-color: #3A72BC;
     background-color: #2160BD;
     background-image: -moz-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
