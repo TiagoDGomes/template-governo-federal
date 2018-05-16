@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Identidade Digital do Governo Federal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="resources/css/geral.css" />
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/tema.css" />
@@ -16,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="resources/css/devel.css" />
     <link media="print" rel="stylesheet" type="text/css" href="resources/css/impressao.css" />
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/acessibilidade.css" />
+
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
     <![endif]-->
@@ -26,55 +28,6 @@
 <body>
 
     <script src="resources/js/acessibilidade.js"></script>
-
-    <!-- Início da área de testes -->
-    <style>
-        @media print {
-            #area-testes {
-                display: none;
-            }
-        }
-
-        @media screen {
-            #area-testes {
-                display: initial;
-                background-color: #fefefe;
-                position: fixed;
-                top: .5em;
-                right: 12px;
-                z-index: 4;
-                background-color: threedface;
-                padding: .5em;
-                opacity: .75;
-                border: 2px dotted red;
-            }
-
-            #area-testes * {
-                font-size: 9pt;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-            }
-        }
-    </style>
-    <div id="area-testes" class="js-necessario">
-        <fieldset>
-            <legend>Testes</legend>
-            <div>
-                <label for="teste_tema">Tema: </label>
-                <select id="teste_tema" onchange="teste_cor(this.value)">
-                    <option value="branco">Branco</option>
-                    <option value="verde">Verde</option>
-                    <option value="amarelo">Amarelo</option>
-                    <option value="azul">Azul</option>
-                    <option value="contraste">Alto contraste</option>
-                </select>
-                <script>
-                    function teste_cor(c) {
-                        document.body.className = c;
-                    }
-                </script>
-            </div>
-        </fieldset>
-    </div>
 
     <div id="barra-brasil"></div>
     <div id="tudo">
@@ -342,7 +295,7 @@
                         <div class="linha">
                             <div class="noticia grande celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia de destaque em uma célula simples</h3>
+                                <h2>Notícia de destaque em uma célula simples</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
@@ -350,21 +303,21 @@
                         <div class="linha tamanho-3">
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula simples em uma linha para 3 células</h3>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
 
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula simples em uma linha para 3 células</h3>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
 
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula simples em uma linha para 3 células</h3>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
@@ -373,13 +326,13 @@
                         <div class="linha tamanho-3">
                             <div class="noticia celula-2">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula de tamanho duplo em uma linha para 3 células</h3>
+                                <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula simples em uma linha para 3 células</h3>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
@@ -389,13 +342,13 @@
                         <div class="linha tamanho-3">
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula simples em uma linha para 3 células</h3>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula-2">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>Notícia em célula de tamanho duplo em uma linha para 3 células</h3>
+                                <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
@@ -407,55 +360,55 @@
                         <div class="linha tamanho-6">
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
-                                <h3>
+                                <h2>
                                     <a href="#">Notícia em célula simples em uma linha para 6 células
                                     </a>
-                                </h3>
+                                </h2>
                                 <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
                                     em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
@@ -538,7 +491,7 @@
         <footer>
             <a name="secao-rodape" id="secao-rodape" class="screen-reader-text">Menu de rodapé</a>
             <div id="footer-menu" class="grid">
-                <div class="linha tamanho-3">
+                <div class="linha tamanho-4">
                     <dl class="celula">
                         <dt class="menu-bloco ">
                             Menu bloco 1
@@ -579,7 +532,27 @@
                     </dl>
                     <dl class="celula">
                         <dt class="menu-bloco">
-                            Menu bloco 2
+                            Menu bloco 3
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Item 1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Item 2 com conteúdo mais extenso
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    
+                    <dl class="celula">
+                        <dt class="menu-bloco">
+                            Menu bloco 4
                         </dt>
                         <dd>
                             <ul>
@@ -601,20 +574,14 @@
             <div id="footer-brasil"></div>
             <div id="extra-footer">
                 <p>
-                    Desenvolvido em HTML e CSS baseado no <a alt="Guia de Estilo" href="http://www.secom.gov.br/orientacoes-gerais/comunicacao-digital/guia-de-estilo-identidade-padrao-comunicacao-digital-fev2015.pdf">guia de estilo</a> da Identidade Padrão de Comunicação Digital do Governo Federal de fevereiro de 2015.
+                    Desenvolvido em HTML e CSS baseado no
+                    <a alt="Guia de Estilo" href="http://www.secom.gov.br/orientacoes-gerais/comunicacao-digital/guia-de-estilo-identidade-padrao-comunicacao-digital-fev2015.pdf">guia de estilo</a> da Identidade Padrão de Comunicação Digital do Governo Federal de fevereiro de 2015.
                 </p>
             </div>
         </footer>
 
     </div>
 
-    <script defer="defer" src="https://barra.brasil.gov.br/barra.js"></script>
-    <script>
-        var elementosDesabilitadosJavascript = document.querySelectorAll('.js-necessario');
-        Array.prototype.forEach.call(elementosDesabilitadosJavascript, function (el, i) {
-            el.classList.remove('js-necessario');
-        });
-    </script>
 
     <!--[if lte IE 8]>
     <div class="alerta-ie">
@@ -642,6 +609,78 @@
     <div class="screen-reader-text">
         <div>Fim da página.</div>
     </div>
+
+
+
+
+    <!-- ====================================== -->
+    <!-- =========== ÁREA DE TESTES =========== -->
+    <!-- ====================================== -->
+
+    <style>
+        @media print {
+            #area-testes {
+                display: none;
+            }
+        }
+
+        @media screen {
+            #area-testes {
+                display: initial;
+                background-color: #fefefe;
+                position: fixed;
+                top: .5em;
+                right: 12px;
+                z-index: 4;
+                background-color: threedface;
+                padding: .5em;
+                opacity: .75;
+                border: 2px dotted red;
+            }
+
+            #area-testes * {
+                font-size: 9pt;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+        }
+    </style>
+    <div id="area-testes" class="js-necessario">
+        <fieldset>
+            <legend>Testes</legend>
+            <div>
+                <label for="teste_tema">Tema: </label>
+                <select id="teste_tema" onchange="teste_cor(this.value)">
+                    <option value="branco">Branco</option>
+                    <option value="verde">Verde</option>
+                    <option value="amarelo">Amarelo</option>
+                    <option value="azul">Azul</option>
+                    <option value="contraste">Alto contraste</option>
+                </select>
+                <script>
+                    function teste_cor(c) {
+                        document.body.className = c;
+                    }
+                </script>
+            </div>
+
+        </fieldset>
+        <div>O código deste formulário de teste está
+            <br> no final do código-fonte.
+            <br>Remova-o.</div>
+    </div>
+    <!-- ====================================== -->
+    <!-- ========== FIM DA ÁREA DE TESTES ===== -->
+    <!-- ====================================== -->
+
+
+    <script defer="defer" src="https://barra.brasil.gov.br/barra.js"></script>
+    <script>
+        var elementosDesabilitadosJavascript = document.querySelectorAll('.js-necessario');
+        Array.prototype.forEach.call(elementosDesabilitadosJavascript, function (el, i) {
+            el.classList.remove('js-necessario');
+        });
+    </script>
+
 
 </body>
 

@@ -532,11 +532,14 @@ main .informacoes dd {
     margin-left: 0
 }
 
+main .bloco .noticia.grande h2,
 main .bloco .noticia.grande h3 {
     font-size: 33px;
     margin: 15px 0 15px 0;
 }
+main .bloco .noticia:not(.grande) h2,
 main .bloco .noticia:not(.grande) h3 {
+    font-size:16px;
     margin: 15px 0 0 0;
 }
 main .bloco .noticia:not(.grande) p:first-of-type {
@@ -553,7 +556,15 @@ main>.manchetes .linha  {
 }
 #footer-menu{
     padding-bottom: 100px;
+    
 }
+#footer-menu dl{
+    margin-top: 0;
+    border-left-style: dotted;
+    border-left-width: 1px;
+    margin-bottom: 46px;
+}
+
 #footer-menu dt{ /* Título da coluna */
     font-size: 18px;   
     font-weight: bold; 
@@ -563,10 +574,47 @@ main>.manchetes .linha  {
 #footer-menu dd{ /* Título da coluna */
     font-size: 13px;   
 }
-#footer-menu dl{
-    margin-top: 0;
-    padding-left: 1em;
-    border-left-style: dotted;
-    border-left-width: 1px;
-    margin-bottom: 46px;
+#footer-menu .linha{
+    margin: 0 auto;
+    max-width: 910px;
+}
+
+#footer-menu .celula{
+    float: left;
+    padding-left: 1em ;
+    padding-right: 5px;
+    
+    
+}
+#footer-menu .tamanho-2 .celula {
+    width:46%;
+}
+#footer-menu .tamanho-3 .celula {
+    width:30%;
+}
+#footer-menu .tamanho-4 .celula {
+    width:20%;
+}
+
+@media screen and (max-width: 1024px){
+    #footer-menu .linha{
+        max-width: 750px;
+    }
+}
+@media screen and (max-width: 768px){
+    #footer-menu .linha{
+        max-width: 96%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #footer-menu .celula {
+        width:42% !important;
+    }    
+}
+
+@media screen and (max-width: 400px){
+    #footer-menu  .celula {
+        width:85% !important;
+    }    
 }
