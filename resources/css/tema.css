@@ -308,7 +308,8 @@ body.contraste #barra-busca input[type="submit"],
 body.contraste #barra-redes-sociais a {
     background-image: url(../img/tema-contraste/sprite.png);
 }
-
+body.contraste select,
+body.contraste option,
 body.contraste #barra-servicos,
 body.contraste main .bloco .legenda,
 body.contraste #barra-busca,
