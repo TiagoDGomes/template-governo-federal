@@ -14,7 +14,7 @@
         padding-bottom: unset;
     }
     main legend,
-    dt.menu-bloco{
+    .menu-bloco dt{
         background-color: #efefef;
     }
     a{

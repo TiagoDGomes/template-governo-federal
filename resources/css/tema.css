@@ -17,7 +17,7 @@ body {
     background-color: white;
 }
 
-body header>div:first-child {
+body header #cabecalho {
     background-color: #F0F2F1;
     background-color: #ECEDF1;
     background-image: -moz-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
@@ -29,7 +29,7 @@ body header>div:first-child {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=" #F0F2F1", endColorstr=" #ECEDF1", GradientType=1);
 }
 
-body.verde header>div:first-child {
+body.verde header #cabecalho  {
     background-color: #17882C;
     background-color: #00510F;
     background-image: -moz-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
@@ -41,7 +41,7 @@ body.verde header>div:first-child {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#17882C", endColorstr="#00510F", GradientType=1);
 }
 
-body.amarelo header>div:first-child {
+body.amarelo header #cabecalho {
     background-color: #FCDD4E;
     background-color: #F9C404;
     background-image: -moz-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
@@ -209,42 +209,42 @@ body.azul #footer-menu {
 
 /* Cores dos blocos */
 
-#menu-lateral dt,
-main fieldset legend,
+.menu-bloco dt,
+main .bloco .legenda,
 hr {
     background-color: #edeff1;
     border-top-color: #1659bf;
 }
 
-body.verde #menu-lateral dt,
-body.verde main fieldset legend,
+body.verde .menu-bloco dt,
+body.verde main .bloco .legenda,
 body.verde hr {
     border-top-color: #00510f;
 }
 
-body.amarelo #menu-lateral dt,
-body.amarelo main fieldset legend,
+body.amarelo .menu-bloco dt,
+body.amarelo main .bloco .legenda,
 body.amarelo hr {
     border-top-color: #03316f;
 }
 
 .chapeu,
-#menu-lateral dt,
-main fieldset legend,
+.menu-bloco dt,
+main .bloco .legenda,
 hr {
     color: #1659bf;
 }
 
 body.verde .chapeu,
-body.verde #menu-lateral dt,
-body.verde main fieldset legend,
+body.verde .menu-bloco dt,
+body.verde main .bloco .legenda,
 body.verde hr {
     color: #00510f;
 }
 
 body.amarelo .chapeu,
-body.amarelo #menu-lateral dt,
-body.amarelo main fieldset legend,
+body.amarelo .menu-bloco dt,
+body.amarelo main .bloco .legenda,
 body.amarelo hr {
     color: #03316f
 }
@@ -296,8 +296,8 @@ body.contraste h4,
 body.contraste h5,
 body.contraste h6,
 body.contraste #barra-breadcrumb,
-body.contraste dt.menu-bloco,
-body.contraste main legend,
+body.contraste .menu-bloco dt,
+body.contraste main .bloco .legenda,
 body.contraste .chapeu,
 body.contraste #barra-breadcrumb {
     color: #ffffff !important;
@@ -320,9 +320,9 @@ body.contraste #barra-redes-sociais a {
 }
 
 body.contraste #barra-servicos,
-body.contraste main fieldset legend,
+body.contraste main .bloco .legenda,
 body.contraste #barra-busca,
-body.contraste dt.menu-bloco,
+body.contraste .menu-bloco dt,
 body.contraste #footer-menu,
 body.contraste footer {
     background-color: #1c1c1c !important;
@@ -334,11 +334,11 @@ body.contraste input {
 
 
 body.azul #footer-menu dl,
-body.contraste dt.menu-bloco,
+body.contraste .menu-bloco dt,
 body.contraste hr,
 body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
-body.contraste main fieldset legend,
+body.contraste main .bloco .legenda,
 body.contraste #footer-menu dl {
     border-color: #ffffff !important;
 }

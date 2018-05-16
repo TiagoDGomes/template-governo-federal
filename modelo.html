@@ -6,10 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Identidade Digital do Governo Federal</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-
-
-
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="resources/css/geral.css" />
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/tema.css" />
@@ -19,6 +15,7 @@
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/devel.css" />
     <link media="print" rel="stylesheet" type="text/css" href="resources/css/impressao.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="resources/css/acessibilidade.css" />
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
     <![endif]-->
@@ -27,6 +24,7 @@
 </head>
 
 <body>
+
     <script src="resources/js/acessibilidade.js"></script>
 
     <!-- Início da área de testes -->
@@ -83,8 +81,8 @@
         <header>
             <div id="cabecalho">
                 <div>
-                    <fieldset id="barra-atalhos">
-                        <legend>Atalhos</legend>
+                    <div id="barra-atalhos">
+                        <div class="legenda screen-reader-text">Menu de atalhos</div>
                         <ul>
                             <li>
                                 <a accesskey="1" href="#secao-conteudo" id="link-conteudo">
@@ -111,9 +109,9 @@
                                 </a>
                             </li>
                         </ul>
-                    </fieldset>
-                    <fieldset id="barra-idiomas">
-                        <legend>Idiomas</legend>
+                    </div>
+                    <div id="barra-idiomas">
+                        <div class="legenda screen-reader-text">Menu de idiomas</div>
                         <ul>
                             <li>
                                 <a href="#">English</a>
@@ -122,10 +120,10 @@
                                 <a href="#">Español</a>
                             </li>
                         </ul>
-                    </fieldset>
+                    </div>
 
-                    <fieldset id="barra-acessibilidade">
-                        <legend>Acessibilidade</legend>
+                    <div id="barra-acessibilidade">
+                        <div class="legenda screen-reader-text">Menu de acessibilidade</div>
                         <ul>
                             <li>
                                 <a href="#">Acessibilidade</a>
@@ -137,7 +135,7 @@
                                 <a href="#">Mapa do site</a>
                             </li>
                         </ul>
-                    </fieldset>
+                    </div>
 
                     <div id="titulo">
                         <a href="#">
@@ -147,18 +145,18 @@
                         </a>
                     </div>
 
+                    <form action="#">
+                        <fieldset id="barra-busca">
+                            <legend>Ferramenta de busca</legend>
 
-                    <fieldset id="barra-busca">
-                        <legend>Ferramenta de busca</legend>
-                        <form action="#">
                             <label for="busca-portal">Buscar no portal</label>
                             <input name="busca-portal" type="text" size="18" title="Buscar no portal" placeholder="Buscar no portal" id="busca-portal">
                             <input type="submit" value="Buscar no portal">
-                        </form>
-                    </fieldset>
 
-                    <fieldset id="barra-redes-sociais">
-                        <legend>Redes sociais</legend>
+                        </fieldset>
+                    </form>
+                    <div id="barra-redes-sociais">
+                        <div class="legenda screen-reader-text">Menu de redes sociais</div>
                         <ul>
                             <li class="youtube">
                                 <a href="http://youtube.com/Youtube">YouTube</a>
@@ -191,12 +189,12 @@
                                 <a href="rss">RSS</a>
                             </li>
                         </ul>
-                    </fieldset>
+                    </div>
                 </div>
             </div>
             <div id="barra-servicos">
-                <fieldset>
-                    <legend>Serviços</legend>
+                <div>
+                    <div class="legenda screen-reader-text">Menu de serviços</div>
                     <ul>
                         <li>
                             <a href="#" title="Perguntas frequentes">Perguntas frequentes</a>
@@ -214,26 +212,26 @@
                             <a href="#" title="Área de imprensa">Área de imprensa</a>
                         </li>
                     </ul>
-                </fieldset>
+                </div>
             </div>
-            <fieldset id="barra-breadcrumb">
-                <legend>Localização da página</legend>
+            <div id="barra-breadcrumb">
+                <span class="legenda screen-reader-text">Localização da página</span>
                 <span id="breadcrumbs-you-are-here">Você está aqui:</span>
                 <span id="breadcrumbs-home">
                     <a href="#">Página Inicial</a>
                 </span>
-            </fieldset>
+            </div>
 
         </header>
 
         <div id="central">
-            <nav>
-                <a name="secao-menu" id="secao-menu"></a>
-                <dl id="menu-lateral">
-                    <dt class="menu-relevancia">
+            <nav id="menu-lateral">
+                <a name="secao-menu" id="secao-menu" class="screen-reader-text">Menu principal</a>
+                <dl class="menu-relevancia">
+                    <dt class="screen-reader-text">
                         Menu de relevância
                     </dt>
-                    <dd class="menu-relevancia">
+                    <dd>
                         <ul>
                             <li>
                                 <a href="#">
@@ -252,7 +250,9 @@
                             </li>
                         </ul>
                     </dd>
-                    <dt class="menu-bloco">
+                </dl>
+                <dl class="menu-bloco">
+                    <dt>
                         Menu bloco 1
                     </dt>
                     <dd>
@@ -269,7 +269,9 @@
                             </li>
                         </ul>
                     </dd>
-                    <dt class="menu-bloco">
+                </dl>
+                <dl class="menu-bloco">
+                    <dt>
                         Menu bloco 2
                     </dt>
                     <dd>
@@ -286,7 +288,9 @@
                             </li>
                         </ul>
                     </dd>
-                    <dt class="menu-bloco centrais-de-conteudos">
+                </dl>
+                <dl class="menu-bloco">
+                    <dt class="centrais-de-conteudos">
                         Centrais de Conteúdos
                     </dt>
                     <dd class="centrais-de-conteudos">
@@ -331,10 +335,10 @@
                 </dl>
             </nav>
             <div id="area-conteudo">
-                <a name="secao-conteudo" id="secao-conteudo"></a>
                 <main class="grid">
-                    <fieldset class="manchetes">
-                        <legend>Conteúdo</legend>
+                    <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text">Início</a>
+                    <div class="bloco manchetes">
+                        <div class="legenda">Conteúdo</div>
                         <div class="linha">
                             <div class="noticia grande celula">
                                 <div class="chapeu">Chapéu</div>
@@ -397,9 +401,9 @@
                             </div>
 
                         </div>
-                    </fieldset>
-                    <fieldset class="manchetes">
-                        <legend>Conteúdo</legend>
+                    </div>
+                    <div class="bloco manchetes">
+                        <div class="legenda">Conteúdo</div>
                         <div class="linha tamanho-6">
                             <div class="noticia celula">
                                 <div class="chapeu">Chapéu</div>
@@ -457,7 +461,7 @@
                             </div>
 
                         </div>
-                    </fieldset>
+                    </div>
 
                     <div class="chapeu">
                         Nome da área interna
@@ -470,6 +474,7 @@
                         </p>
                     </div>
                     <div class="informacoes">
+                        <div class="screen-reader-text">Informações sobre o artigo:</div>
                         <dl>
                             <dt class="autor">por</dt>
                             <dd class="autor">Autor da noticia</dd>
@@ -527,15 +532,11 @@
                         tellus. Morbi porttitor tristique posuere. Maecenas ut libero accumsan, consectetur metus et, facilisis
                         mauris.
                     </p>
-
-
-                    <hr>
-
                 </main>
             </div>
         </div>
         <footer>
-            <a name="secao-rodape" id="secao-rodape"></a>
+            <a name="secao-rodape" id="secao-rodape" class="screen-reader-text">Menu de rodapé</a>
             <div id="footer-menu" class="grid">
                 <div class="linha tamanho-3">
                     <dl class="celula">
@@ -600,13 +601,13 @@
             <div id="footer-brasil"></div>
             <div id="extra-footer">
                 <p>
-                    Desenvolvido em HTML e CSS baseado no
-                    <a href="http://www.secom.gov.br/orientacoes-gerais/comunicacao-digital/guia-de-estilo-identidade-padrao-comunicacao-digital-fev2015.pdf">guia de estilo da Identidade Padrão de Comunicacao Digital do Governo Federal de fevereiro de 2015</a>.
+                    Desenvolvido em HTML e CSS baseado no <a alt="Guia de Estilo" href="http://www.secom.gov.br/orientacoes-gerais/comunicacao-digital/guia-de-estilo-identidade-padrao-comunicacao-digital-fev2015.pdf">guia de estilo</a> da Identidade Padrão de Comunicação Digital do Governo Federal de fevereiro de 2015.
                 </p>
             </div>
         </footer>
 
     </div>
+
     <script defer="defer" src="https://barra.brasil.gov.br/barra.js"></script>
     <script>
         var elementosDesabilitadosJavascript = document.querySelectorAll('.js-necessario');
@@ -614,25 +615,34 @@
             el.classList.remove('js-necessario');
         });
     </script>
+
     <!--[if lte IE 8]>
-    <script> 
-        var $buoop = {  required:{i:9},
-                        noclose:true,
-                        insecure:true,
-                        reminder: 1,
-                        notified: false,
-                        reminderClosed: 1,
-                        api:2018.05
-                    }; 
-        function $buo_f(){ 
-        var e = document.createElement("script"); 
-        e.src = "//browser-update.org/update.min.js"; 
-        document.body.appendChild(e);
-        };
-        try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
-        catch(e){window.attachEvent("onload", $buo_f)}
-    </script>
-    <![endif]-->
+    <div class="alerta-ie">
+        <p>Para visualizar o conteúdo deste site, 
+            será necessário alterar seu navegador.
+        </p>
+        <p>
+            O Internet Explorer 
+            <![if IE 6]>6<![endif]><![if IE 7]>7<![endif]><![if IE 8]>8<![endif]> está
+            obsoleto e 
+            não terá futuras atualizações de segurança.
+        </p>
+        <p>Baixe um destes navegadores mais atuais:
+            <ul>
+                <li><a href="https://www.microsoft.com/pt-br/windows/microsoft-edge">Microsoft Edge</a></li>
+                <li><a href="https://www.mozilla.com/firefox">Mozilla Firefox</a></li>
+                <li><a href="https://www.google.com/chrome/browser/desktop/">Google Chrome</a></li>
+                <li><a href="https://www.opera.com/pt-br">Opera</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="faixa-2"></div>
+    <div class="faixa-3"></div>    
+    <![endif]><![if IE]><![endif]-->
+    <div class="screen-reader-text">
+        <div>Fim da página.</div>
+    </div>
+
 </body>
 
 </html>

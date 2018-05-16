@@ -5,7 +5,6 @@ body {
 #tudo {
     font-size: 62.5%;
 }
-
 header {
     font-size: 1.2em;
 }
@@ -36,23 +35,26 @@ main h6,
 main p{
     font-family: Arial, Helvetica, sans-serif
 }
-main fieldset,
-main legend{
+main .bloco,
+main .bloco .legenda{
     border:0;
     margin:0;
+    margin-bottom: 30px;
     padding:0;
     position: relative;
     display: block;
     
 }
-main legend{
+main .bloco .legenda{
     width: 99%;
 }
 h2 {
     font-size: 3em;
     padding: 0;
 }
-
+#titulo span{
+    display: block;
+}
 #cabecalho>div,
 #barra-servicos ul,
 #extra-footer,
@@ -192,7 +194,7 @@ header li:last-child a {
 }
 
 
-header>div:first-child {
+#cabecalho  {
     padding: 15px 0 0 0;
 }
 
@@ -262,15 +264,13 @@ footer {
     font-size: 1.4em;
 }
 
-dt.menu-relevancia {
-    display: none;
-}
 
-dd.menu-relevancia ul {
+
+.menu-relevancia ul {
     margin-top: 0;
 }
 
-dd.menu-relevancia ul {
+.menu-relevancia ul {
     border-top-width: 1px;
     border-top-style: solid;
     padding: 0 !important;
@@ -280,12 +280,12 @@ dd.menu-relevancia ul {
     margin-top: 0 !important;
 }
 
-dd.menu-relevancia ul,
+.menu-relevancia ul,
 #menu-lateral li {
     border-color: #dfdfdf;
 }
 
-#menu-lateral ul {
+#menu-lateral dl {
     margin-bottom: 45px;
     margin-top: 0;
 }
@@ -293,6 +293,7 @@ dd.menu-relevancia ul,
 #menu-lateral dd,
 #menu-lateral ul,
 #menu-lateral li {
+    margin-top: 0;
     margin-left: 0;
     padding-left: 0;
 }
@@ -305,29 +306,27 @@ dd.menu-relevancia ul,
 }
 
 hr,
-#menu-lateral dt,
-main fieldset legend {
+.menu-bloco dt,
+main .bloco .legenda {
     border-top-style: solid;
 }
 
-main fieldset legend{
+main .bloco .legenda{
     font-size: 20px;
     padding-top: 12px;
     font-weight: normal;
-    
+    padding-right: 0;
 }
-main fieldset:first-child>legend{
+main .bloco:first-child>.legenda{
     margin-top: 0;
 }
-#menu-lateral dt,
-main fieldset legend {
+.menu-bloco dt,
+main .bloco .legenda {
     border-top-width: 4px;
     padding: 8px 8px 24px 10px;
 }
-main fieldset legend{
-    padding-right: 0;
-}
-#menu-lateral dt {
+
+.menu-bloco dt {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
@@ -341,14 +340,14 @@ main fieldset legend{
     padding-left: 1em;
 }
 
-dd.menu-relevancia li a {
+.menu-relevancia li a {
     padding-left: 0 !important;
 }
 
-#menu-lateral dd:not(.menu-relevancia) li a,
-#menu-lateral dd:not(.menu-relevancia) li a:hover,
-#menu-lateral dd:not(.menu-relevancia) li a:active,
-#menu-lateral dd:not(.menu-relevancia) li a:visited {
+#menu-lateral :not(.menu-relevancia) li a,
+#menu-lateral :not(.menu-relevancia) li a:hover,
+#menu-lateral :not(.menu-relevancia) li a:active,
+#menu-lateral :not(.menu-relevancia) li a:visited {
     color: #172938;
 }
 
@@ -415,11 +414,6 @@ header legend,
 #barra-busca input {
     border: 0;
     padding: 0;
-}
-
-header label,
-header legend {
-    display: none;
 }
 
 #barra-busca input[type="text"] {
@@ -538,18 +532,18 @@ main .informacoes dd {
     margin-left: 0
 }
 
-main fieldset .noticia.grande h3 {
+main .bloco .noticia.grande h3 {
     font-size: 33px;
     margin: 15px 0 15px 0;
 }
-main fieldset .noticia:not(.grande) h3 {
+main .bloco .noticia:not(.grande) h3 {
     margin: 15px 0 0 0;
 }
-main fieldset .noticia:not(.grande) p:first-of-type {
+main .bloco .noticia:not(.grande) p:first-of-type {
     margin-top: 0;
 }
-main legend,
-main fieldset .noticia,
+main .legenda,
+main .bloco .noticia,
 main>.manchetes .linha {
     margin-bottom: 30px;
 }

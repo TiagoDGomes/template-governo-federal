@@ -1,8 +1,14 @@
 #barra-brasil,
+#barra-atalhos,
 #barra-redes-sociais,
 #barra-acessibilidade,
 #barra-idiomas,
-#barra-servicos,
+#barra-busca,
+#barra-servicos,#central,
+#barra-breadcrumb,
+#footer-menu,
+#footer-brasil,
+#extra-footer,
 legend {
     display:none;
 }
@@ -15,4 +21,26 @@ legend {
 }
 #central legend {
     display: initial;
+}
+nav{
+    display: block;
+    float: left;
+}
+#cabecalho{
+    /*background-color: green;    */
+    border-bottom: 1px dashed silver;
+}
+body, a, a:hover{
+    /*color: white;*/
+}
+#titulo{
+    margin: 3em;
+}
+.alerta-ie{
+    text-align: center;
+    color: black;
+    padding: 1em;
+}
+.alerta-ie li{
+    list-style-type: none;
 }
