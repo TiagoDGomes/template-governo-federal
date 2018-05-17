@@ -290,6 +290,18 @@ body:not(.contraste) main>.informacoes dl {
 #barra-breadcrumb {
     color: #000000;
 }
+main .main-rodape li a{
+    border-color:  #cfcdcd;
+    background-color: #e9e8ed;
+}
+main .main-rodape li a:hover{
+    background-color: #205c90;
+    color: White;
+    border-color: #205c90;
+}
+
+
+
 body.contraste * {
     color: #ffffff !important;
 }
@@ -322,11 +334,13 @@ body.contraste main .bloco .legenda,
 body.contraste #barra-busca,
 body.contraste .menu-bloco dt,
 body.contraste #footer-menu,
-body.contraste footer {
+body.contraste footer,
+body.contraste main .main-rodape li a:hover {
     background-color: #1c1c1c !important;
 }
 
-body.contraste input {
+body.contraste input,
+body.contraste main .main-rodape li a {
     background-color: transparent !important;
 }
 
@@ -335,7 +349,8 @@ body.contraste hr,
 body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
 body.contraste main .bloco .legenda,
-body.contraste #footer-menu dl {
+body.contraste #footer-menu dl,
+body.contraste main .main-rodape>* {
     border-color: #ffffff !important;
 }
 
@@ -347,4 +362,11 @@ body.contraste #barra-atalhos span {
 body.contraste input:focus {
     outline: initial !important;
     outline: unset !important;
+}
+body.contraste main .main-rodape li a{
+    border-color:  #fff333;
+    background-color: transparent;
+}
+body.contraste main .main-rodape li a:hover{
+    border-color: white !important;
 }
