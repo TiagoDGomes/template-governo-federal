@@ -307,10 +307,14 @@ footer {
 
 hr,
 .menu-bloco dt,
-main .bloco .legenda {
-    border-top-style: solid;
+main .bloco .legenda,
+main .main-rodape>* {
+    border-style: solid;    
+    border-width: 4px 0 0 0;
 }
-
+main .main-rodape>:not(:first-child){
+    border-top-width: 1px;
+}
 main .bloco .legenda{
     font-size: 20px;
     padding-top: 12px;
@@ -321,9 +325,10 @@ main .bloco .legenda{
 main .bloco:first-child>.legenda{
     margin-top: 0;
 }
+
+
 .menu-bloco dt,
 main .bloco .legenda {
-    border-top-width: 4px;
     padding: 8px 8px 24px 10px;
 }
 
@@ -495,6 +500,10 @@ header legend,
     background-position: 145px -25px;
 }
 
+main>h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 
 

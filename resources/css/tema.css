@@ -214,20 +214,27 @@ body.azul #footer-menu {
 
 .menu-bloco dt,
 main .bloco .legenda,
-hr {
+hr{
     background-color: #edeff1;
+}
+.menu-bloco dt,
+main .bloco .legenda,
+hr,
+main .main-rodape>* {
     border-top-color: #1659bf;
 }
 
 body.verde .menu-bloco dt,
 body.verde main .bloco .legenda,
-body.verde hr {
+body.verde hr,
+body.verde main .main-rodape>* {
     border-top-color: #00510f;
 }
 
 body.amarelo .menu-bloco dt,
 body.amarelo main .bloco .legenda,
-body.amarelo hr {
+body.amarelo hr,
+body.amarelo main .main-rodape>*  {
     border-top-color: #03316f;
 }
 
