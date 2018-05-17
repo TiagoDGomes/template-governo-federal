@@ -17,7 +17,7 @@ linha tamanho-6    | (celula) | (celula) | (celula) | (celula) | (celula) | (cel
     overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     main .grid .linha .celula {
         max-width: 100%;
         box-sizing: border-box;

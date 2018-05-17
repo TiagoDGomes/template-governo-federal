@@ -4,7 +4,9 @@
     #barra-idiomas,
     #barra-atalhos,
     #barra-busca,
-    #barra-servicos{
+    #barra-servicos,
+    #footer-menu,
+    .screen-reader-text{
         display: none;
     }
     #cabecalho>div{
@@ -22,5 +24,12 @@
     }
     #barra-breadcrumb{
         margin-top: unset;
+    }
+    #central #menu-lateral{
+        display: none;
+    }
+    #area-conteudo{
+        width: 100%;
+        margin-left: 0;
     }
 }
