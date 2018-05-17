@@ -359,46 +359,46 @@ main .bloco .legenda {
 
 /* Centrais de conteúdos */
 
-dd.centrais-de-conteudos li {
+.centrais-de-conteudos li {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-dd.centrais-de-conteudos li a {
+.centrais-de-conteudos li a {
     padding: 0 0 0 50px !important;
     height: 40px;
 }
 
-dd.centrais-de-conteudos a {
+.centrais-de-conteudos a {
     background-repeat: no-repeat;
     background-position: 1000px 1000px;
 }
 
-dd.centrais-de-conteudos .publicacoes a {
+.centrais-de-conteudos .publicacoes a {
     background-position: 0 -252px;
 }
 
-dd.centrais-de-conteudos .videos a {
+.centrais-de-conteudos .videos a {
     background-position: 0 -156px;
 }
 
-dd.centrais-de-conteudos .audios a {
+.centrais-de-conteudos .audios a {
     background-position: 0 -108px;
 }
 
-dd.centrais-de-conteudos .fotos a {
+.centrais-de-conteudos .fotos a {
     background-position: 0 -300px;
 }
 
-dd.centrais-de-conteudos .infograficos a {
+.centrais-de-conteudos .infograficos a {
     background-position: 0 -204px;
 }
 
-dd.centrais-de-conteudos .aplicativos a {
+.centrais-de-conteudos .aplicativos a {
     background-position: 0 -350px;
 }
 
-dd.centrais-de-conteudos .dadosabertos a {
+.centrais-de-conteudos .dadosabertos a {
     background-position: 0 -400px;
 }
 
