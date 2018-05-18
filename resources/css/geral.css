@@ -5,17 +5,20 @@ body {
 #tudo {
     font-size: 62.5%;
 }
+
 header {
     font-size: 1.2em;
 }
+
 .js-necessario,
 .js-necessario * {
     text-decoration: line-through;
-    cursor: not-allowed;    
+    cursor: not-allowed;
     display: none;
 }
+
 h1,
-h2, 
+h2,
 h3 {
     letter-spacing: -0.05em;
 }
@@ -26,6 +29,7 @@ a:visited,
 a:hover {
     text-decoration: none;
 }
+
 #barra-atalhos *,
 main h2:not(:first-child),
 main h3,
@@ -33,29 +37,33 @@ main h4,
 main h5,
 main h6,
 main p,
-main .main-rodape{
+main .main-rodape {
     font-family: Arial, Helvetica, sans-serif
 }
+
 main .bloco,
-main .bloco .legenda{
-    border:0;
-    margin:0;
+main .bloco .legenda {
+    border: 0;
+    margin: 0;
     margin-bottom: 30px;
-    padding:0;
+    padding: 0;
     position: relative;
     display: block;
-    
 }
-main .bloco .legenda{
+
+main .bloco .legenda {
     width: 99%;
 }
+
 h2 {
     font-size: 3em;
     padding: 0;
 }
-#titulo span{
+
+#titulo span {
     display: block;
 }
+
 #cabecalho>div,
 #barra-servicos ul,
 #extra-footer,
@@ -74,9 +82,9 @@ header,
 footer,
 header ul,
 #titulo h1,
-#extra-footer p ,
+#extra-footer p,
 #footer-menu dd,
-#footer-menu ul{
+#footer-menu ul {
     padding: 0;
     margin: 0;
 }
@@ -194,8 +202,7 @@ header li:last-child a {
     margin-top: 1em;
 }
 
-
-#cabecalho  {
+#cabecalho {
     padding: 15px 0 0 0;
 }
 
@@ -265,8 +272,6 @@ footer {
     font-size: 1.4em;
 }
 
-
-
 .menu-relevancia ul {
     margin-top: 0;
 }
@@ -298,52 +303,60 @@ footer {
     margin-left: 0;
     padding-left: 0;
 }
-main .main-rodape{
+
+main .main-rodape {
     margin-top: 45px;
     font-size: 11px;
 }
+
 #menu-lateral li {
     display: block;
     min-height: 30px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
+
 main .main-rodape>* {
     padding-top: 15px;
 }
+
 hr,
 .menu-bloco dt,
 main .bloco .legenda,
-main .main-rodape>*  {
-    border-style: solid;    
+main .main-rodape>* {
+    border-style: solid;
     border-width: 4px 0 0 0;
     overflow: hidden;
 }
 
-main .main-rodape>*{
+main .main-rodape>* {
     border-width: 0 0 1px 0;
 }
-main .main-rodape>*>*{
+
+main .main-rodape>*>* {
     display: inline-block;
     box-sizing: border-box;
 }
-main .main-rodape ul{
+
+main .main-rodape ul {
     margin: 0;
-    padding:0;
+    padding: 0;
     list-style-type: none;
 }
 
-main .main-rodape li{
+main .main-rodape li {
     display: inline-block;
     margin-left: 5px;
     line-height: 30px;
     margin-bottom: 15px;
 }
-main .main-rodape .legenda{
+
+main .main-rodape .legenda {
     padding: 10px 9px 15px 0;
     margin-bottom: 0;
 }
-main .main-rodape li a{
+
+main .main-rodape li a {
     padding: 4px 9px;
     margin: 0;
     border-radius: 3px;
@@ -351,20 +364,21 @@ main .main-rodape li a{
     border-style: solid;
 }
 
-main .main-rodape>:first-child{
+main .main-rodape>:first-child {
     border-top-width: 4px;
 }
-main .bloco .legenda{
+
+main .bloco .legenda {
     font-size: 20px;
     padding-top: 12px;
     font-weight: normal;
     padding-right: 0;
     box-sizing: border-box;
 }
-main .bloco:first-child>.legenda{
+
+main .bloco:first-child>.legenda {
     margin-top: 0;
 }
-
 
 .menu-bloco dt,
 main .bloco .legenda {
@@ -391,7 +405,7 @@ main .bloco .legenda {
 #menu-lateral .menu-bloco li a,
 #menu-lateral .menu-bloco li a:hover,
 #menu-lateral .menu-bloco li a:active,
-#menu-lateral .menu-bloco li a:visited {    
+#menu-lateral .menu-bloco li a:visited {
     padding-left: 1em;
     color: #172938;
 }
@@ -539,21 +553,19 @@ header legend,
     background-position: 145px -25px;
 }
 
-main>h2{
+main>h2 {
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-
-
-main .informacoes {
-    border-top-color: rgb(215, 220, 216);
+main>.informacoes {
+    border-color: rgb(215, 220, 216);
     border-top-style: solid;
     border-top-width: 1px;
     overflow: hidden;
 }
 
-main .informacoes ul {
+main>.informacoes ul {
     padding: 0 0 0 1em;
     margin: 0;
     border-left-color: rgb(215, 220, 216);
@@ -562,24 +574,24 @@ main .informacoes ul {
     list-style-type: none;
 }
 
-main .informacoes dl,
-main .informacoes ul {
+main>.informacoes dl,
+main>.informacoes ul {
     display: inline-block;
 }
 
-main .informacoes .info {
+main>.informacoes .info {
     font-size: 12px;
     width: 75%;
     float: left;
 }
 
-main .informacoes dt {
+main>.informacoes dt {
     float: left;
     margin: 0;
     margin-right: 3px
 }
 
-main .informacoes dd {
+main>.informacoes dd {
     margin-left: 0
 }
 
@@ -588,91 +600,178 @@ main .bloco .noticia.grande h3 {
     font-size: 33px;
     margin: 15px 0 15px 0;
 }
+
 main .bloco .noticia:not(.grande) h2,
 main .bloco .noticia:not(.grande) h3 {
-    font-size:16px;
+    font-size: 16px;
     margin: 15px 0 0 0;
 }
+
 main .bloco .noticia:not(.grande) p:first-of-type {
     margin-top: 0;
 }
+
 main .legenda,
 main .bloco .noticia,
 main>.manchetes .linha {
     margin-bottom: 30px;
 }
-main>.manchetes .linha  {
-    border-bottom: 1px solid #D7D7D7;
 
+main>.manchetes .linha {
+    border-bottom: 1px solid #D7D7D7;
 }
-#footer-menu{
+
+#footer-menu {
     padding-bottom: 100px;
-    
 }
-#footer-menu dl{
+
+#footer-menu dl {
     margin-top: 0;
     border-left-style: dotted;
     border-left-width: 1px;
     margin-bottom: 46px;
 }
 
-#footer-menu dt{ /* Título da coluna */
-    font-size: 18px;   
-    font-weight: bold; 
+#footer-menu dt {
+    /* Título da coluna */
+    font-size: 18px;
+    font-weight: bold;
     padding-bottom: 18px;
-    
 }
-#footer-menu dd{ /* Título da coluna */
-    font-size: 13px;   
+
+#footer-menu dd {
+    /* Título da coluna */
+    font-size: 13px;
 }
-#footer-menu .linha{
+
+#footer-menu .linha {
     margin: 0 auto;
     max-width: 910px;
 }
 
-#footer-menu .celula{
+#footer-menu .celula {
     float: left;
-    padding-left: 1em ;
+    padding-left: 1em;
     padding-right: 5px;
-    
-    
-}
-#footer-menu .tamanho-2 .celula {
-    width:46%;
-}
-#footer-menu .tamanho-3 .celula {
-    width:30%;
 }
 
-@media screen and (min-width: 1024px){
+#footer-menu .tamanho-2 .celula {
+    width: 46%;
+}
+
+#footer-menu .tamanho-3 .celula {
+    width: 30%;
+}
+
+@media screen and (min-width: 1024px) {
     #footer-menu .tamanho-4 .celula {
         width: 23%;
     }
 }
-@media screen and (min-width: 577px) and (max-width: 1024px){
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
     #footer-menu .tamanho-4 .celula {
         width: 30%;
-    }    
+    }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    #footer-menu .linha{
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #footer-menu .linha {
         max-width: 750px;
     }
 }
-@media screen and (max-width: 768px){
-    #footer-menu .linha{
+
+@media screen and (max-width: 768px) {
+    #footer-menu .linha {
         max-width: 96%;
     }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     #footer-menu .celula {
-        width:42% !important;
-    }    
+        width: 42% !important;
+    }
 }
 
-@media screen and (max-width: 400px){
-    #footer-menu  .celula {
-        width:85% !important;
+@media screen and (max-width: 400px) {
+    #footer-menu .celula {
+        width: 85% !important;
+    }
+}
+
+main .listagem h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #2c66ce;
+    letter-spacing: normal;
+}
+
+main .listagem .chapeu {
+    font-size: 11px;
+}
+
+main .listagem {
+    color: #172938;
+    overflow: hidden;
+}
+main .listagem .noticia,
+main .listagem .publicacao{
+    border-color: silver;
+    border-style: dashed;
+}
+
+main .listagem .noticia{
+    border-width: 0 0 1px 0;
+    padding: 30px 0;
+}
+main .listagem .noticia:first-of-type{
+    border-top-width: 1px;
+}
+main .listagem .publicacao{
+    border-width: 0 0 0 1px;
+    padding-left: 17px;
+}
+
+main .listagem h3 {
+    font-size: 16px;
+}
+
+main .listagem .conteudo {
+    font-size: 15px;
+}
+
+main .listagem .informacoes {
+    box-sizing: border-box;
+}
+
+main .listagem .informacoes .data span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+main .listagem .informacoes span {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 32px;
+}
+
+main .listagem .tags>*,
+main .listagem .categorias>*,
+main .listagem li {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+main .listagem .conteudo{
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    main .listagem .informacoes {
+        float: left;
     }    
+    main .listagem .publicacao {
+        margin-left: 145px;
+    }
 }

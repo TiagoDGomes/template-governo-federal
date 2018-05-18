@@ -300,8 +300,25 @@ main .main-rodape li a:hover{
     border-color: #205c90;
 }
 
+main .listagem .informacoes .data .data{
+    background-image: url(../img/calendar.svg) ;   
+}
 
-
+main .listagem .informacoes .hora{
+    background-image: url(../img/clock.svg) ;   
+}
+main .listagem .informacoes .video{
+    background-image: url(../img/play2.svg) ;   
+}
+main .listagem .informacoes .audio{
+    background-image: url(../img/volume-high.svg) ;   
+}
+body.contraste main .listagem .informacoes span{
+    color:black !important;
+    font-weight: 600;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
 body.contraste * {
     color: #ffffff !important;
 }
