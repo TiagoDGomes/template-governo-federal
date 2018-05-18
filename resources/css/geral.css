@@ -704,6 +704,9 @@ main .listagem h2 {
     text-transform: uppercase;
     color: #2c66ce;
     letter-spacing: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 main .listagem .chapeu {
