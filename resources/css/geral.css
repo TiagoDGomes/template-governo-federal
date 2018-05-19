@@ -50,10 +50,6 @@ main .bloco .legenda {
     display: block;
 }
 
-main .bloco .legenda {
-    width: 99%;
-}
-
 h2 {
     font-size: 3em;
     padding: 0;
