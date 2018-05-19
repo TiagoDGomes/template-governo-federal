@@ -1,100 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg8"
-   sodipodi:docname="checkbox.svg"
-   width="20"
-   height="90"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
-  <defs
-     id="defs12" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     id="namedview10"
-     showgrid="false"
-     inkscape:zoom="9.44"
-     inkscape:cx="8.3119871"
-     inkscape:cy="39.929879"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
-  <metadata
-     id="metadata5">
+<svg 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:cc="http://creativecommons.org/ns#" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:svg="http://www.w3.org/2000/svg" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" 
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg8" sodipodi:docname="checkbox.svg" width="62" height="90" inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs id="defs12" />
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1017" id="namedview10" showgrid="false" inkscape:zoom="22.627417" inkscape:cx="20.313903" inkscape:cy="71.300922" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg8" />
+  <metadata id="metadata5">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work rdf:about="">
         <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title>Checkbox do template do governo federal</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     id="layer1"
-     transform="matrix(2.3440073,0,0,2.5680996,0.23150575,57.328673)"
-     style="stroke:#ffff00;stroke-opacity:1">
-    <rect
-       id="checkboxUnchecked"
-       width="7.4412827"
-       height="7.3000002"
-       x="0.5"
-       y="-6.5999999"
-       style="fill:none;stroke:#ffff00;stroke-width:1.00963056;stroke-opacity:1" />
-    <rect
-       id="checkboxChecked"
-       width="7.4412827"
-       height="7.3000002"
-       x="0.5"
-       y="0.60000002"
-       style="fill:none;stroke:#ffff00;stroke-width:1.00963056;stroke-opacity:1" />
-    <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.79128039;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 1.2962261,1.4614762 C 7.1464657,7.185219 7.1464657,7.185219 7.1464657,7.185219"
-       id="path882"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#ffff00;stroke-width:0.79300499;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 7.1507738,1.4458865 C 1.3089458,7.2020927 1.3089458,7.2020927 1.3089458,7.2020927"
-       id="path882-7"
-       inkscape:connector-curvature="0" />
+  <g id="layer1" transform="matrix(2.3440073,0,0,2.5680996,0.04612439,57.328673)" style="stroke:#ffff00;stroke-opacity:1">
+    <rect id="checkboxUnchecked" width="7.4412827" height="7.3000002" x="0.5" y="-6.5999999" style="fill:none;stroke:#ffff00;stroke-width:1.00963056;stroke-opacity:1" />
+    <rect id="checkboxChecked" width="7.4412827" height="7.3000002" x="0.5" y="0.60000002" style="fill:none;stroke:#ffff00;stroke-width:1.00963056;stroke-opacity:1" />
+    <path style="fill:none;stroke:#ffff00;stroke-width:0.79128039;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 1.2962261,1.4614762 C 7.1464657,7.185219 7.1464657,7.185219 7.1464657,7.185219" id="path882" inkscape:connector-curvature="0" />
+    <path style="fill:none;stroke:#ffff00;stroke-width:0.79300499;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 7.1507738,1.4458865 C 1.3089458,7.2020927 1.3089458,7.2020927 1.3089458,7.2020927" id="path882-7" inkscape:connector-curvature="0" />
   </g>
-  <circle
-     style="opacity:0.98999999;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-opacity:1"
-     id="path839"
-     cx="9.0572033"
-     cy="28.718222"
-     r="8.2097454" />
-  <circle
-     style="opacity:0.98999999;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-opacity:1"
-     id="path839-8"
-     cx="8.8416471"
-     cy="8.7906485"
-     r="8.2097454" />
-  <ellipse
-     style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.86030519;stroke-opacity:1"
-     id="path856"
-     cx="8.7923737"
-     cy="8.8029642"
-     rx="5.5783219"
-     ry="5.6312881" />
+  <circle style="opacity:0.98999999;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-opacity:1" id="path839" cx="8.796545" cy="28.722128" r="8.2097454" />
+  <circle style="opacity:0.98999999;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-opacity:1" id="path839-8" cx="8.8050356" cy="8.7906485" r="8.2097454" />
+  <ellipse style="opacity:0.98999999;fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.86030519;stroke-opacity:1" id="path856" cx="8.7557621" cy="8.8029642" rx="5.5783219" ry="5.6312881" />
 </svg>

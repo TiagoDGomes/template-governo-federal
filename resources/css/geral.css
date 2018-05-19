@@ -641,7 +641,7 @@ main .bloco .linha .noticia:not(.grande) {
     margin-top: 30px;
 }
 
-main>.manchetes .linha {
+main .manchetes .linha {
     border-bottom: 1px solid #D7D7D7;
 }
 
