@@ -161,7 +161,8 @@ header li:last-child a {
 #barra-idiomas,
 #titulo .subordinacao,
 #barra-breadcrumb,
-.chapeu {
+.chapeu,
+main .rodape {
     text-transform: uppercase;
 }
 
@@ -611,13 +612,33 @@ main .bloco .noticia:not(.grande) h3 {
 main .bloco .noticia:not(.grande) p:first-of-type {
     margin-top: 0;
 }
-
-main .legenda,
-main .bloco .noticia,
-main>.manchetes .linha {
-    margin-bottom: 30px;
+main .bloco .rodape {
+    border-width: 2px 0 0 0;
+    border-style:  solid;
+    text-align: right;
+    margin-top: -1px;
+}
+main .bloco .rodape a{
+    display: block;
+    padding: 1em;
 }
 
+main .bloco .rodape .icon:after{
+    content: ' » ';
+    padding: 0px 7px;
+    background-color: red;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+}
+
+main .legenda,
+main .bloco .noticia {
+    margin-bottom: 30px;
+}
+main .bloco .linha .noticia:not(.grande){
+    margin-top: 30px;
+}
 main>.manchetes .linha {
     border-bottom: 1px solid #D7D7D7;
 }

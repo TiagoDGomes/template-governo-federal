@@ -214,12 +214,14 @@ body.azul #footer-menu {
 
 #menu-lateral .bloco .legenda,
 main .bloco .legenda,
+main .bloco .rodape,
 hr{
     background-color: #edeff1;
 }
 #menu-lateral .bloco .legenda,
 main .bloco .legenda,
 hr,
+main .bloco .rodape,
 main .main-rodape>* {
     border-top-color: #1659bf;
 }
@@ -227,6 +229,7 @@ main .main-rodape>* {
 body.verde #menu-lateral .bloco .legenda,
 body.verde main .bloco .legenda,
 body.verde hr,
+body.verde main .bloco .rodape,
 body.verde main .main-rodape>* {
     border-top-color: #00510f;
 }
@@ -234,6 +237,7 @@ body.verde main .main-rodape>* {
 body.amarelo #menu-lateral .bloco .legenda,
 body.amarelo main .bloco .legenda,
 body.amarelo hr,
+body.amarelo main .bloco .rodape,
 body.amarelo main .main-rodape>*  {
     border-top-color: #03316f;
 }
@@ -319,6 +323,7 @@ body.contraste main .listagem .informacoes span{
     -webkit-filter: invert(1);
     filter: invert(1);
 }
+
 body.contraste * {
     color: #ffffff !important;
 }
@@ -352,7 +357,8 @@ body.contraste #barra-busca,
 body.contraste #menu-lateral .bloco .legenda,
 body.contraste #footer-menu,
 body.contraste footer,
-body.contraste main .main-rodape li a:hover {
+body.contraste main .main-rodape li a:hover,
+body.contraste main .bloco .rodape {
     background-color: #1c1c1c !important;
 }
 
@@ -367,6 +373,7 @@ body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
 body.contraste main .bloco .legenda,
 body.contraste #footer-menu dl,
+body.contraste main .bloco .rodape,
 body.contraste main .main-rodape>* {
     border-color: #ffffff !important;
 }
