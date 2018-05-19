@@ -270,6 +270,9 @@ footer {
 #central {
     font-size: 1.4em;
 }
+.menu-relevancia{
+    margin-bottom: 45px;
+}
 
 .menu-relevancia ul {
     margin-top: 0;
