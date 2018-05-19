@@ -298,11 +298,22 @@ main .main-rodape li a{
     border-color:  #cfcdcd;
     background-color: #e9e8ed;
 }
-main .main-rodape li a:hover{
+main .main-rodape li a:hover,
+main .bloco .rodape .icon:after{
     background-color: #205c90;
     color: White;
     border-color: #205c90;
 }
+
+body.verde main .bloco .rodape .icon:after{
+    background-color: #00510f;
+}
+
+body.contraste main .bloco .rodape .icon:after{
+    background-color: #fff333;
+    color: #000000;
+}
+
 
 main .listagem .informacoes .data .data{
     background-image: url(../img/calendar.svg) ;   
@@ -358,7 +369,8 @@ body.contraste #menu-lateral .bloco .legenda,
 body.contraste #footer-menu,
 body.contraste footer,
 body.contraste main .main-rodape li a:hover,
-body.contraste main .bloco .rodape {
+body.contraste main .bloco .rodape,
+body.contraste input[type="checkbox"] {
     background-color: #1c1c1c !important;
 }
 

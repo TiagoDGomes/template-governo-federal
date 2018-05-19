@@ -79,12 +79,19 @@ header ul,
 #titulo h1,
 #extra-footer p,
 #footer-menu dd,
-#footer-menu ul {
+#footer-menu ul,
+main .listagem h2,
+main .main-rodape ul,
+#cabecalho ul,
+main .listagem .tags>*,
+main .listagem .categorias>*,
+main .listagem li  {
     padding: 0;
     margin: 0;
 }
 
-main>:first-child {
+main>:first-child,
+main>:first-child>:first-child {
     padding-top: 0;
     margin-top: 0;
 }
@@ -202,11 +209,6 @@ main .rodape {
     padding: 15px 0 0 0;
 }
 
-#cabecalho ul {
-    margin: 0;
-    padding: 0;
-}
-
 #barra-servicos {
     line-height: 20px;
     text-align: right;
@@ -267,7 +269,8 @@ footer {
 #central {
     font-size: 1.4em;
 }
-.menu-relevancia{
+
+.menu-relevancia {
     margin-bottom: 45px;
 }
 
@@ -338,8 +341,6 @@ main .main-rodape>*>* {
 }
 
 main .main-rodape ul {
-    margin: 0;
-    padding: 0;
     list-style-type: none;
 }
 
@@ -379,7 +380,6 @@ main .bloco:first-child>.legenda {
     margin-top: 0;
 }
 
-
 #menu-lateral .bloco .legenda {
     text-transform: uppercase;
     font-weight: bold;
@@ -396,6 +396,7 @@ main .bloco:first-child>.legenda {
 .menu-relevancia li a {
     padding-left: 0 !important;
 }
+
 .bloco .legenda {
     padding: 8px 8px 24px 10px;
 }
@@ -608,33 +609,38 @@ main .bloco .noticia:not(.grande) h3 {
 main .bloco .noticia:not(.grande) p:first-of-type {
     margin-top: 0;
 }
+
 main .bloco .rodape {
     border-width: 2px 0 0 0;
-    border-style:  solid;
+    border-style: solid;
     text-align: right;
     margin-top: -1px;
+    font-size: .8em
 }
-main .bloco .rodape a{
+
+main .bloco .rodape a {
     display: block;
     padding: 1em;
 }
 
-main .bloco .rodape .icon:after{
-    content: ' » ';
-    padding: 0px 7px;
-    background-color: red;
+main .bloco .rodape .icon:after {
+    content: " »  ";
+    padding: 0px 7px 3px 7px;
+    display: inline-block;
+    box-sizing: border-box;
     border-radius: 3px;
-    color: white;
-    font-size: 16px;
+    font-weight: bold;
 }
 
 main .legenda,
 main .bloco .noticia {
     margin-bottom: 30px;
 }
-main .bloco .linha .noticia:not(.grande){
+
+main .bloco .linha .noticia:not(.grande) {
     margin-top: 30px;
 }
+
 main>.manchetes .linha {
     border-bottom: 1px solid #D7D7D7;
 }
@@ -722,8 +728,6 @@ main .listagem h2 {
     text-transform: uppercase;
     color: #2c66ce;
     letter-spacing: normal;
-    margin: 0;
-    padding: 0;
     margin-bottom: 30px;
 }
 
@@ -735,20 +739,23 @@ main .listagem {
     color: #172938;
     overflow: hidden;
 }
+
 main .listagem .noticia,
-main .listagem .publicacao{
+main .listagem .publicacao {
     border-color: silver;
     border-style: dashed;
 }
 
-main .listagem .noticia{
+main .listagem .noticia {
     border-width: 0 0 1px 0;
     padding: 30px 0;
 }
-main .listagem .noticia:first-of-type{
+
+main .listagem .noticia:first-of-type {
     border-top-width: 1px;
 }
-main .listagem .publicacao{
+
+main .listagem .publicacao {
     border-width: 0 0 0 1px;
     padding-left: 17px;
 }
@@ -781,18 +788,61 @@ main .listagem .categorias>*,
 main .listagem li {
     list-style-type: none;
     display: inline;
-    margin: 0;
-    padding: 0;
     margin-right: 15px;
 }
-main .listagem .conteudo{
+
+main .listagem .conteudo {
     margin-bottom: 30px;
 }
+
 @media screen and (min-width: 768px) {
     main .listagem .informacoes {
         float: left;
-    }    
+    }
     main .listagem .publicacao {
         margin-left: 145px;
     }
+}
+
+body.contraste .form-gov input[type=radio],
+body.contraste .form-gov input[type=checkbox] {
+    display: none;
+    /* Esconde os inputs */
+}
+.form-gov input[type=radio],
+.form-gov input[type=checkbox],
+.form-gov input[type=radio]+label,
+.form-gov input[type=checkbox]+label{    
+    display: inline-block;
+}
+.form-gov input[type=radio]+label,
+.form-gov input[type=checkbox]+label {
+    padding: 0 0 0 25px;
+    margin: -20px 10px 0 0;
+    height: 20px;
+}
+
+body.contraste .form-gov input[type=radio]+label,
+body.contraste .form-gov input[type=checkbox]+label {
+    background-image: url(../img/checkbox.svg);
+    background-repeat: no-repeat;
+    margin: 0 10px 0 0;
+}
+
+body.contraste .form-gov input[type=radio]+label {
+    background-position: 0 -19px;
+}
+body.contraste .form-gov input[type=radio]:checked+label {
+    background-position: 0 1px;
+}
+
+
+body.contraste .form-gov input[type=checkbox]+label {
+    background-position: 0 -40px;
+}
+
+
+
+body.contraste .form-gov input[type=checkbox]:checked+label {
+    background-position: 0 -59px;
 }
