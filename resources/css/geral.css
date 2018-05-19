@@ -46,7 +46,6 @@ main .bloco .legenda {
     border: 0;
     margin: 0;
     margin-bottom: 30px;
-    padding: 0;
     position: relative;
     display: block;
 }
@@ -291,7 +290,7 @@ footer {
     border-color: #dfdfdf;
 }
 
-#menu-lateral dl {
+#menu-lateral .bloco {
     margin-bottom: 45px;
     margin-top: 0;
 }
@@ -321,7 +320,7 @@ main .main-rodape>* {
 }
 
 hr,
-.menu-bloco dt,
+#menu-lateral .bloco .legenda,
 main .bloco .legenda,
 main .main-rodape>* {
     border-style: solid;
@@ -380,12 +379,8 @@ main .bloco:first-child>.legenda {
     margin-top: 0;
 }
 
-.menu-bloco dt,
-main .bloco .legenda {
-    padding: 8px 8px 24px 10px;
-}
 
-.menu-bloco dt {
+#menu-lateral .bloco .legenda {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
@@ -401,11 +396,14 @@ main .bloco .legenda {
 .menu-relevancia li a {
     padding-left: 0 !important;
 }
+.bloco .legenda {
+    padding: 8px 8px 24px 10px;
+}
 
-#menu-lateral .menu-bloco li a,
-#menu-lateral .menu-bloco li a:hover,
-#menu-lateral .menu-bloco li a:active,
-#menu-lateral .menu-bloco li a:visited {
+#menu-lateral .bloco li a,
+#menu-lateral .bloco li a:hover,
+#menu-lateral .bloco li a:active,
+#menu-lateral .bloco li a:visited {
     padding-left: 1em;
     color: #172938;
 }

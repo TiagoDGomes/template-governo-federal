@@ -212,26 +212,26 @@ body.azul #footer-menu {
 
 /* Cores dos blocos */
 
-.menu-bloco dt,
+#menu-lateral .bloco .legenda,
 main .bloco .legenda,
 hr{
     background-color: #edeff1;
 }
-.menu-bloco dt,
+#menu-lateral .bloco .legenda,
 main .bloco .legenda,
 hr,
 main .main-rodape>* {
     border-top-color: #1659bf;
 }
 
-body.verde .menu-bloco dt,
+body.verde #menu-lateral .bloco .legenda,
 body.verde main .bloco .legenda,
 body.verde hr,
 body.verde main .main-rodape>* {
     border-top-color: #00510f;
 }
 
-body.amarelo .menu-bloco dt,
+body.amarelo #menu-lateral .bloco .legenda,
 body.amarelo main .bloco .legenda,
 body.amarelo hr,
 body.amarelo main .main-rodape>*  {
@@ -239,21 +239,21 @@ body.amarelo main .main-rodape>*  {
 }
 
 .chapeu,
-.menu-bloco dt,
+#menu-lateral .bloco .legenda,
 main .bloco .legenda,
 hr {
     color: #1659bf;
 }
 
 body.verde .chapeu,
-body.verde .menu-bloco dt,
+body.verde #menu-lateral .bloco .legenda,
 body.verde main .bloco .legenda,
 body.verde hr {
     color: #00510f;
 }
 
 body.amarelo .chapeu,
-body.amarelo .menu-bloco dt,
+body.amarelo #menu-lateral .bloco .legenda,
 body.amarelo main .bloco .legenda,
 body.amarelo hr {
     color: #03316f
@@ -349,7 +349,7 @@ body.contraste option,
 body.contraste #barra-servicos,
 body.contraste main .bloco .legenda,
 body.contraste #barra-busca,
-body.contraste .menu-bloco dt,
+body.contraste #menu-lateral .bloco .legenda,
 body.contraste #footer-menu,
 body.contraste footer,
 body.contraste main .main-rodape li a:hover {
@@ -361,7 +361,7 @@ body.contraste main .main-rodape li a {
     background-color: transparent !important;
 }
 
-body.contraste .menu-bloco dt,
+body.contraste #menu-lateral .bloco .legenda,
 body.contraste hr,
 body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
