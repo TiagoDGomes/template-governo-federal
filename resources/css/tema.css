@@ -335,7 +335,14 @@ body.contraste main .listagem .informacoes span{
     filter: invert(1);
 }
 
-body.contraste * {
+body.contraste ,
+body.contraste .chapeu,
+body.contraste main .listagem,
+body.contraste main .listagem.busca .opcoes legend,
+body.contraste input,
+body.contraste select,
+body.contraste main h2,
+body.contraste .bloco .legenda{
     color: #ffffff !important;
 }
 body.contraste a,
