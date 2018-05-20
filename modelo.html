@@ -98,7 +98,7 @@
                         </a>
                     </div>
 
-                    <form action="#">
+                    <form class="busca-geral" action="#">
                         <fieldset id="barra-busca">
                             <legend>Ferramenta de busca</legend>
 
@@ -285,143 +285,294 @@
             <div id="area-conteudo">
                 <main class="grid">
                     <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text"></a>
+
+
+
+                    <!-- VISUALIZAÇÃO DE BUSCA -->
+                    <form class="form-gov" action="#">
+                        <div class="listagem busca">
+                            <h2>Busca</h2>
+                            <div class="descricao">
+                                <p>
+                                    Praesent rhoncus eleifend eleifend. Nam faucibus pellentesque rutrum. Nunc lobortis tellus lorem, vel aliquet est mattis
+                                    ut.
+                                </p>
+                            </div>
+
+                            <div class="bloco grid">
+
+                                <div class="legenda">
+                                    <h3>Pesquisa</h3>
+                                    <div class="busca-geral">
+
+                                        <fieldset>
+                                            <legend>Ferramenta de busca</legend>
+                                            <label for="busca-portal">Buscar no portal</label>
+                                            <input name="busca-portal" type="text" size="18" title="Caixa de pesquisa" placeholder="Digite aqui para pesquisar">
+                                            <input type="submit" value="Pesquisar">
+                                        </fieldset>
+
+                                    </div>
+
+                                </div>
+                                <div class="opcoes">
+                                    <div class="painel">
+                                        <fieldset>
+                                            <legend>Por categoria</legend>
+                                            <div class="opcao">
+                                                <input id="exemplo-checkbox-categoria-1" type="checkbox">
+                                                <label for="exemplo-checkbox-categoria-1">Categoria 1</label>
+                                            </div>
+                                            <div class="opcao">
+                                                <input id="exemplo-checkbox-categoria-2" type="checkbox">
+                                                <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend>Por período</legend>
+                                            <div class="opcao">
+                                                <div class="meio">
+                                                    <label for="exemplo_data_inicio">Data de início:</label>
+                                                </div>
+                                                <div class="meio">
+                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
+                                                </div>
+                                            </div>
+                                            <div class="opcao">
+                                                <div class="meio">
+                                                    <label for="exemplo_data_final">Data final:</label>
+                                                </div>
+                                                <div class="meio">
+                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <!-- RESULTADOS DAS BUSCAS -->
+                                <div class="resultados">
+                                    <div class="noticia">
+                                        <div class="informacoes">
+                                            <div class="screen-reader-text">Informações sobre a publicação:</div>
+                                            <div class="info">
+                                                <div class="data">
+                                                    <time datetime="2000-01-31 12:00">
+                                                        <span class="data">30/01/2000 </span>
+                                                        <span class="hora">12:00</span>
+                                                    </time>
+                                                </div>
+                                                <!--
+                                                                <div class="tipo">
+                                                                    <span class="video">Vídeo</span>
+                                                                </div>
+                                                                -->
+                                            </div>
+                                        </div>
+                                        <!-- fim .informacoes -->
+                                        <div class="publicacao">
+                                            <div class="chapeu">Chapéu da notícia</div>
+                                            <h3>
+                                                <a href="#">Lorem ipsum dolor sit amet, eos aliquam vivendo eu</a>
+                                            </h3>
+                                            <div class="conteudo">
+                                                <p>
+                                                    Fusce at convallis mi. Proin condimentum suscipit urna, eu pellentesque urna accumsan sagittis. Fusce id neque vel ex fringilla
+                                                    cursus eget non arcu.
+                                                </p>
+                                            </div>
+                                            <div class="tags">
+                                                <div class="legenda">Tópicos:</div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Tag 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 7</a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="categorias">
+                                                <div class="legenda">Registrado em: </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Categoria 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- fim .publicacao -->
+                                    </div>
+                                    <!-- fim .noticia -->
+                                </div>
+                                <!-- FIM DOS RESULTADOS DAS BUSCAS -->
+                            </div>
+                        </div>
+                    </form>
+                    <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
+
                     <div>
-                    <div class="bloco manchetes">
-                        <div class="legenda">Chamada sem foto e blocos sem fotos</div>
-                        <div class="linha">
-                            <div class="noticia grande celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia de destaque em uma célula simples</h2>
-                                <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e inferior
-                                    de 30px.</p>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada sem foto e blocos sem fotos</div>
+                            <div class="linha">
+                                <div class="noticia grande celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque em uma célula simples</h2>
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="linha tamanho-3">
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                    <p>Célula está junto com mais 3 células em linha tamanho-3.</p>
+                                </div>
+
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
                             </div>
                         </div>
-                        <div class="linha tamanho-3">
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                <p>Célula está junto com mais 3 células em linha tamanho-3.</p>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Uso de 6 blocos em linha</div>
+                            <div class="linha tamanho-3">
+                                <div class="noticia celula-2">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+
                             </div>
 
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
+                            <div class="linha tamanho-3">
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                                <div class="noticia celula-2">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
 
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
                             </div>
                         </div>
-                        <div class="rodape">
-                            <a href="#">Veja mais neste link de teste
-                                <span class="icon"></span>
-                            </a>
+
+                        <!-- VISUALIZAÇÃO DE OUTRO BLOCO DE NOTÍCIAS -->
+
+                        <div class="bloco manchetes">
+                            <div class="legenda">Uso de 6 blocos em linha</div>
+
+                            <div class="linha tamanho-6">
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Notícia em célula simples em uma linha para 6 células
+                                        </a>
+                                    </h2>
+                                    <p>Célula está junto com mais 6 células em linha tamanho-6.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Celula é muito estreita para manchete
+                                        </a>
+                                    </h2>
+                                    <p>Manchete de notícia em tamanho 6 fica muito estreita. Tome cuidado.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Notícia em célula simples em uma linha para 6 células
+                                        </a>
+                                    </h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Notícia em célula simples em uma linha para 6 células
+                                        </a>
+                                    </h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Notícia em célula simples em uma linha para 6 células
+                                        </a>
+                                    </h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+                                <div class="noticia celula">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>
+                                        <a href="#">Notícia em célula simples em uma linha para 6 células
+                                        </a>
+                                    </h2>
+                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
+                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
+                                </div>
+
+                            </div>
                         </div>
+
+
                     </div>
-                    <div class="bloco manchetes">
-                        <div class="legenda">Uso de 6 blocos em linha</div>
-                        <div class="linha tamanho-3">
-                            <div class="noticia celula-2">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="linha tamanho-3">
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-                            <div class="noticia celula-2">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>Notícia em célula de tamanho duplo em uma linha para 3 células</h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- VISUALIZAÇÃO DE OUTRO BLOCO DE NOTÍCIAS -->
-
-                    <div class="bloco manchetes">
-                        <div class="legenda">Uso de 6 blocos em linha</div>
-
-                        <div class="linha tamanho-6">
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Notícia em célula simples em uma linha para 6 células
-                                    </a>
-                                </h2>
-                                <p>Célula está junto com mais 6 células em linha tamanho-6.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Celula é muito estreita para manchete
-                                    </a>
-                                </h2>
-                                <p>Manchete de notícia em tamanho 6 fica muito estreita. Tome cuidado.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Notícia em célula simples em uma linha para 6 células
-                                    </a>
-                                </h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Notícia em célula simples em uma linha para 6 células
-                                    </a>
-                                </h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Notícia em célula simples em uma linha para 6 células
-                                    </a>
-                                </h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-                            <div class="noticia celula">
-                                <div class="chapeu">Chapéu</div>
-                                <h2>
-                                    <a href="#">Notícia em célula simples em uma linha para 6 células
-                                    </a>
-                                </h2>
-                                <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo da notícia
-                                    em duas linhas completas com cerca de 150 caracteres.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    </div>    
 
 
 
@@ -516,7 +667,7 @@
                         <div class="celula ">
                             Caixa de opção
                         </div>
-                        <div class="celula">
+                        <div class="celula-2">
                             <form class="form-gov">
                                 <input name="exemplo-radio" id="exemplo-radio-1" type="radio">
                                 <label for="exemplo-radio-1">Exemplo de opção (label obrigatório à direita para alto contraste exibir o input)</label>
@@ -525,14 +676,14 @@
                             </form>
 
                         </div>
-                        <div class="celula">
+                        <!--<div class="celula">
                             <form>
                                 <input name="exemplo-radio-n" id="exemplo-radio-3" type="radio">
                                 <label for="exemplo-radio-3">Exemplo de opção fora de um form-gov</label>
                                 <input name="exemplo-radio-n" id="exemplo-radio-4" type="radio">
                                 <label for="exemplo-radio-4">Exemplo de opção fora de um form-gov</label>
                             </form>
-                        </div>
+                        </div>-->
                     </div>
 
                     <h3>Lorem ipsum h3</h3>

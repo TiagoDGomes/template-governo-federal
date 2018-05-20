@@ -30,3 +30,13 @@
 #barra-redes-sociais{
     top: 115px;
 }
+.listagem.busca .painel {
+    float: right;
+    width: 33%;
+}.listagem.busca .resultados {
+    float: left;
+    width: 61%;
+}
+.listagem.busca .opcao .meio{
+    text-align: right;
+}

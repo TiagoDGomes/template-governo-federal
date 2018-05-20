@@ -4,6 +4,9 @@
 .screen-reader-text,
 header label,
 header legend,
+header .legenda,
+.busca-geral legend,
+.busca-geral label,
 header .legenda {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
@@ -15,12 +18,13 @@ header .legenda {
     position: absolute !important;
     width: 1px;
     word-wrap: normal !important;
-    voice-family: female;
 }
 .menu-relevancia dt:focus,
 header label:focus,
 header legend:focus,
 header .legenda:focus,
+.busca-geral legend:focus,
+.busca-geral label:focus,
 .screen-reader-text:focus {
     background-color: #eee;
     clip: auto !important;

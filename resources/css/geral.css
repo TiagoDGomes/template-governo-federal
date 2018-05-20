@@ -1,5 +1,16 @@
-body {
+
+body, input, .listagem.busca .legenda h3 {
     font-family: "open_sansregular", "Open Sans", Arial, Helvetica, sans-serif;
+}
+#barra-atalhos *,
+main h2:not(:first-child),
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main .main-rodape {
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #tudo {
@@ -30,16 +41,7 @@ a:hover {
     text-decoration: none;
 }
 
-#barra-atalhos *,
-main h2:not(:first-child),
-main h3,
-main h4,
-main h5,
-main h6,
-main p,
-main .main-rodape {
-    font-family: Arial, Helvetica, sans-serif
-}
+
 
 main .bloco,
 main .bloco .legenda {
@@ -85,7 +87,10 @@ main .main-rodape ul,
 #cabecalho ul,
 main .listagem .tags>*,
 main .listagem .categorias>*,
-main .listagem li  {
+main .listagem li,
+.listagem.busca .bloco>.legenda h3,
+.listagem.busca .opcoes fieldset,
+.listagem.busca .opcoes legend{
     padding: 0;
     margin: 0;
 }
@@ -171,7 +176,7 @@ main .rodape {
 
 #titulo .denominacao,
 #titulo .subordinacao,
-#barra-busca input[type='text'],
+.busca-geral fieldset input[type='text'],
 #barra-servicos {
     font-size: 12px;
 }
@@ -323,8 +328,8 @@ main .main-rodape>* {
 }
 
 hr,
-#menu-lateral .bloco .legenda,
-main .bloco .legenda,
+#menu-lateral .bloco>.legenda,
+main .bloco>.legenda,
 main .main-rodape>* {
     border-style: solid;
     border-width: 4px 0 0 0;
@@ -368,11 +373,10 @@ main .main-rodape>:first-child {
     border-top-width: 4px;
 }
 
-main .bloco .legenda {
+main .bloco>.legenda {
     font-size: 20px;
     padding-top: 12px;
     font-weight: normal;
-    padding-right: 0;
     box-sizing: border-box;
 }
 
@@ -398,7 +402,7 @@ main .bloco:first-child>.legenda {
 }
 
 .bloco .legenda {
-    padding: 8px 8px 24px 10px;
+    padding: 8px 15px 24px 10px;
 }
 
 #menu-lateral .bloco li a,
@@ -454,31 +458,32 @@ main .bloco:first-child>.legenda {
     background-position: 0 -400px;
 }
 
-#barra-busca {
+.busca-geral fieldset {
     border: 1px solid #CCCCCC;
-    float: right;
-    padding: 6px 2px 5px 5px;
+    padding: 6px 2px 6px 8px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     background: #fff;
-    text-align: right;
     font-size: 80%;
-    display: inline-block;
 }
 
+#barra-busca{
+    float: right;   
+    display: inline-block; 
+}
 header fieldset,
 header legend,
-#barra-busca input {
+.busca-geral fieldset input {
     border: 0;
     padding: 0;
 }
 
-#barra-busca input[type="text"] {
+.busca-geral fieldset input[type="text"] {
     width: 214px;
 }
 
-#barra-busca input {
+.busca-geral fieldset input {
     height: 19px;
 }
 
@@ -496,7 +501,7 @@ header legend,
     opacity: 1;
 }
 
-#barra-busca input:focus {
+.busca-geral input:focus {
     outline: none;
 }
 
@@ -609,11 +614,12 @@ main .bloco .noticia:not(.grande) h3 {
 main .bloco .noticia:not(.grande) p:first-of-type {
     margin-top: 0;
 }
-
-main .bloco .rodape {
+main .bloco .rodape{
+    text-align: right;
+}
+main .bloco>.rodape {
     border-width: 2px 0 0 0;
     border-style: solid;
-    text-align: right;
     margin-top: -1px;
     font-size: .8em
 }
@@ -810,6 +816,10 @@ body.contraste .form-gov input[type=checkbox] {
     /* Esconde os inputs */
 }
 .form-gov input[type=radio],
+.form-gov input[type=checkbox]{
+    position: absolute;
+}
+.form-gov input[type=radio],
 .form-gov input[type=checkbox],
 .form-gov input[type=radio]+label,
 .form-gov input[type=checkbox]+label{    
@@ -818,7 +828,6 @@ body.contraste .form-gov input[type=checkbox] {
 .form-gov input[type=radio]+label,
 .form-gov input[type=checkbox]+label {
     padding: 0 0 0 25px;
-    margin: -20px 10px 0 0;
     height: 20px;
 }
 
@@ -845,4 +854,89 @@ body.contraste .form-gov input[type=checkbox]+label {
 
 body.contraste .form-gov input[type=checkbox]:checked+label {
     background-position: 0 -59px;
+}
+body.contraste .painel {
+    background-color: transparent;
+}
+
+
+.listagem.busca .busca-geral fieldset input[type="text"] {
+    height: 24px;
+    width: 100%;
+}
+.listagem.busca .bloco>.legenda{
+    padding-top:15px;
+    margin-bottom: 25px;
+    min-height: 130px;
+}
+
+.listagem.busca .busca-geral fieldset {
+    position: relative;
+}
+.listagem.busca .busca-geral fieldset input[type="submit"] {
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    width: 130px;
+    height: 30px;
+    background-color: #7d7d7d ;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+.listagem.busca .opcoes legend{
+    font-weight: bold;
+    font-size: 12px;
+    color: #172938;
+    margin-bottom: 18px;
+}
+.listagem.busca .opcoes input[type="date"]{
+    max-width: 90%;
+}
+.listagem.busca .opcoes fieldset{
+    border: 0;
+}
+.listagem.busca .opcoes .opcao{
+    margin-bottom: 20px;
+    min-height: 20px;
+    font-size: 11px;
+}
+.listagem.busca .opcoes .opcao :first-child{
+    /*padding-top: 2px;*/
+}
+.listagem.busca .opcoes .opcao .meio {
+    display: inline-block;    
+    min-width: 85px;
+}
+body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
+    border:1px solid  yellow;   
+    color: yellow !important; 
+}
+
+
+
+.painel{
+    min-height: 100px;
+    border: 1px solid #c0c1c1;
+    background-color:  #edeff1 ;
+    border-radius: 6px;
+    position: relative;
+    padding: 15px 12px;
+}
+.painel>.cabecalho,
+.painel>.rodape{
+   border-color: silver;
+   border-style: dotted;
+   min-height: 10px;
+}
+.painel>.cabecalho{
+    border-width: 0 0 1px 0;
+}
+.painel>.rodape{
+    position: absolute;
+    bottom: 0;
+    border-width: 1px 0 0 0;
+    width: 100%;
 }

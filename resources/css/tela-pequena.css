@@ -56,7 +56,7 @@ main,
     text-align: left;
     
 }
-#barra-busca input[type="text"]{
+.busca-geral input[type="text"]{
     width: 90%;
 }
 #barra-busca input[type="submit"]{

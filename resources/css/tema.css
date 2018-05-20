@@ -213,29 +213,29 @@ body.azul #footer-menu {
 /* Cores dos blocos */
 
 #menu-lateral .bloco .legenda,
-main .bloco .legenda,
+main .bloco>.legenda,
 main .bloco .rodape,
 hr{
     background-color: #edeff1;
 }
 #menu-lateral .bloco .legenda,
-main .bloco .legenda,
+main .bloco>.legenda,
 hr,
-main .bloco .rodape,
+main .bloco>.rodape,
 main .main-rodape>* {
     border-top-color: #1659bf;
 }
 
 body.verde #menu-lateral .bloco .legenda,
-body.verde main .bloco .legenda,
+body.verde main .bloco>.legenda,
 body.verde hr,
 body.verde main .bloco .rodape,
 body.verde main .main-rodape>* {
     border-top-color: #00510f;
 }
 
-body.amarelo #menu-lateral .bloco .legenda,
-body.amarelo main .bloco .legenda,
+body.amarelo #menu-lateral .bloco>.legenda,
+body.amarelo main .bloco>.legenda,
 body.amarelo hr,
 body.amarelo main .bloco .rodape,
 body.amarelo main .main-rodape>*  {
@@ -243,22 +243,22 @@ body.amarelo main .main-rodape>*  {
 }
 
 .chapeu,
-#menu-lateral .bloco .legenda,
-main .bloco .legenda,
+#menu-lateral .bloco>.legenda,
+main .bloco>.legenda,
 hr {
     color: #1659bf;
 }
 
 body.verde .chapeu,
-body.verde #menu-lateral .bloco .legenda,
-body.verde main .bloco .legenda,
+body.verde #menu-lateral .bloco>.legenda,
+body.verde main .bloco>.legenda,
 body.verde hr {
     color: #00510f;
 }
 
 body.amarelo .chapeu,
-body.amarelo #menu-lateral .bloco .legenda,
-body.amarelo main .bloco .legenda,
+body.amarelo #menu-lateral .bloco>.legenda,
+body.amarelo main .bloco>.legenda,
 body.amarelo hr {
     color: #03316f
 }
@@ -364,13 +364,14 @@ body.contraste select,
 body.contraste option,
 body.contraste #barra-servicos,
 body.contraste main .bloco .legenda,
-body.contraste #barra-busca,
+body.contraste .busca-geral fieldset,
 body.contraste #menu-lateral .bloco .legenda,
 body.contraste #footer-menu,
 body.contraste footer,
 body.contraste main .main-rodape li a:hover,
 body.contraste main .bloco .rodape,
-body.contraste input[type="checkbox"] {
+body.contraste input[type="checkbox"],
+body.contraste .painel {
     background-color: #1c1c1c !important;
 }
 
