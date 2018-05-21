@@ -319,17 +319,30 @@
                                     <div class="painel">
                                         <fieldset>
                                             <legend>Por categoria</legend>
-                                            <div class="opcao">
-                                                <input id="exemplo-checkbox-categoria-1" type="checkbox">
-                                                <label for="exemplo-checkbox-categoria-1">Categoria 1</label>
-                                            </div>
-                                            <div class="opcao">
-                                                <input id="exemplo-checkbox-categoria-2" type="checkbox">
-                                                <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
-                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <input id="exemplo-checkbox-categoria-1" type="checkbox">
+                                                    <label for="exemplo-checkbox-categoria-1">Categoria 1</label>
+                                                </li>
+                                                <li>
+                                                    <input id="exemplo-checkbox-categoria-2" type="checkbox">
+                                                    <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
+                                                </li>
+                                            </ul>                                            
                                         </fieldset>
                                         <fieldset>
                                             <legend>Por período</legend>
+                                            <ul>
+                                                <li>
+                                                    <label for="exemplo_data_inicio">Data de início:</label>
+                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
+                                                </li>
+                                                <li>
+                                                    <label for="exemplo_data_final">Data final:</label>
+                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
+                                                </li>
+                                            </ul> 
+                                            <!--
                                             <div class="opcao">
                                                 <div class="meio">
                                                     <label for="exemplo_data_inicio">Data de início:</label>
@@ -345,7 +358,7 @@
                                                 <div class="meio">
                                                     <input id="exemplo_data_final" name="exemplo_data_final" type="date">
                                                 </div>
-                                            </div>
+                                            </div>-->
                                         </fieldset>
                                     </div>
                                 </div>
@@ -1169,6 +1182,7 @@
         }
     </style>
     <div id="area-testes" class="js-necessario">
+        <noscript>Javascript desativado</noscript>
         <fieldset>
             <legend>Testes</legend>
             <div>

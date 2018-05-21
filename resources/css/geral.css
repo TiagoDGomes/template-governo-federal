@@ -90,6 +90,8 @@ main .listagem .categorias>*,
 main .listagem li,
 .listagem.busca .bloco>.legenda h3,
 .listagem.busca .opcoes fieldset,
+.listagem.busca .opcoes ul,
+.listagem.busca .opcoes li,
 .listagem.busca .opcoes legend{
     padding: 0;
     margin: 0;
@@ -104,8 +106,20 @@ main>:first-child>:first-child {
 header li,
 #barra-servicos li,
 #menu-lateral li,
-#footer-menu li {
+#footer-menu li,
+main .main-rodape ul,
+main>.informacoes ul ,
+.listagem.busca .opcoes ul,
+.listagem.busca .opcoes li {
     list-style-type: none;
+}
+
+main .listagem .tags>*,
+main .listagem .categorias>*,
+main .listagem .publicacao li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
 }
 
 #barra-brasil {
@@ -345,9 +359,7 @@ main .main-rodape>*>* {
     box-sizing: border-box;
 }
 
-main .main-rodape ul {
-    list-style-type: none;
-}
+
 
 main .main-rodape li {
     display: inline-block;
@@ -575,7 +587,6 @@ main>.informacoes ul {
     border-left-color: rgb(215, 220, 216);
     border-left-style: solid;
     border-left-width: 1px;
-    list-style-type: none;
 }
 
 main>.informacoes dl,
@@ -789,13 +800,7 @@ main .listagem .informacoes span {
     padding-left: 32px;
 }
 
-main .listagem .tags>*,
-main .listagem .categorias>*,
-main .listagem li {
-    list-style-type: none;
-    display: inline;
-    margin-right: 15px;
-}
+
 
 main .listagem .conteudo {
     margin-bottom: 30px;
@@ -898,17 +903,20 @@ body.contraste .painel {
 .listagem.busca .opcoes fieldset{
     border: 0;
 }
-.listagem.busca .opcoes .opcao{
+.listagem.busca .opcoes .opcao,
+.listagem.busca .opcoes li{
     margin-bottom: 20px;
     min-height: 20px;
     font-size: 11px;
 }
-.listagem.busca .opcoes .opcao :first-child{
+.listagem.busca .opcoes li:first-child{
     /*padding-top: 2px;*/
 }
-.listagem.busca .opcoes .opcao .meio {
+.listagem.busca .opcoes .opcao .meio,
+.listagem.busca .opcoes li *,
+ {    
     display: inline-block;    
-    min-width: 85px;
+    min-width: 85px;    
 }
 body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     border:1px solid  yellow;   
