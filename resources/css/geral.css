@@ -9,7 +9,8 @@ body, input, .listagem.busca .legenda h3 {
     box-sizing: border-box !important;
 }
 #tudo{
-    padding-top: 32px;
+    margin-top: 32px;
+    border-top: 1px solid #dfdfdf;
 }
 #barra-atalhos *,
 main h2:not(:first-child),
