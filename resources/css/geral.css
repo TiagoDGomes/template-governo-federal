@@ -2,6 +2,15 @@
 body, input, .listagem.busca .legenda h3 {
     font-family: "open_sansregular", "Open Sans", Arial, Helvetica, sans-serif;
 }
+#barra-brasil{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box !important;
+}
+#tudo{
+    padding-top: 32px;
+}
 #barra-atalhos *,
 main h2:not(:first-child),
 main h3,
