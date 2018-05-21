@@ -293,10 +293,15 @@
                         <div class="listagem busca">
                             <h2>Busca</h2>
                             <div class="descricao">
-                                <p>
-                                    Praesent rhoncus eleifend eleifend. Nam faucibus pellentesque rutrum. Nunc lobortis tellus lorem, vel aliquet est mattis
-                                    ut.
-                                </p>
+                                <p>Resultado da busca por <em>{termo-pesquisado}</em></p>
+                                <div class="screen-reader-text">
+                                    <p>Você pode:</p>
+                                    <ul>
+                                        <li><a href="#nav-resultados">Ir para os resultados</a></li>
+                                        <li><a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a></li>
+                                        <li><a href="#nav-opcoes">Ir para o filtro de busca</a></li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="bloco grid">
@@ -307,14 +312,15 @@
 
                                         <fieldset>
                                             <legend>Ferramenta de busca</legend>
-                                            <label for="busca-portal">Buscar no portal</label>
-                                            <input name="busca-portal" type="text" size="18" title="Caixa de pesquisa" placeholder="Digite aqui para pesquisar">
+                                            <label for="pagina-caixa-busca-portal">Buscar no portal</label>
+                                            <input id="pagina-caixa-busca-portal" name="busca-portal" type="text" size="18" title="Caixa de pesquisa" placeholder="Digite aqui para pesquisar">
                                             <input type="submit" value="Pesquisar">
                                         </fieldset>
 
                                     </div>
 
                                 </div>
+                                <a name="nav-opcoes" id="nav-opcoes"></a>
                                 <div class="opcoes">
                                     <div class="painel">
                                         <fieldset>
@@ -364,6 +370,7 @@
                                 </div>
 
                                 <!-- RESULTADOS DAS BUSCAS -->
+                                <a name="nav-resultados" id="nav-resultados"></a>
                                 <div class="resultados">
                                     <div class="noticia">
                                         <div class="informacoes">
