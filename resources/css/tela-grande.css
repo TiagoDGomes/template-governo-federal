@@ -1,9 +1,19 @@
+#area-conteudo {
+    width: 750px;
+    margin-left: 55px;
+}
+
+body.sem-menu #area-conteudo{
+    margin-left: initial;
+}
+
 #cabecalho>div,
 #barra-breadcrumb,
 #barra-servicos ul,
 #footer-brasil>div,
 #extra-footer,
-#central {
+#central,
+body.sem-menu #area-conteudo {
     width: 960px;
 }
 
@@ -21,10 +31,6 @@
     float: left;
 }
 
-#area-conteudo {
-    width: 750px;
-    margin-left: 55px;
-}
 
 #barra-busca,
 #barra-redes-sociais {

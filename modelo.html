@@ -293,13 +293,21 @@
                         <div class="listagem busca">
                             <h2>Busca</h2>
                             <div class="descricao">
-                                <p>Resultado da busca por <em>{termo-pesquisado}</em></p>
+                                <p>Resultado da busca por
+                                    <em>{termo-pesquisado}</em>
+                                </p>
                                 <div class="screen-reader-text">
                                     <p>Você pode:</p>
                                     <ul>
-                                        <li><a href="#nav-resultados">Ir para os resultados</a></li>
-                                        <li><a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a></li>
-                                        <li><a href="#nav-opcoes">Ir para o filtro de busca</a></li>
+                                        <li>
+                                            <a href="#nav-resultados">Ir para os resultados</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a>
+                                        </li>
+                                        <li>
+                                            <a href="#nav-opcoes">Ir para o filtro de busca</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -334,7 +342,7 @@
                                                     <input id="exemplo-checkbox-categoria-2" type="checkbox">
                                                     <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
                                                 </li>
-                                            </ul>                                            
+                                            </ul>
                                         </fieldset>
                                         <fieldset>
                                             <legend>Por período</legend>
@@ -347,7 +355,7 @@
                                                     <label for="exemplo_data_final">Data final:</label>
                                                     <input id="exemplo_data_final" name="exemplo_data_final" type="date">
                                                 </li>
-                                            </ul> 
+                                            </ul>
                                             <!--
                                             <div class="opcao">
                                                 <div class="meio">
@@ -1203,10 +1211,17 @@
                 </select>
                 <script>
                     function teste_cor(c) {
-                        document.body.className = c;
+                        document.body.classList.remove('verde');
+                        document.body.classList.remove('amarelo');
+                        document.body.classList.remove('azul');
+                        document.body.classList.remove('branco');
+                        document.body.classList.add(c);
                     }
                 </script>
             </div>
+
+
+            
             <div>
                 <input id="teste_barra_idioma" type="checkbox" checked="checked" onclick="barra_idioma(this.checked)">
                 <label for="teste_barra_idioma">Barra de idiomas</label>
@@ -1214,6 +1229,23 @@
                 <script>
                     function barra_idioma(v) {
                         document.getElementById('barra-idiomas').style.display = v ? '' : 'none';
+                    }
+                </script>
+            </div>
+
+
+
+            <div>
+                <input id="teste_menu_lateral" type="checkbox" checked="checked" onclick="menu_lateral(this.checked)">
+                <label for="teste_menu_lateral">Menu lateral</label>
+
+                <script>
+                    function menu_lateral(v) {
+                        if (v) {
+                            document.body.classList.remove('sem-menu');
+                        } else {
+                            document.body.classList.add('sem-menu');
+                        }
                     }
                 </script>
             </div>
