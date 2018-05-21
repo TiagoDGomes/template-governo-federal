@@ -23,13 +23,22 @@
     <![endif]-->
 
     <script src="resources/js/cookies.js"></script>
+    <style>
+        #barra-brasil{
+            position: absolute;
+            top:0;
+            width: 100%;
+        }
+        #tudo{
+            padding-top: 32px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <a class="screen-reader-text" href="#secao-conteudo">Ir para o conteúdo</a>
     <script src="resources/js/acessibilidade.js"></script>
-
-    <div id="barra-brasil"></div>
+    <!--<div id="barra-brasil"></div>-->
     <div id="tudo">
         <header>
             <div id="cabecalho">
@@ -145,6 +154,7 @@
                     </div>
                 </div>
             </div>
+            <div id="barra-brasil"></div>
             <div id="barra-servicos">
                 <div>
                     <div class="legenda screen-reader-text">Menu de serviços</div>
@@ -297,7 +307,7 @@
                                     <em>{termo-pesquisado}</em>
                                 </p>
                                 <div class="screen-reader-text">
-                                    <p>Você pode:</p>
+                                    <p>Você pode escolher as opções a seguir:</p>
                                     <ul>
                                         <li>
                                             <a href="#nav-resultados">Ir para os resultados</a>
@@ -329,6 +339,7 @@
 
                                 </div>
                                 <a name="nav-opcoes" id="nav-opcoes"></a>
+                                <p class="screen-reader-text">Você está no filtro de pesquisa. Selecione as opções desejadas a seguir:</p>
                                 <div class="opcoes">
                                     <div class="painel">
                                         <fieldset>
@@ -379,15 +390,16 @@
 
                                 <!-- RESULTADOS DAS BUSCAS -->
                                 <a name="nav-resultados" id="nav-resultados"></a>
+                                <p class="screen-reader-text">Você está nos resultados da pesquisa.</p>
                                 <div class="resultados">
                                     <div class="noticia">
                                         <div class="informacoes">
-                                            <div class="screen-reader-text">Informações sobre a publicação:</div>
+                                            <div class="screen-reader-text">Informações sobre a publicação (1 de 1):</div>
                                             <div class="info">
                                                 <div class="data">
                                                     <time datetime="2000-01-31 12:00">
-                                                        <span class="data">30/01/2000 </span>
-                                                        <span class="hora">12:00</span>
+                                                        <span class="data"><span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
+                                                        <span class="hora"><span class="screen-reader-text">Hora da publicação: </span>12:00</span>
                                                     </time>
                                                 </div>
                                                 <!--
