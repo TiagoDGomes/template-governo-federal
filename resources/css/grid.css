@@ -41,3 +41,14 @@ linha tamanho-6    | (celula) | (celula) | (celula) | (celula) | (celula) | (cel
     }
     
 }
+@media (min-width: 1024px) {
+    body.sem-menu main.grid .linha.tamanho-3 .celula {
+        width: 300px;
+    }
+    body.sem-menu main.grid .linha.tamanho-3 .celula-2 {
+        width: 630px;
+    }
+    body.sem-menu main.grid .linha.tamanho-6 .celula {
+        width: 135px;
+    }
+}
