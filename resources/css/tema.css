@@ -106,8 +106,7 @@ header a:visited,
 #barra-breadcrumb a:hover,
 #barra-breadcrumb a:active,
 #barra-breadcrumb a:visited,
-#footer-menu dt,
-#footer-menu dd,
+#footer-menu,
 #footer-menu a,
 #footer-menu a:hover,
 #footer-menu a:active,
@@ -120,13 +119,11 @@ body.verde header a,
 body.verde header a:hover,
 body.verde header a:active,
 body.verde header a:visited,
-body.azul header,
 body.azul header a,
 body.azul header a:hover,
 body.azul header a:active,
 body.azul header a:visited,
-body.azul #footer-menu dt,
-body.azul #footer-menu dd,
+body.azul #footer-menu,
 body.azul #footer-menu a,
 body.azul #footer-menu a:hover,
 body.azul #footer-menu a:active,
@@ -138,7 +135,7 @@ body.verde #footer-menu a:visited {
     color: #FFFFFF
 }
 
-body.verde #footer-menu dt {
+body.verde #footer-menu {
     color: #61b06f;
 }
 
@@ -147,8 +144,7 @@ body.amarelo header a,
 body.amarelo header a:hover,
 body.amarelo header a:active,
 body.amarelo header a:visited,
-body.amarelo #footer-menu dt,
-body.amarelo #footer-menu dd,
+body.amarelo #footer-menu,
 body.amarelo #footer-menu a,
 body.amarelo #footer-menu a:hover,
 body.amarelo #footer-menu a:active,
@@ -291,9 +287,7 @@ body:not(.contraste) main>.informacoes dl {
     color: #2c66ce;
 }
 
-#barra-breadcrumb {
-    color: #000000;
-}
+
 main .main-rodape li a{
     border-color:  #cfcdcd;
     background-color: #e9e8ed;
@@ -336,6 +330,7 @@ body.contraste main .listagem .informacoes span{
 }
 
 body.contraste ,
+body.contraste #footer-menu,
 body.contraste .chapeu,
 body.contraste main .listagem,
 body.contraste main .listagem.busca .opcoes legend,
@@ -392,7 +387,7 @@ body.contraste hr,
 body.contraste #barra-acessibilidade,
 body.contraste #barra-idiomas,
 body.contraste main .bloco .legenda,
-body.contraste #footer-menu dl,
+body.contraste #footer-menu .celula,
 body.contraste main .bloco .rodape,
 body.contraste main .main-rodape>* {
     border-color: #ffffff !important;
