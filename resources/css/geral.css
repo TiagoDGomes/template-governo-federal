@@ -964,3 +964,43 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     border-width: 1px 0 0 0;
     width: 100%;
 }
+
+/* Imagens das manchetes */
+.manchetes .noticia {
+    overflow: hidden;
+}
+.manchetes .noticia img{
+    height: 136px !important; 
+    width: 230px !important;    
+    border-radius: 8px;
+}
+
+@media screen and (min-width:760px){
+    .manchetes .noticia.grande img{
+        position: absolute;
+    }
+    .manchetes .noticia.grande.imagem-ao-centro img{
+        height: 320px !important; 
+        width: 750px !important; 
+        position: static;
+        margin-bottom: 15px;
+    }
+    .manchetes .noticia.grande.imagem-a-direita{
+        width: 490px;
+    }
+
+    .manchetes .noticia.grande.imagem-a-esquerda{
+        padding-left: 250px;
+    }
+    .manchetes .noticia.grande.imagem-a-esquerda .chapeu,
+    .manchetes .noticia.grande.imagem-a-esquerda img{
+        margin-left: -250px;
+    }
+    .manchetes .noticia.grande.imagem-a-esquerda img{
+        top: 135px;
+    }
+    .manchetes .noticia.grande.imagem-a-direita img{
+        right:0;
+        top: 136px;
+    }
+}

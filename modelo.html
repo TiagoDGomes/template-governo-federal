@@ -387,8 +387,10 @@
                                             <div class="info">
                                                 <div class="data">
                                                     <time datetime="2000-01-31 12:00">
-                                                        <span class="data"><span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
-                                                        <span class="hora"><span class="screen-reader-text">Hora da publicação: </span>12:00</span>
+                                                        <span class="data">
+                                                            <span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
+                                                        <span class="hora">
+                                                            <span class="screen-reader-text">Hora da publicação: </span>12:00</span>
                                                     </time>
                                                 </div>
                                                 <!--
@@ -466,6 +468,59 @@
                     <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
 
                     <div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-a-esquerda">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto à esquerda</h2>
+                                    <img src="exemplo/230x136.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-a-direita">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto à direita</h2>
+                                    <img src="exemplo/230x136.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-ao-centro">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto ao centro</h2>
+                                    <img src="exemplo/750x320.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        
                         <div class="bloco manchetes">
                             <div class="legenda">Chamada sem foto e blocos sem fotos</div>
                             <div class="linha">
@@ -1048,7 +1103,7 @@
                         <div class="legenda">
                             Menu bloco 1
                         </div>
-                        
+
                         <ul>
                             <li>
                                 <a href="#">
@@ -1061,31 +1116,13 @@
                                 </a>
                             </li>
                         </ul>
-                    
+
                     </div>
                     <div class="celula">
                         <div class="legenda">
                             Menu bloco 2
                         </div>
-                    
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    Item 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Item 2 com conteúdo mais extenso
-                                </a>
-                            </li>
-                        </ul>                        
-                    </div>
-                    <div class="celula">
-                        <div class="legenda">
-                            Menu bloco 3
-                        </div>
-                        
+
                         <ul>
                             <li>
                                 <a href="#">
@@ -1098,7 +1135,25 @@
                                 </a>
                             </li>
                         </ul>
-                        
+                    </div>
+                    <div class="celula">
+                        <div class="legenda">
+                            Menu bloco 3
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Item 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Item 2 com conteúdo mais extenso
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
 
                     <div class="celula">
@@ -1118,7 +1173,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
             <div id="footer-brasil"></div>
@@ -1220,7 +1275,7 @@
             </div>
 
 
-            
+
             <div>
                 <input id="teste_barra_idioma" type="checkbox" checked="checked" onclick="barra_idioma(this.checked)">
                 <label for="teste_barra_idioma">Barra de idiomas</label>
