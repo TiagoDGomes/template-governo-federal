@@ -2,6 +2,16 @@
 body, input, .listagem.busca .legenda h3 {
     font-family: "open_sansregular", "Open Sans", Arial, Helvetica, sans-serif;
 }
+#barra-brasil{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box !important;
+}
+#tudo{
+    margin-top: 32px;
+    border-top: 1px solid #dfdfdf;
+}
 #barra-atalhos *,
 main h2:not(:first-child),
 main h3,
@@ -11,6 +21,11 @@ main h6,
 main p,
 main .main-rodape {
     font-family: Arial, Helvetica, sans-serif
+}
+
+body.sem-menu #menu-lateral,
+body.sem-menu #barra-atalhos a[accesskey="2"]{
+    display: none !important;
 }
 
 #tudo {
@@ -667,22 +682,22 @@ main .manchetes .linha {
     padding-bottom: 100px;
 }
 
-#footer-menu dl {
+#footer-menu .celula {
     margin-top: 0;
     border-left-style: dotted;
     border-left-width: 1px;
     margin-bottom: 46px;
+    box-sizing: border-box;
 }
 
-#footer-menu dt {
+#footer-menu .legenda {
     /* Título da coluna */
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 18px;
 }
 
-#footer-menu dd {
-    /* Título da coluna */
+#footer-menu .celula {
     font-size: 13px;
 }
 
@@ -948,4 +963,44 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     bottom: 0;
     border-width: 1px 0 0 0;
     width: 100%;
+}
+
+/* Imagens das manchetes */
+.manchetes .noticia {
+    overflow: hidden;
+}
+.manchetes .noticia img{
+    height: 136px !important; 
+    width: 230px !important;    
+    border-radius: 8px;
+}
+
+@media screen and (min-width:760px){
+    .manchetes .noticia.grande img{
+        position: absolute;
+    }
+    .manchetes .noticia.grande.imagem-ao-centro img{
+        height: 320px !important; 
+        width: 750px !important; 
+        position: static;
+        margin-bottom: 15px;
+    }
+    .manchetes .noticia.grande.imagem-a-direita{
+        width: 490px;
+    }
+
+    .manchetes .noticia.grande.imagem-a-esquerda{
+        padding-left: 250px;
+    }
+    .manchetes .noticia.grande.imagem-a-esquerda .chapeu,
+    .manchetes .noticia.grande.imagem-a-esquerda img{
+        margin-left: -250px;
+    }
+    .manchetes .noticia.grande.imagem-a-esquerda img{
+        top: 135px;
+    }
+    .manchetes .noticia.grande.imagem-a-direita img{
+        right:0;
+        top: 136px;
+    }
 }
