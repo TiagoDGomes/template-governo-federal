@@ -9,6 +9,9 @@
 #cabecalho>div{
     position: relative;
 }
+#titulo {
+    max-width: 465px; 
+}
 #barra-idiomas{
     position: absolute;
     top: 2em;
