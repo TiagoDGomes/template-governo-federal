@@ -26,10 +26,8 @@
 </head>
 
 <body>
-    <a class="screen-reader-text" href="#secao-conteudo">Ir para o conteúdo</a>
     <script src="resources/js/acessibilidade.js"></script>
-
-    <div id="barra-brasil"></div>
+    <!--<div id="barra-brasil"></div>-->
     <div id="tudo">
         <header>
             <div id="cabecalho">
@@ -145,6 +143,7 @@
                     </div>
                 </div>
             </div>
+            <div id="barra-brasil"></div>
             <div id="barra-servicos">
                 <div>
                     <div class="legenda screen-reader-text">Menu de serviços</div>
@@ -293,13 +292,21 @@
                         <div class="listagem busca">
                             <h2>Busca</h2>
                             <div class="descricao">
-                                <p>Resultado da busca por <em>{termo-pesquisado}</em></p>
+                                <p>Resultado da busca por
+                                    <em>{termo-pesquisado}</em>
+                                </p>
                                 <div class="screen-reader-text">
-                                    <p>Você pode:</p>
+                                    <p>Você pode escolher as opções a seguir:</p>
                                     <ul>
-                                        <li><a href="#nav-resultados">Ir para os resultados</a></li>
-                                        <li><a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a></li>
-                                        <li><a href="#nav-opcoes">Ir para o filtro de busca</a></li>
+                                        <li>
+                                            <a href="#nav-resultados">Ir para os resultados</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a>
+                                        </li>
+                                        <li>
+                                            <a href="#nav-opcoes">Ir para o filtro de busca</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -321,6 +328,7 @@
 
                                 </div>
                                 <a name="nav-opcoes" id="nav-opcoes"></a>
+                                <p class="screen-reader-text">Você está no filtro de pesquisa. Selecione as opções desejadas a seguir:</p>
                                 <div class="opcoes">
                                     <div class="painel">
                                         <fieldset>
@@ -334,7 +342,7 @@
                                                     <input id="exemplo-checkbox-categoria-2" type="checkbox">
                                                     <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
                                                 </li>
-                                            </ul>                                            
+                                            </ul>
                                         </fieldset>
                                         <fieldset>
                                             <legend>Por período</legend>
@@ -347,7 +355,7 @@
                                                     <label for="exemplo_data_final">Data final:</label>
                                                     <input id="exemplo_data_final" name="exemplo_data_final" type="date">
                                                 </li>
-                                            </ul> 
+                                            </ul>
                                             <!--
                                             <div class="opcao">
                                                 <div class="meio">
@@ -371,15 +379,18 @@
 
                                 <!-- RESULTADOS DAS BUSCAS -->
                                 <a name="nav-resultados" id="nav-resultados"></a>
+                                <p class="screen-reader-text">Você está nos resultados da pesquisa.</p>
                                 <div class="resultados">
                                     <div class="noticia">
                                         <div class="informacoes">
-                                            <div class="screen-reader-text">Informações sobre a publicação:</div>
+                                            <div class="screen-reader-text">Informações sobre a publicação (1 de 1):</div>
                                             <div class="info">
                                                 <div class="data">
                                                     <time datetime="2000-01-31 12:00">
-                                                        <span class="data">30/01/2000 </span>
-                                                        <span class="hora">12:00</span>
+                                                        <span class="data">
+                                                            <span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
+                                                        <span class="hora">
+                                                            <span class="screen-reader-text">Hora da publicação: </span>12:00</span>
                                                     </time>
                                                 </div>
                                                 <!--
@@ -457,6 +468,59 @@
                     <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
 
                     <div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-a-esquerda">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto à esquerda</h2>
+                                    <img src="exemplo/230x136.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-a-direita">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto à direita</h2>
+                                    <img src="exemplo/230x136.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bloco manchetes">
+                            <div class="legenda">Chamada com foto</div>
+                            <div class="linha">
+                                <div class="noticia grande celula com-imagem imagem-ao-centro">
+                                    <div class="chapeu">Chapéu</div>
+                                    <h2>Notícia de destaque com foto ao centro</h2>
+                                    <img src="exemplo/750x320.jpeg" alt="">
+                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
+                                        inferior de 30px.</p>
+                                </div>
+                            </div>
+                            <div class="rodape">
+                                <a href="#">Veja mais neste link de teste
+                                    <span class="icon"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        
                         <div class="bloco manchetes">
                             <div class="legenda">Chamada sem foto e blocos sem fotos</div>
                             <div class="linha">
@@ -1035,83 +1099,81 @@
             <a name="secao-rodape" id="secao-rodape" class="screen-reader-text">Menu de rodapé</a>
             <div id="footer-menu" class="grid">
                 <div class="linha tamanho-4">
-                    <dl class="celula">
-                        <dt class="menu-bloco ">
+                    <div class="celula">
+                        <div class="legenda">
                             Menu bloco 1
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Item 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Item 2
-                                    </a>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="celula">
-                        <dt class="menu-bloco">
-                            Menu bloco 2
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Item 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Item 2 com conteúdo mais extenso
-                                    </a>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                    <dl class="celula">
-                        <dt class="menu-bloco">
-                            Menu bloco 3
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Item 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Item 2 com conteúdo mais extenso
-                                    </a>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
+                        </div>
 
-                    <dl class="celula">
-                        <dt class="menu-bloco">
-                            Menu bloco 4
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Item 1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Item 2 com conteúdo mais extenso
-                                    </a>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Item 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Item 2
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="celula">
+                        <div class="legenda">
+                            Menu bloco 2
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Item 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Item 2 com conteúdo mais extenso
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="celula">
+                        <div class="legenda">
+                            Menu bloco 3
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Item 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Item 2 com conteúdo mais extenso
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="celula">
+                        <div class="legenda">
+                            Menu bloco 2
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Item 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Item 2 com conteúdo mais extenso
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <div id="footer-brasil"></div>
@@ -1203,10 +1265,17 @@
                 </select>
                 <script>
                     function teste_cor(c) {
-                        document.body.className = c;
+                        document.body.classList.remove('verde');
+                        document.body.classList.remove('amarelo');
+                        document.body.classList.remove('azul');
+                        document.body.classList.remove('branco');
+                        document.body.classList.add(c);
                     }
                 </script>
             </div>
+
+
+
             <div>
                 <input id="teste_barra_idioma" type="checkbox" checked="checked" onclick="barra_idioma(this.checked)">
                 <label for="teste_barra_idioma">Barra de idiomas</label>
@@ -1214,6 +1283,23 @@
                 <script>
                     function barra_idioma(v) {
                         document.getElementById('barra-idiomas').style.display = v ? '' : 'none';
+                    }
+                </script>
+            </div>
+
+
+
+            <div>
+                <input id="teste_menu_lateral" type="checkbox" checked="checked" onclick="menu_lateral(this.checked)">
+                <label for="teste_menu_lateral">Menu lateral</label>
+
+                <script>
+                    function menu_lateral(v) {
+                        if (v) {
+                            document.body.classList.remove('sem-menu');
+                        } else {
+                            document.body.classList.add('sem-menu');
+                        }
                     }
                 </script>
             </div>
