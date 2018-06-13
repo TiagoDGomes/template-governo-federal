@@ -23,6 +23,7 @@
     <![endif]-->
 
     <script src="resources/js/cookies.js"></script>
+    <script src="resources/js/geral.js"></script>
 </head>
 
 <body>
@@ -166,19 +167,14 @@
                     </ul>
                 </div>
             </div>
-            <div id="barra-breadcrumb">
-                <span class="legenda screen-reader-text">Localização da página</span>
-                <span id="breadcrumbs-you-are-here">Você está aqui:</span>
-                <span id="breadcrumbs-home">
-                    <a href="#">Página Inicial</a>
-                </span>
-            </div>
-
+            
         </header>
-
+        <div id="titulo-menu-retratil" class="js-necessario">
+            <a href="javascript:;" onclick="alternarMenuRetratil()"><span class="screen-reader-text">Ativar menu principal</span></a>
+        </div>
         <div id="central">
             <nav id="menu-lateral">
-                <a name="secao-menu" id="secao-menu" class="screen-reader-text">Menu principal</a>
+                <a name="secao-menu" id="secao-menu" class="screen-reader-text">Menu principal</a>            
                 <div class="menu-relevancia">
                     <div class="screen-reader-text legenda">
                         Menu de relevância
@@ -281,6 +277,13 @@
                     </div>
                 </div>
             </nav>
+            <div id="barra-breadcrumb">
+                <span class="legenda screen-reader-text">Localização da página</span>
+                <span id="breadcrumbs-you-are-here">Você está aqui:</span>
+                <span id="breadcrumbs-home">
+                    <a href="#">Página Inicial</a>
+                </span>
+            </div>
             <div id="area-conteudo">
                 <main class="grid">
                     <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text"></a>

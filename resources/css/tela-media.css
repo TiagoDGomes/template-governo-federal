@@ -3,7 +3,8 @@
 #extra-footer,
 #footer-brasil>div,
 #barra-servicos ul,
-#central{
+#central,
+#titulo-menu-retratil a{
     max-width: 750px !important;
 }
 #cabecalho>div{

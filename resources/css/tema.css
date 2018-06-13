@@ -17,9 +17,44 @@ body {
     background-color: white;
 }
 
-body header #cabecalho {
+#titulo-menu-retratil a{
+    background-image: url(../img/tema-branco/bg-menu-mobile.png);
+}
+
+body.verde #titulo-menu-retratil a{
+    background-image: url(../img/tema-verde/bg-menu-mobile.png);
+}
+
+body.amarelo #titulo-menu-retratil a{
+    background-image: url(../img/tema-amarelo/bg-menu-mobile.png);
+}
+
+body.azul #titulo-menu-retratil a{
+    background-image: url(../img/tema-azul/bg-menu-mobile.png);
+}
+
+body.contraste #titulo-menu-retratil a{
+    background-image: url(../img/tema-contraste/bg-menu-mobile-contraste.png);
+}
+body header #cabecalho,
+#titulo-menu-retratil{
     background-color: #F0F2F1;
-    background-color: #ECEDF1;
+    background-color: #ECEDF1;    
+}
+#menu-lateral {
+    border-color: #114dad;
+}
+
+body.verde #menu-lateral {
+    border-color: #00510f;
+}
+
+body.amarelo #menu-lateral {
+    border-color: #fefab4;
+}
+
+
+body header #cabecalho {
     background-image: -moz-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
     background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #F0F2F1), color-stop(100%, #ECEDF1));
     background-image: -webkit-radial-gradient(center, ellipse cover, #F0F2F1 1%, #ECEDF1 100%);
@@ -29,9 +64,12 @@ body header #cabecalho {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=" #F0F2F1", endColorstr=" #ECEDF1", GradientType=1);
 }
 
-body.verde header #cabecalho  {
+body.verde header #cabecalho,
+body.verde #titulo-menu-retratil {
     background-color: #17882C;
     background-color: #00510F;
+}
+body.verde header #cabecalho {
     background-image: -moz-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
     background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #17882C), color-stop(100%, #00510F));
     background-image: -webkit-radial-gradient(center, ellipse cover, #17882C 1%, #00510F 100%);
@@ -41,9 +79,12 @@ body.verde header #cabecalho  {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#17882C", endColorstr="#00510F", GradientType=1);
 }
 
-body.amarelo header #cabecalho {
+body.amarelo header #cabecalho,
+body.amarelo #titulo-menu-retratil {
     background-color: #FCDD4E;
     background-color: #F9C404;
+}
+body.amarelo header #cabecalho {
     background-image: -moz-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
     background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #FCDD4E), color-stop(100%, #F9C404));
     background-image: -webkit-radial-gradient(center, ellipse cover, #FCDD4E 1%, #F9C404 100%);
@@ -53,9 +94,12 @@ body.amarelo header #cabecalho {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FCDD4E", endColorstr="#F9C404", GradientType=1);
 }
 
-body.azul header #cabecalho {
+body.azul header #cabecalho,
+body.azul #titulo-menu-retratil {
     background-color: #3A72BC;
     background-color: #2160BD;
+}
+body.azul header #cabecalho {
     background-image: -moz-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
     background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #3A72BC), color-stop(100%, #2160BD));
     background-image: -webkit-radial-gradient(center, ellipse cover, #3A72BC 1%, #2160BD 100%);
@@ -352,7 +396,8 @@ body.contraste a:hover {
 }
 
 body.contraste,
-body.contraste #cabecalho {
+body.contraste #cabecalho,
+body.contraste #titulo-menu-retratil{
     background-color: black !important;
     background-image: none !important;
 }

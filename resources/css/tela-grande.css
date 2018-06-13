@@ -53,3 +53,12 @@ body.sem-menu #area-conteudo {
     float: left;
     width: 61%;
 }
+#barra-breadcrumb{
+    position: absolute;
+}
+#menu-lateral, #area-conteudo{
+    margin-top: 65px;
+}
+#titulo-menu-retratil{
+	display: none;
+}
