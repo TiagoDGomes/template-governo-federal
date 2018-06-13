@@ -1013,14 +1013,18 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     background-position-x: right;
     display: block;
     margin: 0 auto;
+    background-position-y: initial;
 }
 @media screen and (max-width: 1024px){
-    #menu-lateral{        
-        display: none;
+    #menu-lateral{  
+        height:0;      
+        opacity: 0;
         border-width:  6px;        
         border-style: solid;
         margin-top: -6px;
         border-radius: 6px;
+        transition: opacity 0.2s, height 3s;
+        box-shadow: 0px 6px 35px
     }
     #menu-lateral li{
         font-size: 1.4em;
@@ -1033,5 +1037,12 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     }
     #menu-lateral .bloco .legenda{
         font-size: 1.4em;
+    }
+    .menu-lateral-aberto #menu-lateral{
+        height: initial;
+        opacity: 1;
+    }
+    .menu-lateral-aberto #titulo-menu-retratil a{
+        background-position-y: -73px;
     }
 }
