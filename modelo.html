@@ -289,187 +289,8 @@
                     <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text"></a>
 
 
-
-                    <!-- VISUALIZAÇÃO DE BUSCA -->
-                    <form class="form-gov" action="#">
-                        <div class="listagem busca">
-                            <h2>Busca</h2>
-                            <div class="descricao">
-                                <p>Resultado da busca por
-                                    <em>{termo-pesquisado}</em>
-                                </p>
-                                <div class="screen-reader-text">
-                                    <p>Você pode escolher as opções a seguir:</p>
-                                    <ul>
-                                        <li>
-                                            <a href="#nav-resultados">Ir para os resultados</a>
-                                        </li>
-                                        <li>
-                                            <a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a>
-                                        </li>
-                                        <li>
-                                            <a href="#nav-opcoes">Ir para o filtro de busca</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="bloco grid">
-
-                                <div class="legenda">
-                                    <h3>Pesquisa</h3>
-                                    <div class="busca-geral">
-
-                                        <fieldset>
-                                            <legend>Ferramenta de busca</legend>
-                                            <label for="pagina-caixa-busca-portal">Buscar no portal</label>
-                                            <input id="pagina-caixa-busca-portal" name="busca-portal" type="text" size="18" title="Caixa de pesquisa" placeholder="Digite aqui para pesquisar">
-                                            <input type="submit" value="Pesquisar">
-                                        </fieldset>
-
-                                    </div>
-
-                                </div>
-                                <a name="nav-opcoes" id="nav-opcoes"></a>
-                                <p class="screen-reader-text">Você está no filtro de pesquisa. Selecione as opções desejadas a seguir:</p>
-                                <div class="opcoes">
-                                    <div class="painel">
-                                        <fieldset>
-                                            <legend>Por categoria</legend>
-                                            <ul>
-                                                <li>
-                                                    <input id="exemplo-checkbox-categoria-1" type="checkbox">
-                                                    <label for="exemplo-checkbox-categoria-1">Categoria 1</label>
-                                                </li>
-                                                <li>
-                                                    <input id="exemplo-checkbox-categoria-2" type="checkbox">
-                                                    <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
-                                                </li>
-                                            </ul>
-                                        </fieldset>
-                                        <fieldset>
-                                            <legend>Por período</legend>
-                                            <ul>
-                                                <li>
-                                                    <label for="exemplo_data_inicio">Data de início:</label>
-                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
-                                                </li>
-                                                <li>
-                                                    <label for="exemplo_data_final">Data final:</label>
-                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
-                                                </li>
-                                            </ul>
-                                            <!--
-                                            <div class="opcao">
-                                                <div class="meio">
-                                                    <label for="exemplo_data_inicio">Data de início:</label>
-                                                </div>
-                                                <div class="meio">
-                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
-                                                </div>
-                                            </div>
-                                            <div class="opcao">
-                                                <div class="meio">
-                                                    <label for="exemplo_data_final">Data final:</label>
-                                                </div>
-                                                <div class="meio">
-                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
-                                                </div>
-                                            </div>-->
-                                        </fieldset>
-                                    </div>
-                                </div>
-
-                                <!-- RESULTADOS DAS BUSCAS -->
-                                <a name="nav-resultados" id="nav-resultados"></a>
-                                <p class="screen-reader-text">Você está nos resultados da pesquisa.</p>
-                                <div class="resultados">
-                                    <div class="noticia">
-                                        <div class="informacoes">
-                                            <div class="screen-reader-text">Informações sobre a publicação (1 de 1):</div>
-                                            <div class="info">
-                                                <div class="data">
-                                                    <time datetime="2000-01-31 12:00">
-                                                        <span class="data">
-                                                            <span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
-                                                        <span class="hora">
-                                                            <span class="screen-reader-text">Hora da publicação: </span>12:00</span>
-                                                    </time>
-                                                </div>
-                                                <!--
-                                                                <div class="tipo">
-                                                                    <span class="video">Vídeo</span>
-                                                                </div>
-                                                                -->
-                                            </div>
-                                        </div>
-                                        <!-- fim .informacoes -->
-                                        <div class="publicacao">
-                                            <div class="chapeu">Chapéu da notícia</div>
-                                            <h3>
-                                                <a href="#">Lorem ipsum dolor sit amet, eos aliquam vivendo eu</a>
-                                            </h3>
-                                            <div class="conteudo">
-                                                <p>
-                                                    Fusce at convallis mi. Proin condimentum suscipit urna, eu pellentesque urna accumsan sagittis. Fusce id neque vel ex fringilla
-                                                    cursus eget non arcu.
-                                                </p>
-                                            </div>
-                                            <div class="tags">
-                                                <div class="legenda">Tópicos:</div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Tag 1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 2</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 3</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 4</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 5</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 6</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Tag 7</a>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                            <div class="categorias">
-                                                <div class="legenda">Registrado em: </div>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Categoria 1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Categoria 2</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Categoria 3</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Categoria 4</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!-- fim .publicacao -->
-                                    </div>
-                                    <!-- fim .noticia -->
-                                </div>
-                                <!-- FIM DOS RESULTADOS DAS BUSCAS -->
-                            </div>
-                        </div>
-                    </form>
-                    <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
-
+                    
+                    
                     <div>
                         <div class="bloco manchetes">
                             <div class="legenda">Chamada com foto</div>
@@ -843,6 +664,191 @@
 
                     <!-- VISUALIZAÇÃO DE LISTAGEM DE NOTÍCIAS -->
                     <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
+                    
+                    <!-- VISUALIZAÇÃO DE BUSCA -->
+                    <form class="form-gov" action="#">
+                        <div class="listagem busca">
+                            <h2>Busca</h2>
+                            <div class="descricao">
+                                <p>Resultado da busca por
+                                    <em>{termo-pesquisado}</em>
+                                </p>
+                                <div class="screen-reader-text">
+                                    <p>Você pode escolher as opções a seguir:</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#nav-resultados">Ir para os resultados</a>
+                                        </li>
+                                        <li>
+                                            <a href="#pagina-caixa-busca-portal">Ir para a caixa de busca</a>
+                                        </li>
+                                        <li>
+                                            <a href="#nav-opcoes">Ir para o filtro de busca</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bloco grid">
+
+                                <div class="legenda">
+                                    <h3>Pesquisa</h3>
+                                    <div class="busca-geral">
+
+                                        <fieldset>
+                                            <legend>Ferramenta de busca</legend>
+                                            <label for="pagina-caixa-busca-portal">Buscar no portal</label>
+                                            <input id="pagina-caixa-busca-portal" name="busca-portal" type="text" size="18" title="Caixa de pesquisa" placeholder="Digite aqui para pesquisar">
+                                            <input type="submit" value="Pesquisar">
+                                        </fieldset>
+
+                                    </div>
+
+                                </div>
+                                <a name="nav-opcoes" id="nav-opcoes"></a>
+                                <p class="screen-reader-text">Você está no filtro de pesquisa. Selecione as opções desejadas a seguir:</p>
+                                <div class="opcoes">
+                                    <div class="painel">
+                                        <fieldset>
+                                            <legend>Por categoria</legend>
+                                            <ul>
+                                                <li>
+                                                    <input id="exemplo-checkbox-categoria-1" type="checkbox">
+                                                    <label for="exemplo-checkbox-categoria-1">Categoria 1</label>
+                                                </li>
+                                                <li>
+                                                    <input id="exemplo-checkbox-categoria-2" type="checkbox">
+                                                    <label for="exemplo-checkbox-categoria-2">Categoria 2</label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                        <fieldset>
+                                            <legend>Por período</legend>
+                                            <ul>
+                                                <li>
+                                                    <label for="exemplo_data_inicio">Data de início:</label>
+                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
+                                                </li>
+                                                <li>
+                                                    <label for="exemplo_data_final">Data final:</label>
+                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
+                                                </li>
+                                            </ul>
+                                            <!--
+                                            <div class="opcao">
+                                                <div class="meio">
+                                                    <label for="exemplo_data_inicio">Data de início:</label>
+                                                </div>
+                                                <div class="meio">
+                                                    <input id="exemplo_data_inicio" name="exemplo_data_inicio" type="date">
+                                                </div>
+                                            </div>
+                                            <div class="opcao">
+                                                <div class="meio">
+                                                    <label for="exemplo_data_final">Data final:</label>
+                                                </div>
+                                                <div class="meio">
+                                                    <input id="exemplo_data_final" name="exemplo_data_final" type="date">
+                                                </div>
+                                            </div>-->
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <!-- RESULTADOS DAS BUSCAS -->
+                                <a name="nav-resultados" id="nav-resultados"></a>
+                                <p class="screen-reader-text">Você está nos resultados da pesquisa.</p>
+                                <div class="resultados">
+                                    <div class="noticia">
+                                        <div class="informacoes">
+                                            <div class="screen-reader-text">Informações sobre a publicação (1 de 1):</div>
+                                            <div class="info">
+                                                <div class="data">
+                                                    <time datetime="2000-01-31 12:00">
+                                                        <span class="data">
+                                                            <span class="screen-reader-text">Data de publicação: </span>30/01/2000 </span>
+                                                        <span class="hora">
+                                                            <span class="screen-reader-text">Hora da publicação: </span>12:00</span>
+                                                    </time>
+                                                </div>
+                                                <!--
+                                                                <div class="tipo">
+                                                                    <span class="video">Vídeo</span>
+                                                                </div>
+                                                                -->
+                                            </div>
+                                        </div>
+                                        <!-- fim .informacoes -->
+                                        <div class="publicacao">
+                                            <div class="chapeu">Chapéu da notícia</div>
+                                            <h3>
+                                                <a href="#">Lorem ipsum dolor sit amet, eos aliquam vivendo eu</a>
+                                            </h3>
+                                            <div class="conteudo">
+                                                <p>
+                                                    Fusce at convallis mi. Proin condimentum suscipit urna, eu pellentesque urna accumsan sagittis. Fusce id neque vel ex fringilla
+                                                    cursus eget non arcu.
+                                                </p>
+                                            </div>
+                                            <div class="tags">
+                                                <div class="legenda">Tópicos:</div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Tag 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 5</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 6</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Tag 7</a>
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                            <div class="categorias">
+                                                <div class="legenda">Registrado em: </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Categoria 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Categoria 4</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- fim .publicacao -->
+                                    </div>
+                                    <!-- fim .noticia -->
+                                </div>
+                                <!-- FIM DOS RESULTADOS DAS BUSCAS -->
+                            </div>
+                        </div>
+                    </form>
+                    <p style="color:white;font-weight:bold;border-style:dashed; background-color:red;border-color: yellow;text-align: center">Linha usada neste modelo apenas para separação de conteúdo multipágina. Não a use!</p>
+
+                    
+                    
+                    
+                    
                     <div class="listagem">
                         <h2>Listagem</h2>
 
