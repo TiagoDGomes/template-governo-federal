@@ -719,6 +719,7 @@ main .bloco .rede-social a.twitter-timeline{
     background-color: #55acee;
     color: white;
 }
+
 main .bloco .rede-social li:not(:first-child){
 /*    position: absolute;
     right: 0;
@@ -727,8 +728,30 @@ main .bloco .rede-social li:not(:first-child){
 
 }
 
-
-
+.redes-sociais.reacao ul{
+    margin-top: 3px;
+}
+.redes-sociais.reacao li{    
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding: 2px 6px 2px 6px;
+}
+.redes-sociais.reacao a{
+    color: white;
+    display: block;
+}
+.redes-sociais.reacao .twitter{
+    background-color: #47c7fa;    
+}
+.redes-sociais.reacao .googleplus{
+    background-color: red;
+}
+.redes-sociais.reacao .facebook{
+    background-color: #29487d;
+}
 
 
 main .manchetes .linha {
