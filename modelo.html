@@ -300,8 +300,10 @@
 
                             <div class="celula-2 rede-social">
                                 <ul class="aba">
-                                    <li><a class="lll" href="#r_twitter" onclick="alternarAbaRedeSocial('twitter');this.classList.add('ativo');return false;">Twitter</a></li>
-                                    <li><a class="lll" href="#r_facebook" onclick="alternarAbaRedeSocial('facebook');this.classList.add('ativo');return false;">Facebook</a></li>                                    
+                                    <li><a class="ativo" href="#r_twitter" onclick="return alternarAbaRedeSocial('twitter', this);">Twitter</a></li>
+                                    <li><a class="" href="#r_facebook" onclick="return alternarAbaRedeSocial('facebook', this);">Facebook</a></li>  
+                                    <li><a class="" href="#r_flickr" onclick="return alternarAbaRedeSocial('flickr', this);">Flickr</a></li>  
+
                                 </ul>
                                 <a name="r_twitter" id="r_twitter"></a>
                                 <div class="twitter incorporacao">
@@ -314,13 +316,30 @@
                                 <a name="r_facebook" id="r_facebook"></a>
                                 <div class="facebook incorporacao">
                                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&amp;tabs=timeline&amp;height=600&amp;width=490&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=155097244557946" 
-                                        height="400px" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                                    
-                                </div>                 
+                                        height="400px" width="100%" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                                    
+                                </div>        
+                                
+                                <a name="r_flickr" id="r_flickr"></a>
+                                <div class="flickr incorporacao">                                    
+                                    <iframe 
+                                    src="https://flickrembed.com/cms_embed.php?source=flickr&amp;layout=responsive&amp;input=www.flickr.com/photos/flickr/&amp;sort=0&amp;by=user&amp;theme=default&amp;scale=fill&amp;limit=10&amp;skin=default&amp;autoplay=true" 
+                                    scrolling="no" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">                                    
+                                        <small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small>
+                                    </iframe>
+                                    <script type="text/javascript">
+                                        function showpics(){var a=$("#box").val();
+                                        $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",
+                                                function(a){
+                                                    $("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}
+                                    </script>
+                                </div>        
+                                
+                                
                             </div>                            
                         </div>
                         <script>
                             var idg_elem_redes_sociais = document.querySelectorAll('.rede-social .incorporacao');
-                            function alternarAbaRedeSocial(v){
+                            function alternarAbaRedeSocial(v, t){
                                 Array.prototype.forEach.call(idg_elem_redes_sociais, function (el, i) {
                                     el.classList.add('oculto');                                   
                                 });
@@ -332,7 +351,9 @@
                                     }
                                 });
                                 var inc = document.querySelectorAll('.rede-social .incorporacao.'+v)[0];
-                                inc.classList.remove('oculto');                                 
+                                inc.classList.remove('oculto');  
+                                t.classList.add('ativo');
+                                return false;                               
                             }  
                             Array.prototype.forEach.call(idg_elem_redes_sociais, function (el, i) {
                                 if(i!=0){
