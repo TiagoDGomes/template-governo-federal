@@ -288,9 +288,61 @@
                 <main class="grid">
                     <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text"></a>
 
+                    
+                    <div class="bloco manchetes">
+                        <div class="legenda">Chamada de redes sociais</div>
+                        <div class="linha tamanho-3">
+                            <div class="noticia celula">
+                                <div class="chapeu">Chapéu</div>
+                                <h2>Notícia em célula simples em uma linha para 3 células</h2>
+                                <p>Célula está junto com mais 3 células em linha tamanho-3.</p>
+                            </div>
 
-                    
-                    
+                            <div class="celula-2 rede-social">
+                                <ul class="aba">
+                                    <li><a class="lll" href="#r_twitter" onclick="alternarAbaRedeSocial('twitter');this.classList.add('ativo');return false;">Twitter</a></li>
+                                    <li><a class="lll" href="#r_facebook" onclick="alternarAbaRedeSocial('facebook');this.classList.add('ativo');return false;">Facebook</a></li>                                    
+                                </ul>
+                                <a name="r_twitter" id="r_twitter"></a>
+                                <div class="twitter incorporacao">
+                                    <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">
+                                        Tweets de [Denominação]
+                                    </a> 
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                                     
+                                </div>  
+                                          
+                                <a name="r_facebook" id="r_facebook"></a>
+                                <div class="facebook incorporacao">
+                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&amp;tabs=timeline&amp;height=600&amp;width=490&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=155097244557946" 
+                                        height="400px" width="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>                                    
+                                </div>                 
+                            </div>                            
+                        </div>
+                        <script>
+                            var idg_elem_redes_sociais = document.querySelectorAll('.rede-social .incorporacao');
+                            function alternarAbaRedeSocial(v){
+                                Array.prototype.forEach.call(idg_elem_redes_sociais, function (el, i) {
+                                    el.classList.add('oculto');                                   
+                                });
+                                Array.prototype.forEach.call(document.querySelectorAll('.rede-social .aba a'), function (el, i) {
+                                    try{
+                                        el.classList.remove('ativo');                                   
+                                    } catch (e){
+                                        console.error(el);
+                                    }
+                                });
+                                var inc = document.querySelectorAll('.rede-social .incorporacao.'+v)[0];
+                                inc.classList.remove('oculto');                                 
+                            }  
+                            Array.prototype.forEach.call(idg_elem_redes_sociais, function (el, i) {
+                                if(i!=0){
+                                    el.classList.add('oculto');                                   
+                                } 
+                            });
+                            
+                        </script>
+                        
+                    </div>
                     <div>
                         <div class="bloco manchetes">
                             <div class="legenda">Chamada com foto</div>
@@ -345,43 +397,6 @@
                         </div>
 
                         
-                        <div class="bloco manchetes">
-                            <div class="legenda">Chamada sem foto e blocos sem fotos</div>
-                            <div class="linha">
-                                <div class="noticia grande celula">
-                                    <div class="chapeu">Chapéu</div>
-                                    <h2>Notícia de destaque em uma célula simples</h2>
-                                    <p>Célula tem o H2 estilizado como grande e está em uma linha única. Margens superior e
-                                        inferior de 30px.</p>
-                                </div>
-                            </div>
-                            <div class="linha tamanho-3">
-                                <div class="noticia celula">
-                                    <div class="chapeu">Chapéu</div>
-                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                    <p>Célula está junto com mais 3 células em linha tamanho-3.</p>
-                                </div>
-
-                                <div class="noticia celula">
-                                    <div class="chapeu">Chapéu</div>
-                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
-                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
-                                </div>
-
-                                <div class="noticia celula">
-                                    <div class="chapeu">Chapéu</div>
-                                    <h2>Notícia em célula simples em uma linha para 3 células</h2>
-                                    <p>Subtítulo da notícia em duas linhas completas com cerca de 150 caracteres. Subtítulo
-                                        da notícia em duas linhas completas com cerca de 150 caracteres.</p>
-                                </div>
-                            </div>
-                            <div class="rodape">
-                                <a href="#">Veja mais neste link de teste
-                                    <span class="icon"></span>
-                                </a>
-                            </div>
-                        </div>
                         <div class="bloco manchetes">
                             <div class="legenda">Uso de 6 blocos em linha</div>
                             <div class="linha tamanho-3">
