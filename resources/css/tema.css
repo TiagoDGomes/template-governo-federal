@@ -366,6 +366,23 @@ main .listagem .informacoes .video{
 main .listagem .informacoes .audio{
     background-image: url(../img/volume-high.svg) ;   
 }
+
+
+
+main .bloco .rede-social .incorporacao{
+    border: 1px solid #d4d5d7;
+    background-color: #eeeff1; 
+}
+main .bloco .rede-social li a{
+    color: #454545;
+}
+main .bloco .rede-social li {
+    background-color: #eeeff1;     
+}
+
+
+
+
 body.contraste main .listagem .informacoes span{
     color:black !important;
     font-weight: 600;
@@ -418,7 +435,9 @@ body.contraste footer,
 body.contraste main .main-rodape li a:hover,
 body.contraste main .bloco .rodape,
 body.contraste input[type="checkbox"],
-body.contraste .painel {
+body.contraste .painel,
+body.contraste main .bloco .rede-social .incorporacao,
+body.contraste main .bloco .rede-social li {
     background-color: #1c1c1c !important;
 }
 
@@ -437,7 +456,9 @@ body.contraste main .bloco .rodape,
 body.contraste main .main-rodape>* {
     border-color: #ffffff !important;
 }
-
+body.contraste main .bloco .rede-social li{
+    border: 1px solid #ffffff !important;
+}
 body.contraste #barra-atalhos span {
     background: #FFF !important;
     color: #000 !important;

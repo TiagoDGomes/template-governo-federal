@@ -686,8 +686,6 @@ main .bloco .rede-social{
     position: relative;  
 }
 main .bloco .rede-social .incorporacao{
-    border: 1px solid #d4d5d7;
-    background-color: #eeeff1; 
     padding: 10px 4px;
 }
 main .bloco .rede-social .oculto{
@@ -697,7 +695,6 @@ main .bloco .rede-social li {
     padding: 5px 15px 5px 15px;
     margin: 0;
     font-size: 14px; 
-    background-color: #eeeff1; 
     font-weight: normal;  
     border-radius: 8px 8px 0 0;
     text-align: center;
@@ -711,9 +708,6 @@ main .bloco .rede-social iframe {
     height: 400px;
     border:none;
     overflow:scroll;
-}
-main .bloco .rede-social li a{
-    color: #454545;
 }
 main .bloco .rede-social li .ativo{
     font-weight: bold;
