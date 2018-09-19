@@ -17,12 +17,14 @@
     <link rel="stylesheet" type="text/css" href="resources/css/devel.css" />
     <link media="print" rel="stylesheet" type="text/css" href="resources/css/impressao.css" />
     <link media="screen" rel="stylesheet" type="text/css" href="resources/css/acessibilidade.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="resources/css/carousel.css" />
 
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="resources/css/basic-ie.css" />
     <![endif]-->
 
     <script src="resources/js/cookies.js"></script>
+    <script src="resources/js/carousel.js"></script>
     <script src="resources/js/geral.js"></script>
 </head>
 
@@ -287,8 +289,44 @@
             <div id="area-conteudo">
                 <main class="grid">
                     <a name="secao-conteudo" id="secao-conteudo" class="screen-reader-text"></a>
+                    <div class="bloco carrossel">
+                        <div id="carousel" class="carousel">
+                            <div class="slides">
+                                <div class="slide active">
+                                    <img src="exemplo/exemplo1-750x250.png" alt="Imagem de exemplo">
+                                    <div class="text">
+                                            <a href="http://www.example.com">
+                                                Isto é um texto de exemplo com link do slide 1.
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="slide active">
+                                    <img src="exemplo/exemplo2-750x250.png" alt="Imagem de exemplo">
+                                    <div class="text">                                        
+                                        Isto é um texto de exemplo do slide 2.                                        
+                                    </div>
+                                </div>
+                                <div class="slide active">
+                                    <img src="exemplo/exemplo3-750x250.png" alt="Imagem de exemplo">
+                                    <div class="text">
+                                        Isto é um texto de exemplo do slide 3.
+                                    </div>
+                                </div>
+                                                    
+                            </div>
 
-                    
+                            <ul class="indicators">
+                              <li class="active"><a href="javascript:;" data-slide="1">&bullet; </a></li>
+                              <li><a href="javascript:;" data-slide="2">&bullet;</a></li>
+                              <li><a href="javascript:;" data-slide="3">&bullet;</a></li>
+                            </ul>
+                        </div>
+                        <script>
+                            var c = new CarouselClass('#carousel', 2000);
+                            c.start();
+                        </script>
+                    </div>   
+
                     <div class="bloco manchetes">
                         <div class="legenda">Chamada de redes sociais</div>
                         <div class="linha tamanho-3">

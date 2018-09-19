@@ -1,0 +1,108 @@
+.carousel {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  padding-top: 1.5em;
+}
+.carousel .slide, .carousel img{  
+  border-radius: 15px;
+}
+.carousel .text a{
+  color: white;
+  cursor: pointer;
+}
+.carousel .text {
+  height: 36px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px 1em 10px;
+  box-sizing: border-box;
+  border-radius: 0px 0px 15px 15px;
+  background: transparent url(../img/shadow-50.png) 0 0;
+  text-shadow: 0px 0px 5px
+}
+
+.carousel .slides {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.carousel .slide:nth-child(1) {
+  background-color: red;
+  opacity: 1;
+}
+
+.carousel .slide:nth-child(2) {
+  background-color: green;
+}
+
+.carousel .slide:nth-child(3) {
+  background-color: blue;
+}
+
+.carousel .slide.active {
+  display: block;
+}
+
+.carousel .indicators {
+  position: absolute;
+  top: -1em;
+  right: 0px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.carousel .indicators a {
+  color: white;
+  font-weight: bold;
+}
+
+.carousel .indicators li {
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+  background-color: #1659bf;
+  width: 12px;
+  height: 20px;
+  text-align: center;
+  margin-left: -4px;
+}
+
+.carousel .indicators li.active,
+.carousel .indicators li:hover {
+  background-color: #FFB400;
+}
+
+body.amarelo .carousel .indicators li {
+  background-color: #03316f;
+}
+
+body.verde .carousel .indicators li {
+  background-color: green;
+}
+
+body.verde .carousel .indicators a,
+body.amarelo .carousel .indicators a {
+  color: white;
+}
+
+body.verde .carousel .indicators li:hover,
+body.amarelo .carousel .indicators li:hover,
+body.verde .carousel .indicators li.active,
+body.amarelo .carousel .indicators li.active {
+  background-color: #FFB400;
+}
