@@ -7,9 +7,12 @@
 .carousel .slide, .carousel img{  
   border-radius: 15px;
 }
-.carousel .text a{
+.carousel a{
   color: white;
   cursor: pointer;
+}
+.carousel .text, .carousel a{
+  z-index: 2;
 }
 .carousel .text {
   height: 36px;
@@ -20,7 +23,8 @@
   box-sizing: border-box;
   border-radius: 0px 0px 15px 15px;
   background: transparent url(../img/shadow-50.png) 0 0;
-  text-shadow: 0px 0px 5px
+  text-shadow: 0px 0px 5px;
+
 }
 
 .carousel .slides {
