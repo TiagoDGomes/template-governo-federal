@@ -13,6 +13,7 @@
 }
 .carousel .text, .carousel a{
   z-index: 2;
+  text-align: left;
 }
 .carousel .text {
   height: 36px;
@@ -44,8 +45,11 @@
   opacity: 0;
   transition: opacity 1000ms;
   background-color: #f1f1f1;
+  text-align: center;
 }
-
+.carousel img{
+  height: 100%;
+}
 .carousel .slide.active {
   display: block;
 }
