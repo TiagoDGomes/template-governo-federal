@@ -18,7 +18,8 @@
   height: 36px;
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
   padding: 5px 1em 10px;
   box-sizing: border-box;
   border-radius: 0px 0px 15px 15px;
@@ -42,19 +43,7 @@
   color: white;
   opacity: 0;
   transition: opacity 1000ms;
-}
-
-.carousel .slide:nth-child(1) {
-  background-color: red;
-  opacity: 1;
-}
-
-.carousel .slide:nth-child(2) {
-  background-color: green;
-}
-
-.carousel .slide:nth-child(3) {
-  background-color: blue;
+  background-color: #f1f1f1;
 }
 
 .carousel .slide.active {
