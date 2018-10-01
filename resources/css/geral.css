@@ -1081,6 +1081,10 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
         right:0;
         top: 136px;
     }
+    .linha .com-imagem{
+	    min-height: 180px;
+    }
+
 }
 
 /* Menu lateral mobile */
@@ -1126,4 +1130,10 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     .menu-lateral-aberto #titulo-menu-retratil a{
         background-position-y: -73px;
     }
+    .linha .com-imagem img{
+	    display: block;
+        float: none;
+    }
+    
 }
+
