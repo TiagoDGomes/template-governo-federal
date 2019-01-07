@@ -48,7 +48,10 @@
   text-align: center;
 }
 .carousel img{
-  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .carousel .slide.active {
   display: block;
