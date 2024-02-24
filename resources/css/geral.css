@@ -432,18 +432,37 @@ main .bloco:first-child>.legenda {
 
 .bloco .legenda {
     padding: 8px 15px 24px 10px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #menu-lateral .bloco li a,
 #menu-lateral .bloco li a:hover,
 #menu-lateral .bloco li a:active,
 #menu-lateral .bloco li a:visited {
-    padding-left: 1em;
     color: #172938;
 }
 
-/* Centrais de conteúdos */
+#menu-lateral .bloco li a {
+    padding-left: 1em;
+}
 
+#menu-lateral .bloco li a:has(img) {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+#menu-lateral .bloco li img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding-right: 8px;
+}
+
+/* Centrais de conteúdos */
+#menu-lateral .bloco li:has(img),
 .centrais-de-conteudos li {
     padding-top: 5px;
     padding-bottom: 5px;
