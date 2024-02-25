@@ -1128,7 +1128,8 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
         margin-top: -6px;
         border-radius: 6px;
         transition: opacity 0.2s, height 3s;
-        box-shadow: 0px 6px 35px
+        box-shadow: 0px 6px 35px;
+	display: none;
     }
     #menu-lateral li{
         font-size: 1.4em;
@@ -1145,6 +1146,7 @@ body.contraste .listagem.busca .busca-geral fieldset input[type="submit"] {
     .menu-lateral-aberto #menu-lateral{
         height: initial;
         opacity: 1;
+	display: inherit;
     }
     .menu-lateral-aberto #titulo-menu-retratil a{
         background-position-y: -73px;
